@@ -16,13 +16,10 @@
 		224C9AF31C8B74400068237D /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AF11C8B74400068237D /* LocationHelper.swift */; };
 		224C9AF61C8B75360068237D /* RequestLocationPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AF51C8B75360068237D /* RequestLocationPermissionsViewController.swift */; };
 		224C9AFA1C8B770C0068237D /* RequestLocationPermision.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224C9AF91C8B770C0068237D /* RequestLocationPermision.storyboard */; };
-		224C9B161C8B8C900068237D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224C9B0F1C8B8C900068237D /* MainInterface.storyboard */; };
-		224C9B181C8B8C900068237D /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B131C8B8C900068237D /* TodayViewController.m */; };
-		224C9B191C8B8C900068237D /* UIView+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B151C8B8C900068237D /* UIView+PanicureAdditions.m */; };
-		224C9B1B1C8B8CEB0068237D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */; };
 		224C9B1F1C8B9CFC0068237D /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AF11C8B74400068237D /* LocationHelper.swift */; };
 		224C9B221C8B9DF10068237D /* PanicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B211C8B9DF10068237D /* PanicHelper.swift */; };
 		224C9B231C8B9E080068237D /* PanicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B211C8B9DF10068237D /* PanicHelper.swift */; };
+		224C9B261C8BA5970068237D /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B251C8BA5970068237D /* ParseHelper.swift */; };
 		75378CDC7BF118E90FC8EDB2 /* Pods_Panicure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */; };
 		CB6E94C11C8B745900AD43B2 /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94C01C8B745900AD43B2 /* SecretKeys.swift */; };
 		CB6E94E11C8B998800AD43B2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */; };
@@ -80,6 +77,7 @@
 		224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		224C9B1C1C8B9CC00068237D /* PanicExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PanicExtension-Bridging-Header.h"; sourceTree = "<group>"; };
 		224C9B211C8B9DF10068237D /* PanicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanicHelper.swift; sourceTree = "<group>"; };
+		224C9B251C8BA5970068237D /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParseHelper.swift; path = Helpers/Parse/ParseHelper.swift; sourceTree = "<group>"; };
 		829424ED1D6E7BDAD1C9EFE9 /* Pods-Panicure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.release.xcconfig"; sourceTree = "<group>"; };
 		836C28868AEB079F7D187052 /* Pods-Panicure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.debug.xcconfig"; sourceTree = "<group>"; };
 		C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panicure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +210,7 @@
 		224C9AD71C8B49700068237D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				224C9B241C8BA5800068237D /* Parse */,
 				224C9B201C8B9D910068237D /* Panic */,
 				224C9AF01C8B74180068237D /* Location */,
 			);
@@ -242,25 +241,20 @@
 			name = "Request Location Permision";
 			sourceTree = "<group>";
 		};
-		224C9B0E1C8B8C900068237D /* PanicureExtension */ = {
-			isa = PBXGroup;
-			children = (
-				224C9B0F1C8B8C900068237D /* MainInterface.storyboard */,
-				224C9B111C8B8C900068237D /* Info.plist */,
-				224C9B121C8B8C900068237D /* TodayViewController.h */,
-				224C9B131C8B8C900068237D /* TodayViewController.m */,
-				224C9B141C8B8C900068237D /* UIView+PanicureAdditions.h */,
-				224C9B151C8B8C900068237D /* UIView+PanicureAdditions.m */,
-			);
-			path = PanicureExtension;
-			sourceTree = "<group>";
-		};
 		224C9B201C8B9D910068237D /* Panic */ = {
 			isa = PBXGroup;
 			children = (
 				224C9B211C8B9DF10068237D /* PanicHelper.swift */,
 			);
 			name = Panic;
+			sourceTree = "<group>";
+		};
+		224C9B241C8BA5800068237D /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				224C9B251C8BA5970068237D /* ParseHelper.swift */,
+			);
+			name = Parse;
 			sourceTree = "<group>";
 		};
 		CB6E94E21C8B998800AD43B2 /* PanicExtension */ = {
@@ -468,6 +462,7 @@
 			files = (
 				224C9AF31C8B74400068237D /* LocationHelper.swift in Sources */,
 				224C9AF61C8B75360068237D /* RequestLocationPermissionsViewController.swift in Sources */,
+				224C9B261C8BA5970068237D /* ParseHelper.swift in Sources */,
 				224C9AD61C8B48A20068237D /* ViewController.swift in Sources */,
 				224C9B221C8B9DF10068237D /* PanicHelper.swift in Sources */,
 				CB6E94C11C8B745900AD43B2 /* SecretKeys.swift in Sources */,
