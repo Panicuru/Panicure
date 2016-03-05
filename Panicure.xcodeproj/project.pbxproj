@@ -14,6 +14,7 @@
 		224C9AC81C8B47150068237D /* PanicureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AC71C8B47150068237D /* PanicureTests.swift */; };
 		224C9AD61C8B48A20068237D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AD51C8B48A20068237D /* ViewController.swift */; };
 		84FA6CFAF524B96F973A14B8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F1B6D3EBBBF70E0BD715AB /* libPods.a */; };
+		C18824B41C8B6D7F0031CB92 /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18824B31C8B6D7F0031CB92 /* SecretKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,8 @@
 		224C9AD51C8B48A20068237D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		70D57F9A0F02A3A2A2C59390 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B7663C30FCF7FD557B097DD0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C18824B11C8B6D300031CB92 /* Panicure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Panicure-Bridging-Header.h"; sourceTree = "<group>"; };
+		C18824B31C8B6D7F0031CB92 /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecretKeys.swift; path = ../SecretKeys.swift; sourceTree = "<group>"; };
 		F0F1B6D3EBBBF70E0BD715AB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,6 +95,7 @@
 		224C9AB11C8B47150068237D /* Panicure */ = {
 			isa = PBXGroup;
 			children = (
+				C18824B31C8B6D7F0031CB92 /* SecretKeys.swift */,
 				224C9AB21C8B47150068237D /* AppDelegate.swift */,
 				224C9AD31C8B47300068237D /* Models */,
 				224C9AD21C8B47290068237D /* Controllers */,
@@ -101,6 +105,7 @@
 				224C9AB91C8B47150068237D /* Assets.xcassets */,
 				224C9ABB1C8B47150068237D /* LaunchScreen.storyboard */,
 				224C9ABE1C8B47150068237D /* Info.plist */,
+				C18824B11C8B6D300031CB92 /* Panicure-Bridging-Header.h */,
 			);
 			path = Panicure;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 			files = (
 				224C9AD61C8B48A20068237D /* ViewController.swift in Sources */,
 				224C9AB31C8B47150068237D /* AppDelegate.swift in Sources */,
+				C18824B41C8B6D7F0031CB92 /* SecretKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,10 +441,13 @@
 			baseConfigurationReference = 70D57F9A0F02A3A2A2C59390 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Panicure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.panicuru.Panicure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Panicure/Panicure-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -447,10 +456,12 @@
 			baseConfigurationReference = B7663C30FCF7FD557B097DD0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Panicure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.panicuru.Panicure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Panicure/Panicure-Bridging-Header.h";
 			};
 			name = Release;
 		};
