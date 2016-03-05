@@ -77,9 +77,12 @@ class LocationHelper: NSObject, CLLocationManagerDelegate {
     Request the user's current location
     The completion block will only be called once, either with a locaiton or an error.
     */
-    func requestLocation(completion: RequestLocationCompletionBlock) throws {
+    func requestLocation(completion: RequestLocationCompletionBlock) {
         // Save the completion block
         requestLocationBlock = completion
+        
+        // Request locaiton updates
+        locationManager.startUpdatingLocation()
     }
     
     // MARK: -
@@ -124,8 +127,5 @@ class LocationHelper: NSObject, CLLocationManagerDelegate {
     
     // MARK: -
     // MARK: - Utility
-    
-    private var userDeniedAuthorizationError: NSError? {
-        return NSError(domain: "AuthorizationErrorDomain", code: 69, userInfo: [NSLocalizedDescriptionKey: "User did not authorize requestAlwaysAuthorization."])
-    }
+
 }

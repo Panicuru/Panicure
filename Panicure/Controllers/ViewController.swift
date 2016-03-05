@@ -30,6 +30,12 @@ class ViewController: UIViewController, RequestLocationPermissionsViewController
     override func viewDidAppear(animated: Bool) {
         viewHasAppeared = true
         makeSureLocationIsAuthroized()
+        
+        if locaitonHelper.authorized {
+            locaitonHelper.requestLocation() { location, error in
+                print("location: \(location), error: \(error)")
+            }
+        }
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -37,6 +43,7 @@ class ViewController: UIViewController, RequestLocationPermissionsViewController
     }
     
     func makeSureLocationIsAuthroized() {
+        
         if viewHasAppeared == false || locaitonRequestViewController != nil {
             return
         }
@@ -53,6 +60,7 @@ class ViewController: UIViewController, RequestLocationPermissionsViewController
             locaitonRequestViewController = storyboard.instantiateViewControllerWithIdentifier("EVARequestLocationPermissionsViewController") as? RequestLocationPermissionsViewController
             locaitonRequestViewController?.delegate = self
             presentViewController(locaitonRequestViewController!, animated: true, completion: nil)
+            return
         }
     }
 
