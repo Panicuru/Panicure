@@ -11,8 +11,12 @@ import UIKit
 @objc(EVAEncryptionHelper)
 class EncryptionHelper: NSObject {
     
-    static func encryptDecryptString(string: String) -> String {
-        return XOREncryption.encryptDecrypt(string)
+    static func encryptDecryptString(string: String?) -> String? {
+        if let input: String = string {
+            return XOREncryption.encryptDecrypt(input)
+        } else {
+            return nil
+        }
     }
 
 }

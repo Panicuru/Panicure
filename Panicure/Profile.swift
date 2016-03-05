@@ -13,4 +13,8 @@ class Profile: PFObject {
     
     @NSManaged var user: PFUser
     
+    func encryptDecrypt() {
+        // todo: implement when more properties added
+    }
+    
 }
