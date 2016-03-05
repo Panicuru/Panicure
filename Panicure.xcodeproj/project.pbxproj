@@ -13,9 +13,9 @@
 		224C9ABD1C8B47150068237D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224C9ABB1C8B47150068237D /* LaunchScreen.storyboard */; };
 		224C9AC81C8B47150068237D /* PanicureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AC71C8B47150068237D /* PanicureTests.swift */; };
 		224C9AD61C8B48A20068237D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AD51C8B48A20068237D /* ViewController.swift */; };
-		224C9AEB1C8B6BF80068237D /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AE91C8B6BF80068237D /* LocationHelper.swift */; };
-		224C9AEC1C8B6BF80068237D /* RequestLocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AEA1C8B6BF80068237D /* RequestLocationHelper.swift */; };
-		224C9AEE1C8B6C020068237D /* RequestLocationPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AED1C8B6C020068237D /* RequestLocationPermissionsViewController.swift */; };
+		224C9AF31C8B74400068237D /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AF11C8B74400068237D /* LocationHelper.swift */; };
+		224C9AF61C8B75360068237D /* RequestLocationPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AF51C8B75360068237D /* RequestLocationPermissionsViewController.swift */; };
+		224C9AFA1C8B770C0068237D /* RequestLocationPermision.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224C9AF91C8B770C0068237D /* RequestLocationPermision.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +39,9 @@
 		224C9AC71C8B47150068237D /* PanicureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanicureTests.swift; sourceTree = "<group>"; };
 		224C9AC91C8B47150068237D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		224C9AD51C8B48A20068237D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
-		224C9AE91C8B6BF80068237D /* LocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationHelper.swift; path = Helpers/LocationHelper.swift; sourceTree = "<group>"; };
-		224C9AEA1C8B6BF80068237D /* RequestLocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestLocationHelper.swift; path = Helpers/RequestLocationHelper.swift; sourceTree = "<group>"; };
-		224C9AED1C8B6C020068237D /* RequestLocationPermissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestLocationPermissionsViewController.swift; path = Controllers/RequestLocationPermissionsViewController.swift; sourceTree = "<group>"; };
+		224C9AF11C8B74400068237D /* LocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationHelper.swift; path = Helpers/Location/LocationHelper.swift; sourceTree = "<group>"; };
+		224C9AF51C8B75360068237D /* RequestLocationPermissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestLocationPermissionsViewController.swift; path = "Controllers/Request Location/RequestLocationPermissionsViewController.swift"; sourceTree = "<group>"; };
+		224C9AF91C8B770C0068237D /* RequestLocationPermision.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = RequestLocationPermision.storyboard; path = Views/RequestLocationPermision/RequestLocationPermision.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 		224C9AD21C8B47290068237D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				224C9AED1C8B6C020068237D /* RequestLocationPermissionsViewController.swift */,
+				224C9AEF1C8B740B0068237D /* Request Location  */,
 				224C9AD51C8B48A20068237D /* ViewController.swift */,
 			);
 			name = Controllers;
@@ -124,6 +124,7 @@
 		224C9AD41C8B47530068237D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				224C9AFB1C8B775E0068237D /* Request Location Permision */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -131,10 +132,33 @@
 		224C9AD71C8B49700068237D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				224C9AE91C8B6BF80068237D /* LocationHelper.swift */,
-				224C9AEA1C8B6BF80068237D /* RequestLocationHelper.swift */,
+				224C9AF01C8B74180068237D /* Location */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		224C9AEF1C8B740B0068237D /* Request Location  */ = {
+			isa = PBXGroup;
+			children = (
+				224C9AF51C8B75360068237D /* RequestLocationPermissionsViewController.swift */,
+			);
+			name = "Request Location ";
+			sourceTree = "<group>";
+		};
+		224C9AF01C8B74180068237D /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				224C9AF11C8B74400068237D /* LocationHelper.swift */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		224C9AFB1C8B775E0068237D /* Request Location Permision */ = {
+			isa = PBXGroup;
+			children = (
+				224C9AF91C8B770C0068237D /* RequestLocationPermision.storyboard */,
+			);
+			name = "Request Location Permision";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +211,11 @@
 				TargetAttributes = {
 					224C9AAE1C8B47150068237D = {
 						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					224C9AC21C8B47150068237D = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -220,6 +249,7 @@
 			files = (
 				224C9ABD1C8B47150068237D /* LaunchScreen.storyboard in Resources */,
 				224C9ABA1C8B47150068237D /* Assets.xcassets in Resources */,
+				224C9AFA1C8B770C0068237D /* RequestLocationPermision.storyboard in Resources */,
 				224C9AB81C8B47150068237D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,9 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				224C9AEC1C8B6BF80068237D /* RequestLocationHelper.swift in Sources */,
-				224C9AEE1C8B6C020068237D /* RequestLocationPermissionsViewController.swift in Sources */,
-				224C9AEB1C8B6BF80068237D /* LocationHelper.swift in Sources */,
+				224C9AF31C8B74400068237D /* LocationHelper.swift in Sources */,
+				224C9AF61C8B75360068237D /* RequestLocationPermissionsViewController.swift in Sources */,
 				224C9AD61C8B48A20068237D /* ViewController.swift in Sources */,
 				224C9AB31C8B47150068237D /* AppDelegate.swift in Sources */,
 			);
@@ -372,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Panicure/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.panicuru.Panicure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -383,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Panicure/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.panicuru.Panicure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
