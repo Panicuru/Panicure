@@ -18,6 +18,7 @@
 		CB2CA7CC1C8B6D99009ACF51 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2CA7CB1C8B6D99009ACF51 /* TodayViewController.m */; };
 		CB2CA7CF1C8B6D99009ACF51 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2CA7CD1C8B6D99009ACF51 /* MainInterface.storyboard */; };
 		CB2CA7D31C8B6D99009ACF51 /* PanicureExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB2CA7C61C8B6D99009ACF51 /* PanicureExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C18824B41C8B6D7F0031CB92 /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18824B31C8B6D7F0031CB92 /* SecretKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		CB2CA7CB1C8B6D99009ACF51 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		CB2CA7CE1C8B6D99009ACF51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		CB2CA7D01C8B6D99009ACF51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C18824B11C8B6D300031CB92 /* Panicure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Panicure-Bridging-Header.h"; sourceTree = "<group>"; };
+		C18824B31C8B6D7F0031CB92 /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecretKeys.swift; path = ../SecretKeys.swift; sourceTree = "<group>"; };
 		F0F1B6D3EBBBF70E0BD715AB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
