@@ -5,14 +5,20 @@
 //  Created by Vahan Harutyunyan on 2016-03-05.
 //  Copyright © 2016 Panicuru. All rights reserved.
 //
-
+#import <Parse/Parse.h>
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
 #import <CoreLocation/CoreLocation.h>
 
+#import "PanicExtension-Swift.h"
+
 @interface TodayViewController () <NCWidgetProviding,CLLocationManagerDelegate>
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLLocation *currentLocation;
+
+///
+@property (strong, nonatomic) EVALocationHelper *locationHelper;
+
 @end
 
 @implementation TodayViewController
@@ -23,6 +29,7 @@
     _locationManager = [[CLLocationManager alloc] init];
     _locationManager.delegate = self;
     _locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
+    
     
     if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
         [_locationManager requestAlwaysAuthorization];
@@ -51,6 +58,15 @@
     }
     
     NSLog(@"%@", self.currentLocation.description);
+    
+    [EVAPanicHelper startPanicingWithCompletion:^(NSError * _Nullable error) {
+        if (error) {
+            // Handle error
+            return;
+        }
+        
+        // Panic Successful
+    }];
 }
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
