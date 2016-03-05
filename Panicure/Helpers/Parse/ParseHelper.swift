@@ -12,7 +12,7 @@ import Parse
 @objc(EVAParseHelper)
 class ParseHelper: NSObject {
     
-    static func Start() {
+    static func start() {
         Parse.setApplicationId(ParseKeys.ApplicationId, clientKey: ParseKeys.ClientKey)
     }
 }

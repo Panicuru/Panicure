@@ -20,8 +20,10 @@
 		224C9B221C8B9DF10068237D /* PanicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B211C8B9DF10068237D /* PanicHelper.swift */; };
 		224C9B231C8B9E080068237D /* PanicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B211C8B9DF10068237D /* PanicHelper.swift */; };
 		224C9B261C8BA5970068237D /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B251C8BA5970068237D /* ParseHelper.swift */; };
+		224C9B271C8BA6630068237D /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B251C8BA5970068237D /* ParseHelper.swift */; };
+		224C9B2C1C8BA70E0068237D /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B2B1C8BA70E0068237D /* SecretKeys.swift */; };
+		224C9B2D1C8BA70E0068237D /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B2B1C8BA70E0068237D /* SecretKeys.swift */; };
 		75378CDC7BF118E90FC8EDB2 /* Pods_Panicure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */; };
-		CB6E94C11C8B745900AD43B2 /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94C01C8B745900AD43B2 /* SecretKeys.swift */; };
 		CB6E94E11C8B998800AD43B2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */; };
 		CB6E94E51C8B998800AD43B2 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94E41C8B998800AD43B2 /* TodayViewController.m */; };
 		CB6E94E81C8B998800AD43B2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6E94E61C8B998800AD43B2 /* MainInterface.storyboard */; };
@@ -78,10 +80,10 @@
 		224C9B1C1C8B9CC00068237D /* PanicExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PanicExtension-Bridging-Header.h"; sourceTree = "<group>"; };
 		224C9B211C8B9DF10068237D /* PanicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanicHelper.swift; sourceTree = "<group>"; };
 		224C9B251C8BA5970068237D /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParseHelper.swift; path = Helpers/Parse/ParseHelper.swift; sourceTree = "<group>"; };
+		224C9B2B1C8BA70E0068237D /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
 		829424ED1D6E7BDAD1C9EFE9 /* Pods-Panicure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.release.xcconfig"; sourceTree = "<group>"; };
 		836C28868AEB079F7D187052 /* Pods-Panicure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.debug.xcconfig"; sourceTree = "<group>"; };
 		C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panicure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB6E94C01C8B745900AD43B2 /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
 		CB6E94E01C8B998800AD43B2 /* PanicExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PanicExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6E94E31C8B998800AD43B2 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		CB6E94E41C8B998800AD43B2 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		224C9AA61C8B47150068237D = {
 			isa = PBXGroup;
 			children = (
+				224C9B2B1C8BA70E0068237D /* SecretKeys.swift */,
 				224C9AB11C8B47150068237D /* Panicure */,
 				224C9AC61C8B47150068237D /* PanicureTests */,
 				CB6E94E21C8B998800AD43B2 /* PanicExtension */,
@@ -465,7 +468,7 @@
 				224C9B261C8BA5970068237D /* ParseHelper.swift in Sources */,
 				224C9AD61C8B48A20068237D /* ViewController.swift in Sources */,
 				224C9B221C8B9DF10068237D /* PanicHelper.swift in Sources */,
-				CB6E94C11C8B745900AD43B2 /* SecretKeys.swift in Sources */,
+				224C9B2C1C8BA70E0068237D /* SecretKeys.swift in Sources */,
 				224C9AB31C8B47150068237D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +489,8 @@
 				CB6E94E51C8B998800AD43B2 /* TodayViewController.m in Sources */,
 				CB6E94F21C8B9AB400AD43B2 /* UIView+PanicureAdditions.m in Sources */,
 				224C9B231C8B9E080068237D /* PanicHelper.swift in Sources */,
+				224C9B271C8BA6630068237D /* ParseHelper.swift in Sources */,
+				224C9B2D1C8BA70E0068237D /* SecretKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

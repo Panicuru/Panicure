@@ -29,6 +29,9 @@
     [_locationHelper requestLocation:^(CLLocation * _Nullable location, NSError * _Nullable error) {
         
     }];
+    
+    [EVAParseHelper start];
+    
     // Do any additional setup after loading the view from its nib.
     _locationManager = [[CLLocationManager alloc] init];
     _locationManager.delegate = self;
