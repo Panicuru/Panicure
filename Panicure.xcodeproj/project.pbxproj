@@ -14,6 +14,10 @@
 		224C9AC81C8B47150068237D /* PanicureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AC71C8B47150068237D /* PanicureTests.swift */; };
 		224C9AD61C8B48A20068237D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AD51C8B48A20068237D /* ViewController.swift */; };
 		84FA6CFAF524B96F973A14B8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F1B6D3EBBBF70E0BD715AB /* libPods.a */; };
+		CB2CA7C81C8B6D99009ACF51 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2CA7C71C8B6D99009ACF51 /* NotificationCenter.framework */; };
+		CB2CA7CC1C8B6D99009ACF51 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2CA7CB1C8B6D99009ACF51 /* TodayViewController.m */; };
+		CB2CA7CF1C8B6D99009ACF51 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2CA7CD1C8B6D99009ACF51 /* MainInterface.storyboard */; };
+		CB2CA7D31C8B6D99009ACF51 /* PanicureExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB2CA7C61C8B6D99009ACF51 /* PanicureExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C18824B41C8B6D7F0031CB92 /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18824B31C8B6D7F0031CB92 /* SecretKeys.swift */; };
 		C18824B91C8B6E810031CB92 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18824B81C8B6E810031CB92 /* Report.swift */; };
 		C18824BB1C8B6F2C0031CB92 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18824BA1C8B6F2C0031CB92 /* Profile.swift */; };
@@ -29,7 +33,28 @@
 			remoteGlobalIDString = 224C9AAE1C8B47150068237D;
 			remoteInfo = Panicure;
 		};
+		CB2CA7D11C8B6D99009ACF51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 224C9AA71C8B47150068237D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB2CA7C51C8B6D99009ACF51;
+			remoteInfo = PanicureExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB2CA7D71C8B6D99009ACF51 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB2CA7D31C8B6D99009ACF51 /* PanicureExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		224C9AAF1C8B47150068237D /* Panicure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Panicure.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +69,12 @@
 		224C9AD51C8B48A20068237D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		70D57F9A0F02A3A2A2C59390 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B7663C30FCF7FD557B097DD0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CB2CA7C61C8B6D99009ACF51 /* PanicureExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PanicureExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2CA7C71C8B6D99009ACF51 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		CB2CA7CA1C8B6D99009ACF51 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		CB2CA7CB1C8B6D99009ACF51 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		CB2CA7CE1C8B6D99009ACF51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CB2CA7D01C8B6D99009ACF51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C18824B11C8B6D300031CB92 /* Panicure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Panicure-Bridging-Header.h"; sourceTree = "<group>"; };
 		C18824B31C8B6D7F0031CB92 /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecretKeys.swift; path = ../SecretKeys.swift; sourceTree = "<group>"; };
 		C18824B81C8B6E810031CB92 /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
@@ -70,6 +101,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB2CA7C31C8B6D99009ACF51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2CA7C81C8B6D99009ACF51 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				F0F1B6D3EBBBF70E0BD715AB /* libPods.a */,
+				CB2CA7C71C8B6D99009ACF51 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,6 +126,7 @@
 			children = (
 				224C9AB11C8B47150068237D /* Panicure */,
 				224C9AC61C8B47150068237D /* PanicureTests */,
+				CB2CA7C91C8B6D99009ACF51 /* PanicureExtension */,
 				224C9AB01C8B47150068237D /* Products */,
 				E86C84B48DCA9376F157BA93 /* Pods */,
 				0850178D5FC1EA0105158438 /* Frameworks */,
@@ -97,6 +138,7 @@
 			children = (
 				224C9AAF1C8B47150068237D /* Panicure.app */,
 				224C9AC31C8B47150068237D /* PanicureTests.xctest */,
+				CB2CA7C61C8B6D99009ACF51 /* PanicureExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +204,17 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		CB2CA7C91C8B6D99009ACF51 /* PanicureExtension */ = {
+			isa = PBXGroup;
+			children = (
+				CB2CA7CA1C8B6D99009ACF51 /* TodayViewController.h */,
+				CB2CA7CB1C8B6D99009ACF51 /* TodayViewController.m */,
+				CB2CA7CD1C8B6D99009ACF51 /* MainInterface.storyboard */,
+				CB2CA7D01C8B6D99009ACF51 /* Info.plist */,
+			);
+			path = PanicureExtension;
+			sourceTree = "<group>";
+		};
 		E86C84B48DCA9376F157BA93 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,10 +237,12 @@
 				224C9AAD1C8B47150068237D /* Resources */,
 				57D9D4FB73201DCBE97CFE45 /* Embed Pods Frameworks */,
 				8E93B65BFEE24B17D8C0DEAB /* Copy Pods Resources */,
+				CB2CA7D71C8B6D99009ACF51 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CB2CA7D21C8B6D99009ACF51 /* PBXTargetDependency */,
 			);
 			name = Panicure;
 			productName = Panicure;
@@ -212,6 +267,23 @@
 			productReference = 224C9AC31C8B47150068237D /* PanicureTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CB2CA7C51C8B6D99009ACF51 /* PanicureExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB2CA7D61C8B6D99009ACF51 /* Build configuration list for PBXNativeTarget "PanicureExtension" */;
+			buildPhases = (
+				CB2CA7C21C8B6D99009ACF51 /* Sources */,
+				CB2CA7C31C8B6D99009ACF51 /* Frameworks */,
+				CB2CA7C41C8B6D99009ACF51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PanicureExtension;
+			productName = PanicureExtension;
+			productReference = CB2CA7C61C8B6D99009ACF51 /* PanicureExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -228,6 +300,9 @@
 					224C9AC21C8B47150068237D = {
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = 224C9AAE1C8B47150068237D;
+					};
+					CB2CA7C51C8B6D99009ACF51 = {
+						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
@@ -246,6 +321,7 @@
 			targets = (
 				224C9AAE1C8B47150068237D /* Panicure */,
 				224C9AC21C8B47150068237D /* PanicureTests */,
+				CB2CA7C51C8B6D99009ACF51 /* PanicureExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -265,6 +341,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB2CA7C41C8B6D99009ACF51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2CA7CF1C8B6D99009ACF51 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +425,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB2CA7C21C8B6D99009ACF51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2CA7CC1C8B6D99009ACF51 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -348,6 +440,11 @@
 			isa = PBXTargetDependency;
 			target = 224C9AAE1C8B47150068237D /* Panicure */;
 			targetProxy = 224C9AC41C8B47150068237D /* PBXContainerItemProxy */;
+		};
+		CB2CA7D21C8B6D99009ACF51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB2CA7C51C8B6D99009ACF51 /* PanicureExtension */;
+			targetProxy = CB2CA7D11C8B6D99009ACF51 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -366,6 +463,14 @@
 				224C9ABC1C8B47150068237D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CB2CA7CD1C8B6D99009ACF51 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB2CA7CE1C8B6D99009ACF51 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -507,6 +612,28 @@
 			};
 			name = Release;
 		};
+		CB2CA7D41C8B6D99009ACF51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PanicureExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panicuru.Panicure.PanicureExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CB2CA7D51C8B6D99009ACF51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PanicureExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panicuru.Panicure.PanicureExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -536,6 +663,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CB2CA7D61C8B6D99009ACF51 /* Build configuration list for PBXNativeTarget "PanicureExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB2CA7D41C8B6D99009ACF51 /* Debug */,
+				CB2CA7D51C8B6D99009ACF51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
