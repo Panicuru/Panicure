@@ -18,7 +18,9 @@
 		CB2CA7CC1C8B6D99009ACF51 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2CA7CB1C8B6D99009ACF51 /* TodayViewController.m */; };
 		CB2CA7CF1C8B6D99009ACF51 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2CA7CD1C8B6D99009ACF51 /* MainInterface.storyboard */; };
 		CB2CA7D31C8B6D99009ACF51 /* PanicureExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB2CA7C61C8B6D99009ACF51 /* PanicureExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C18824B41C8B6D7F0031CB92 /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18824B31C8B6D7F0031CB92 /* SecretKeys.swift */; };
+		CB6E94C11C8B745900AD43B2 /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94C01C8B745900AD43B2 /* SecretKeys.swift */; };
+		CB6E94C41C8B88F300AD43B2 /* UIView+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94C31C8B88F300AD43B2 /* UIView+PanicureAdditions.m */; };
+		CB6E94C51C8B88F300AD43B2 /* UIView+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94C31C8B88F300AD43B2 /* UIView+PanicureAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,14 +67,16 @@
 		224C9AD51C8B48A20068237D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		70D57F9A0F02A3A2A2C59390 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B7663C30FCF7FD557B097DD0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C18824B11C8B6D300031CB92 /* Panicure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Panicure-Bridging-Header.h"; sourceTree = "<group>"; };
 		CB2CA7C61C8B6D99009ACF51 /* PanicureExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PanicureExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2CA7C71C8B6D99009ACF51 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		CB2CA7CA1C8B6D99009ACF51 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		CB2CA7CB1C8B6D99009ACF51 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		CB2CA7CE1C8B6D99009ACF51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		CB2CA7D01C8B6D99009ACF51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C18824B11C8B6D300031CB92 /* Panicure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Panicure-Bridging-Header.h"; sourceTree = "<group>"; };
-		C18824B31C8B6D7F0031CB92 /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecretKeys.swift; path = ../SecretKeys.swift; sourceTree = "<group>"; };
+		CB6E94C01C8B745900AD43B2 /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
+		CB6E94C21C8B88F300AD43B2 /* UIView+PanicureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PanicureAdditions.h"; sourceTree = "<group>"; };
+		CB6E94C31C8B88F300AD43B2 /* UIView+PanicureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PanicureAdditions.m"; sourceTree = "<group>"; };
 		F0F1B6D3EBBBF70E0BD715AB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,7 +141,7 @@
 		224C9AB11C8B47150068237D /* Panicure */ = {
 			isa = PBXGroup;
 			children = (
-				C18824B31C8B6D7F0031CB92 /* SecretKeys.swift */,
+				CB6E94C01C8B745900AD43B2 /* SecretKeys.swift */,
 				224C9AB21C8B47150068237D /* AppDelegate.swift */,
 				224C9AD31C8B47300068237D /* Models */,
 				224C9AD21C8B47290068237D /* Controllers */,
@@ -197,6 +201,8 @@
 				CB2CA7CB1C8B6D99009ACF51 /* TodayViewController.m */,
 				CB2CA7CD1C8B6D99009ACF51 /* MainInterface.storyboard */,
 				CB2CA7D01C8B6D99009ACF51 /* Info.plist */,
+				CB6E94C21C8B88F300AD43B2 /* UIView+PanicureAdditions.h */,
+				CB6E94C31C8B88F300AD43B2 /* UIView+PanicureAdditions.m */,
 			);
 			path = PanicureExtension;
 			sourceTree = "<group>";
@@ -394,8 +400,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				224C9AD61C8B48A20068237D /* ViewController.swift in Sources */,
+				CB6E94C11C8B745900AD43B2 /* SecretKeys.swift in Sources */,
 				224C9AB31C8B47150068237D /* AppDelegate.swift in Sources */,
-				C18824B41C8B6D7F0031CB92 /* SecretKeys.swift in Sources */,
+				CB6E94C41C8B88F300AD43B2 /* UIView+PanicureAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB2CA7CC1C8B6D99009ACF51 /* TodayViewController.m in Sources */,
+				CB6E94C51C8B88F300AD43B2 /* UIView+PanicureAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +661,7 @@
 				CB2CA7D51C8B6D99009ACF51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
