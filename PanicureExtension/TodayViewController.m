@@ -8,9 +8,11 @@
 
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface TodayViewController () <NCWidgetProviding>
-
+@interface TodayViewController () <NCWidgetProviding,CLLocationManagerDelegate>
+@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) CLLocation *currentLocation;
 @end
 
 @implementation TodayViewController
@@ -18,6 +20,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _locationManager = [[CLLocationManager alloc] init];
+    _locationManager.delegate = self;
+    _locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
+    
+    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
+        [_locationManager requestAlwaysAuthorization];
+    }
+    
+    [_locationManager startMonitoringSignificantLocationChanges];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,6 +44,22 @@
     // If there's an update, use NCUpdateResultNewData
 
     completionHandler(NCUpdateResultNewData);
+}
+- (IBAction)panicAction:(id)sender {
+    if(!self.currentLocation){
+    self.currentLocation = self.locationManager.location;
+    }
+    
+    NSLog(@"%@", self.currentLocation.description);
+}
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
+    
+    if (locations.lastObject != nil) {
+        self.currentLocation = locations.lastObject;
+    } else {
+        self.currentLocation = manager.location;
+    }
 }
 
 @end
