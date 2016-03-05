@@ -6,7 +6,7 @@
 //  Copyright © 2016 Panicuru. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
 @objc(EVARequestLocationPermissionsViewController)
 class RequestLocationPermissionsViewController: UIViewController {
