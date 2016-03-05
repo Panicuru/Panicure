@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objc(EVAProfile)
 class Profile: PFObject {
     
     @NSManaged var user: PFUser

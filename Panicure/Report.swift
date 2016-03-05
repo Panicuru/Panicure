@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objc(EVAReport)
 class Report: PFObject {
     
     @NSManaged var media: PFFile?

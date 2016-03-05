@@ -18,6 +18,7 @@
 		C18824B91C8B6E810031CB92 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18824B81C8B6E810031CB92 /* Report.swift */; };
 		C18824BB1C8B6F2C0031CB92 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18824BA1C8B6F2C0031CB92 /* Profile.swift */; };
 		C18824BE1C8B71890031CB92 /* EncryptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18824BD1C8B71890031CB92 /* EncryptionHelper.swift */; };
+		C18824C31C8B79FA0031CB92 /* EVAXOREncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C18824C21C8B79FA0031CB92 /* EVAXOREncrypt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		C18824B81C8B6E810031CB92 /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 		C18824BA1C8B6F2C0031CB92 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		C18824BD1C8B71890031CB92 /* EncryptionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionHelper.swift; sourceTree = "<group>"; };
+		C18824C21C8B79FA0031CB92 /* EVAXOREncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAXOREncrypt.m; sourceTree = "<group>"; };
+		C18824C41C8B7A1A0031CB92 /* EVAXOREncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EVAXOREncrypt.h; sourceTree = "<group>"; };
 		F0F1B6D3EBBBF70E0BD715AB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -153,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				C18824BD1C8B71890031CB92 /* EncryptionHelper.swift */,
+				C18824C41C8B7A1A0031CB92 /* EVAXOREncrypt.h */,
+				C18824C21C8B79FA0031CB92 /* EVAXOREncrypt.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 				224C9AD61C8B48A20068237D /* ViewController.swift in Sources */,
 				C18824BB1C8B6F2C0031CB92 /* Profile.swift in Sources */,
 				C18824BE1C8B71890031CB92 /* EncryptionHelper.swift in Sources */,
+				C18824C31C8B79FA0031CB92 /* EVAXOREncrypt.m in Sources */,
 				224C9AB31C8B47150068237D /* AppDelegate.swift in Sources */,
 				C18824B41C8B6D7F0031CB92 /* SecretKeys.swift in Sources */,
 				C18824B91C8B6E810031CB92 /* Report.swift in Sources */,

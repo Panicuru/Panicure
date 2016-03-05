@@ -4,3 +4,5 @@
 
 #import <Parse/Parse.h>
 #import <Bolts/Bolts.h>
+#import <CommonCrypto/CommonCrypto.h>
+#import "EVAXOREncrypt.h"
