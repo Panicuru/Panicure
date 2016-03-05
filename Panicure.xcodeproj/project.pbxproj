@@ -16,16 +16,13 @@
 		224C9AF31C8B74400068237D /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AF11C8B74400068237D /* LocationHelper.swift */; };
 		224C9AF61C8B75360068237D /* RequestLocationPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AF51C8B75360068237D /* RequestLocationPermissionsViewController.swift */; };
 		224C9AFA1C8B770C0068237D /* RequestLocationPermision.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224C9AF91C8B770C0068237D /* RequestLocationPermision.storyboard */; };
-		224C9AFD1C8B87BF0068237D /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AFC1C8B87BF0068237D /* SecretKeys.swift */; };
+		224C9B161C8B8C900068237D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224C9B0F1C8B8C900068237D /* MainInterface.storyboard */; };
+		224C9B171C8B8C900068237D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 224C9B111C8B8C900068237D /* Info.plist */; };
+		224C9B181C8B8C900068237D /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B131C8B8C900068237D /* TodayViewController.m */; };
+		224C9B191C8B8C900068237D /* UIView+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B151C8B8C900068237D /* UIView+PanicureAdditions.m */; };
+		224C9B1B1C8B8CEB0068237D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */; };
 		75378CDC7BF118E90FC8EDB2 /* Pods_Panicure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */; };
-		84FA6CFAF524B96F973A14B8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F1B6D3EBBBF70E0BD715AB /* libPods.a */; };
-		CB2CA7C81C8B6D99009ACF51 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2CA7C71C8B6D99009ACF51 /* NotificationCenter.framework */; };
-		CB2CA7CC1C8B6D99009ACF51 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2CA7CB1C8B6D99009ACF51 /* TodayViewController.m */; };
-		CB2CA7CF1C8B6D99009ACF51 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2CA7CD1C8B6D99009ACF51 /* MainInterface.storyboard */; };
-		CB2CA7D31C8B6D99009ACF51 /* PanicureExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB2CA7C61C8B6D99009ACF51 /* PanicureExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CB6E94C11C8B745900AD43B2 /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94C01C8B745900AD43B2 /* SecretKeys.swift */; };
-		CB6E94C41C8B88F300AD43B2 /* UIView+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94C31C8B88F300AD43B2 /* UIView+PanicureAdditions.m */; };
-		CB6E94C51C8B88F300AD43B2 /* UIView+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94C31C8B88F300AD43B2 /* UIView+PanicureAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,23 +69,17 @@
 		224C9AF11C8B74400068237D /* LocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationHelper.swift; path = Helpers/Location/LocationHelper.swift; sourceTree = "<group>"; };
 		224C9AF51C8B75360068237D /* RequestLocationPermissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestLocationPermissionsViewController.swift; path = "Controllers/Request Location/RequestLocationPermissionsViewController.swift"; sourceTree = "<group>"; };
 		224C9AF91C8B770C0068237D /* RequestLocationPermision.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = RequestLocationPermision.storyboard; path = Views/RequestLocationPermision/RequestLocationPermision.storyboard; sourceTree = "<group>"; };
-		224C9AFC1C8B87BF0068237D /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
+		224C9B101C8B8C900068237D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		224C9B111C8B8C900068237D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		224C9B121C8B8C900068237D /* TodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		224C9B131C8B8C900068237D /* TodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		224C9B141C8B8C900068237D /* UIView+PanicureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PanicureAdditions.h"; sourceTree = "<group>"; };
+		224C9B151C8B8C900068237D /* UIView+PanicureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PanicureAdditions.m"; sourceTree = "<group>"; };
+		224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		829424ED1D6E7BDAD1C9EFE9 /* Pods-Panicure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.release.xcconfig"; sourceTree = "<group>"; };
 		836C28868AEB079F7D187052 /* Pods-Panicure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.debug.xcconfig"; sourceTree = "<group>"; };
 		C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panicure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		70D57F9A0F02A3A2A2C59390 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		B7663C30FCF7FD557B097DD0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		C18824B11C8B6D300031CB92 /* Panicure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Panicure-Bridging-Header.h"; sourceTree = "<group>"; };
-		CB2CA7C61C8B6D99009ACF51 /* PanicureExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PanicureExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB2CA7C71C8B6D99009ACF51 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		CB2CA7CA1C8B6D99009ACF51 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
-		CB2CA7CB1C8B6D99009ACF51 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
-		CB2CA7CE1C8B6D99009ACF51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		CB2CA7D01C8B6D99009ACF51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB6E94C01C8B745900AD43B2 /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
-		CB6E94C21C8B88F300AD43B2 /* UIView+PanicureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PanicureAdditions.h"; sourceTree = "<group>"; };
-		CB6E94C31C8B88F300AD43B2 /* UIView+PanicureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PanicureAdditions.m"; sourceTree = "<group>"; };
-		F0F1B6D3EBBBF70E0BD715AB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224C9B1B1C8B8CEB0068237D /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +112,7 @@
 		0850178D5FC1EA0105158438 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */,
 				C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */,
 			);
 			name = Frameworks;
@@ -139,6 +132,7 @@
 			children = (
 				224C9AB11C8B47150068237D /* Panicure */,
 				224C9AC61C8B47150068237D /* PanicureTests */,
+				224C9B0E1C8B8C900068237D /* PanicureExtension */,
 				224C9AB01C8B47150068237D /* Products */,
 				0850178D5FC1EA0105158438 /* Frameworks */,
 				0FB20A710CA03BF7BFAD42D3 /* Pods */,
@@ -157,7 +151,6 @@
 		224C9AB11C8B47150068237D /* Panicure */ = {
 			isa = PBXGroup;
 			children = (
-				224C9AFC1C8B87BF0068237D /* SecretKeys.swift */,
 				224C9AB21C8B47150068237D /* AppDelegate.swift */,
 				224C9AD31C8B47300068237D /* Models */,
 				224C9AD21C8B47290068237D /* Controllers */,
@@ -216,12 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				224C9AF51C8B75360068237D /* RequestLocationPermissionsViewController.swift */,
-				CB2CA7CA1C8B6D99009ACF51 /* TodayViewController.h */,
-				CB2CA7CB1C8B6D99009ACF51 /* TodayViewController.m */,
-				CB2CA7CD1C8B6D99009ACF51 /* MainInterface.storyboard */,
-				CB2CA7D01C8B6D99009ACF51 /* Info.plist */,
-				CB6E94C21C8B88F300AD43B2 /* UIView+PanicureAdditions.h */,
-				CB6E94C31C8B88F300AD43B2 /* UIView+PanicureAdditions.m */,
 			);
 			name = "Request Location ";
 			sourceTree = "<group>";
@@ -240,6 +227,19 @@
 				224C9AF91C8B770C0068237D /* RequestLocationPermision.storyboard */,
 			);
 			name = "Request Location Permision";
+			sourceTree = "<group>";
+		};
+		224C9B0E1C8B8C900068237D /* PanicureExtension */ = {
+			isa = PBXGroup;
+			children = (
+				224C9B0F1C8B8C900068237D /* MainInterface.storyboard */,
+				224C9B111C8B8C900068237D /* Info.plist */,
+				224C9B121C8B8C900068237D /* TodayViewController.h */,
+				224C9B131C8B8C900068237D /* TodayViewController.m */,
+				224C9B141C8B8C900068237D /* UIView+PanicureAdditions.h */,
+				224C9B151C8B8C900068237D /* UIView+PanicureAdditions.m */,
+			);
+			path = PanicureExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +371,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224C9B171C8B8C900068237D /* Info.plist in Resources */,
+				224C9B161C8B8C900068237D /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,8 +436,6 @@
 				224C9AD61C8B48A20068237D /* ViewController.swift in Sources */,
 				CB6E94C11C8B745900AD43B2 /* SecretKeys.swift in Sources */,
 				224C9AB31C8B47150068237D /* AppDelegate.swift in Sources */,
-				224C9AFD1C8B87BF0068237D /* SecretKeys.swift in Sources */,
-				CB6E94C41C8B88F300AD43B2 /* UIView+PanicureAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,8 +451,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB2CA7CC1C8B6D99009ACF51 /* TodayViewController.m in Sources */,
-				CB6E94C51C8B88F300AD43B2 /* UIView+PanicureAdditions.m in Sources */,
+				224C9B181C8B8C900068237D /* TodayViewController.m in Sources */,
+				224C9B191C8B8C900068237D /* UIView+PanicureAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +486,14 @@
 				224C9ABC1C8B47150068237D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		224C9B0F1C8B8C900068237D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				224C9B101C8B8C900068237D /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -635,6 +643,9 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/PanicureExtension/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com;
 				PRODUCT_NAME = PanicureExtension;
 			};
 			name = Debug;
@@ -644,7 +655,12 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/PanicureExtension/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com;
 				PRODUCT_NAME = PanicureExtension;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
