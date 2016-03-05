@@ -40,13 +40,6 @@
 			remoteGlobalIDString = 224C9AAE1C8B47150068237D;
 			remoteInfo = Panicure;
 		};
-		CB6E94DA1C8B994800AD43B2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 224C9AA71C8B47150068237D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB2CA7C51C8B6D99009ACF51;
-			remoteInfo = PanicureExtension;
-		};
 		CB6E94EA1C8B998800AD43B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 224C9AA71C8B47150068237D /* Project object */;
@@ -84,12 +77,6 @@
 		224C9AF11C8B74400068237D /* LocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationHelper.swift; path = Helpers/Location/LocationHelper.swift; sourceTree = "<group>"; };
 		224C9AF51C8B75360068237D /* RequestLocationPermissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestLocationPermissionsViewController.swift; path = "Controllers/Request Location/RequestLocationPermissionsViewController.swift"; sourceTree = "<group>"; };
 		224C9AF91C8B770C0068237D /* RequestLocationPermision.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = RequestLocationPermision.storyboard; path = Views/RequestLocationPermision/RequestLocationPermision.storyboard; sourceTree = "<group>"; };
-		224C9B101C8B8C900068237D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		224C9B111C8B8C900068237D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		224C9B121C8B8C900068237D /* TodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
-		224C9B131C8B8C900068237D /* TodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
-		224C9B141C8B8C900068237D /* UIView+PanicureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PanicureAdditions.h"; sourceTree = "<group>"; };
-		224C9B151C8B8C900068237D /* UIView+PanicureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PanicureAdditions.m"; sourceTree = "<group>"; };
 		224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		224C9B1C1C8B9CC00068237D /* PanicExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PanicExtension-Bridging-Header.h"; sourceTree = "<group>"; };
 		224C9B211C8B9DF10068237D /* PanicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanicHelper.swift; sourceTree = "<group>"; };
@@ -119,14 +106,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB2CA7C31C8B6D99009ACF51 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				224C9B1B1C8B8CEB0068237D /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +143,6 @@
 			children = (
 				224C9AB11C8B47150068237D /* Panicure */,
 				224C9AC61C8B47150068237D /* PanicureTests */,
-				224C9B0E1C8B8C900068237D /* PanicureExtension */,
 				CB6E94E21C8B998800AD43B2 /* PanicExtension */,
 				224C9AB01C8B47150068237D /* Products */,
 				0850178D5FC1EA0105158438 /* Frameworks */,
@@ -317,7 +295,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				CB6E94DB1C8B994800AD43B2 /* PBXTargetDependency */,
 				CB6E94EB1C8B998800AD43B2 /* PBXTargetDependency */,
 			);
 			name = Panicure;
@@ -342,22 +319,6 @@
 			productName = PanicureTests;
 			productReference = 224C9AC31C8B47150068237D /* PanicureTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CB2CA7C51C8B6D99009ACF51 /* PanicureExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2260BDD61C8B87490028E711 /* Build configuration list for PBXNativeTarget "PanicureExtension" */;
-			buildPhases = (
-				CB2CA7C21C8B6D99009ACF51 /* Sources */,
-				CB2CA7C31C8B6D99009ACF51 /* Frameworks */,
-				CB2CA7C41C8B6D99009ACF51 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PanicureExtension;
-			productName = PanicureExtension;
-			productType = "com.apple.product-type.app-extension";
 		};
 		CB6E94DF1C8B998800AD43B2 /* PanicExtension */ = {
 			isa = PBXNativeTarget;
@@ -398,9 +359,6 @@
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = 224C9AAE1C8B47150068237D;
 					};
-					CB2CA7C51C8B6D99009ACF51 = {
-						CreatedOnToolsVersion = 7.2.1;
-					};
 					CB6E94DF1C8B998800AD43B2 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -421,7 +379,6 @@
 			targets = (
 				224C9AAE1C8B47150068237D /* Panicure */,
 				224C9AC21C8B47150068237D /* PanicureTests */,
-				CB2CA7C51C8B6D99009ACF51 /* PanicureExtension */,
 				CB6E94DF1C8B998800AD43B2 /* PanicExtension */,
 			);
 		};
@@ -443,14 +400,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB2CA7C41C8B6D99009ACF51 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				224C9B161C8B8C900068237D /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,15 +483,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB2CA7C21C8B6D99009ACF51 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				224C9B181C8B8C900068237D /* TodayViewController.m in Sources */,
-				224C9B191C8B8C900068237D /* UIView+PanicureAdditions.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CB6E94DC1C8B998800AD43B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -561,11 +501,6 @@
 			isa = PBXTargetDependency;
 			target = 224C9AAE1C8B47150068237D /* Panicure */;
 			targetProxy = 224C9AC41C8B47150068237D /* PBXContainerItemProxy */;
-		};
-		CB6E94DB1C8B994800AD43B2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CB2CA7C51C8B6D99009ACF51 /* PanicureExtension */;
-			targetProxy = CB6E94DA1C8B994800AD43B2 /* PBXContainerItemProxy */;
 		};
 		CB6E94EB1C8B998800AD43B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -589,14 +524,6 @@
 				224C9ABC1C8B47150068237D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		224C9B0F1C8B8C900068237D /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				224C9B101C8B8C900068237D /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 		CB6E94E61C8B998800AD43B2 /* MainInterface.storyboard */ = {
@@ -750,33 +677,6 @@
 			};
 			name = Release;
 		};
-		2260BDD41C8B87490028E711 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "$(SRCROOT)/PanicureExtension/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com;
-				PRODUCT_NAME = PanicureExtension;
-			};
-			name = Debug;
-		};
-		2260BDD51C8B87490028E711 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_OPTIMIZATION_LEVEL = 0;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "$(SRCROOT)/PanicureExtension/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com;
-				PRODUCT_NAME = PanicureExtension;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-			};
-			name = Release;
-		};
 		CB6E94EE1C8B998800AD43B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -830,15 +730,6 @@
 			buildConfigurations = (
 				224C9AD01C8B47150068237D /* Debug */,
 				224C9AD11C8B47150068237D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2260BDD61C8B87490028E711 /* Build configuration list for PBXNativeTarget "PanicureExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2260BDD41C8B87490028E711 /* Debug */,
-				2260BDD51C8B87490028E711 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
