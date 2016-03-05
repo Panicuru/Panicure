@@ -13,6 +13,7 @@
 		224C9ABD1C8B47150068237D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224C9ABB1C8B47150068237D /* LaunchScreen.storyboard */; };
 		224C9AC81C8B47150068237D /* PanicureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AC71C8B47150068237D /* PanicureTests.swift */; };
 		224C9AD61C8B48A20068237D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AD51C8B48A20068237D /* ViewController.swift */; };
+		84FA6CFAF524B96F973A14B8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F1B6D3EBBBF70E0BD715AB /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 		224C9AC71C8B47150068237D /* PanicureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanicureTests.swift; sourceTree = "<group>"; };
 		224C9AC91C8B47150068237D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		224C9AD51C8B48A20068237D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		70D57F9A0F02A3A2A2C59390 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B7663C30FCF7FD557B097DD0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F0F1B6D3EBBBF70E0BD715AB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FA6CFAF524B96F973A14B8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0850178D5FC1EA0105158438 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0F1B6D3EBBBF70E0BD715AB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		224C9AA61C8B47150068237D = {
 			isa = PBXGroup;
 			children = (
 				224C9AB11C8B47150068237D /* Panicure */,
 				224C9AC61C8B47150068237D /* PanicureTests */,
 				224C9AB01C8B47150068237D /* Products */,
+				E86C84B48DCA9376F157BA93 /* Pods */,
+				0850178D5FC1EA0105158438 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +143,15 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		E86C84B48DCA9376F157BA93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70D57F9A0F02A3A2A2C59390 /* Pods.debug.xcconfig */,
+				B7663C30FCF7FD557B097DD0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 224C9ACC1C8B47150068237D /* Build configuration list for PBXNativeTarget "Panicure" */;
 			buildPhases = (
+				E7D2CE6394B62BE06F05D4E3 /* Check Pods Manifest.lock */,
 				224C9AAB1C8B47150068237D /* Sources */,
 				224C9AAC1C8B47150068237D /* Frameworks */,
 				224C9AAD1C8B47150068237D /* Resources */,
+				57D9D4FB73201DCBE97CFE45 /* Embed Pods Frameworks */,
+				8E93B65BFEE24B17D8C0DEAB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,6 +250,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57D9D4FB73201DCBE97CFE45 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E93B65BFEE24B17D8C0DEAB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7D2CE6394B62BE06F05D4E3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		224C9AAB1C8B47150068237D /* Sources */ = {
@@ -357,6 +432,7 @@
 		};
 		224C9ACD1C8B47150068237D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70D57F9A0F02A3A2A2C59390 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Panicure/Info.plist;
@@ -368,6 +444,7 @@
 		};
 		224C9ACE1C8B47150068237D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7663C30FCF7FD557B097DD0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Panicure/Info.plist;
@@ -420,6 +497,7 @@
 				224C9ACE1C8B47150068237D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		224C9ACF1C8B47150068237D /* Build configuration list for PBXNativeTarget "PanicureTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +506,7 @@
 				224C9AD11C8B47150068237D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
