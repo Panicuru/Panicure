@@ -25,6 +25,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.locationHelper = [[EVALocationHelper alloc] init];
+    [_locationHelper requestLocation:^(CLLocation * _Nullable location, NSError * _Nullable error) {
+        
+    }];
     // Do any additional setup after loading the view from its nib.
     _locationManager = [[CLLocationManager alloc] init];
     _locationManager.delegate = self;
