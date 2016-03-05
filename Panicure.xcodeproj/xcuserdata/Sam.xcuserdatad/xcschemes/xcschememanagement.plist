@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PanicureExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>224C9AC21C8B47150068237D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CB2CA7C51C8B6D99009ACF51</key>
 		<dict>
 			<key>primary</key>
 			<true/>

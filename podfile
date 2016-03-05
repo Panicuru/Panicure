@@ -1,2 +1,7 @@
-pod 'Parse'
-pod 'Bolts'
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'Panicure' do
+  pod 'Parse'
+  pod 'Bolts'
+end

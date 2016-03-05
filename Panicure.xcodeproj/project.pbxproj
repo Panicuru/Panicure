@@ -16,6 +16,8 @@
 		224C9AF31C8B74400068237D /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AF11C8B74400068237D /* LocationHelper.swift */; };
 		224C9AF61C8B75360068237D /* RequestLocationPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AF51C8B75360068237D /* RequestLocationPermissionsViewController.swift */; };
 		224C9AFA1C8B770C0068237D /* RequestLocationPermision.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224C9AF91C8B770C0068237D /* RequestLocationPermision.storyboard */; };
+		224C9AFD1C8B87BF0068237D /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AFC1C8B87BF0068237D /* SecretKeys.swift */; };
+		75378CDC7BF118E90FC8EDB2 /* Pods_Panicure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +44,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				CB2CA7D31C8B6D99009ACF51 /* PanicureExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +64,10 @@
 		224C9AF11C8B74400068237D /* LocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationHelper.swift; path = Helpers/Location/LocationHelper.swift; sourceTree = "<group>"; };
 		224C9AF51C8B75360068237D /* RequestLocationPermissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestLocationPermissionsViewController.swift; path = "Controllers/Request Location/RequestLocationPermissionsViewController.swift"; sourceTree = "<group>"; };
 		224C9AF91C8B770C0068237D /* RequestLocationPermision.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = RequestLocationPermision.storyboard; path = Views/RequestLocationPermision/RequestLocationPermision.storyboard; sourceTree = "<group>"; };
+		224C9AFC1C8B87BF0068237D /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
+		829424ED1D6E7BDAD1C9EFE9 /* Pods-Panicure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.release.xcconfig"; sourceTree = "<group>"; };
+		836C28868AEB079F7D187052 /* Pods-Panicure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.debug.xcconfig"; sourceTree = "<group>"; };
+		C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panicure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84FA6CFAF524B96F973A14B8 /* libPods.a in Frameworks */,
+				75378CDC7BF118E90FC8EDB2 /* Pods_Panicure.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +90,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB2CA7C81C8B6D99009ACF51 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,10 +99,18 @@
 		0850178D5FC1EA0105158438 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F0F1B6D3EBBBF70E0BD715AB /* libPods.a */,
-				CB2CA7C71C8B6D99009ACF51 /* NotificationCenter.framework */,
+				C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0FB20A710CA03BF7BFAD42D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				836C28868AEB079F7D187052 /* Pods-Panicure.debug.xcconfig */,
+				829424ED1D6E7BDAD1C9EFE9 /* Pods-Panicure.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		224C9AA61C8B47150068237D = {
@@ -106,10 +118,9 @@
 			children = (
 				224C9AB11C8B47150068237D /* Panicure */,
 				224C9AC61C8B47150068237D /* PanicureTests */,
-				CB2CA7C91C8B6D99009ACF51 /* PanicureExtension */,
 				224C9AB01C8B47150068237D /* Products */,
-				E86C84B48DCA9376F157BA93 /* Pods */,
 				0850178D5FC1EA0105158438 /* Frameworks */,
+				0FB20A710CA03BF7BFAD42D3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,7 +129,6 @@
 			children = (
 				224C9AAF1C8B47150068237D /* Panicure.app */,
 				224C9AC31C8B47150068237D /* PanicureTests.xctest */,
-				CB2CA7C61C8B6D99009ACF51 /* PanicureExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,7 +136,7 @@
 		224C9AB11C8B47150068237D /* Panicure */ = {
 			isa = PBXGroup;
 			children = (
-				C18824B31C8B6D7F0031CB92 /* SecretKeys.swift */,
+				224C9AFC1C8B87BF0068237D /* SecretKeys.swift */,
 				224C9AB21C8B47150068237D /* AppDelegate.swift */,
 				224C9AD31C8B47300068237D /* Models */,
 				224C9AD21C8B47290068237D /* Controllers */,
@@ -136,7 +146,6 @@
 				224C9AB91C8B47150068237D /* Assets.xcassets */,
 				224C9ABB1C8B47150068237D /* LaunchScreen.storyboard */,
 				224C9ABE1C8B47150068237D /* Info.plist */,
-				C18824B11C8B6D300031CB92 /* Panicure-Bridging-Header.h */,
 			);
 			path = Panicure;
 			sourceTree = "<group>";
@@ -251,7 +260,7 @@
 		};
 		CB2CA7C51C8B6D99009ACF51 /* PanicureExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB2CA7D61C8B6D99009ACF51 /* Build configuration list for PBXNativeTarget "PanicureExtension" */;
+			buildConfigurationList = 2260BDD61C8B87490028E711 /* Build configuration list for PBXNativeTarget "PanicureExtension" */;
 			buildPhases = (
 				CB2CA7C21C8B6D99009ACF51 /* Sources */,
 				CB2CA7C31C8B6D99009ACF51 /* Frameworks */,
@@ -263,7 +272,6 @@
 			);
 			name = PanicureExtension;
 			productName = PanicureExtension;
-			productReference = CB2CA7C61C8B6D99009ACF51 /* PanicureExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -336,7 +344,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB2CA7CF1C8B6D99009ACF51 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +362,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panicure/Pods-Panicure-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8E93B65BFEE24B17D8C0DEAB /* Copy Pods Resources */ = {
@@ -370,7 +377,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panicure/Pods-Panicure-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E7D2CE6394B62BE06F05D4E3 /* Check Pods Manifest.lock */ = {
@@ -399,7 +406,7 @@
 				224C9AF61C8B75360068237D /* RequestLocationPermissionsViewController.swift in Sources */,
 				224C9AD61C8B48A20068237D /* ViewController.swift in Sources */,
 				224C9AB31C8B47150068237D /* AppDelegate.swift in Sources */,
-				C18824B41C8B6D7F0031CB92 /* SecretKeys.swift in Sources */,
+				224C9AFD1C8B87BF0068237D /* SecretKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +422,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB2CA7CC1C8B6D99009ACF51 /* TodayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,14 +455,6 @@
 				224C9ABC1C8B47150068237D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		CB2CA7CD1C8B6D99009ACF51 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB2CA7CE1C8B6D99009ACF51 /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -547,7 +545,7 @@
 		};
 		224C9ACD1C8B47150068237D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70D57F9A0F02A3A2A2C59390 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 836C28868AEB079F7D187052 /* Pods-Panicure.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -563,7 +561,7 @@
 		};
 		224C9ACE1C8B47150068237D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7663C30FCF7FD557B097DD0 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 829424ED1D6E7BDAD1C9EFE9 /* Pods-Panicure.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -600,25 +598,22 @@
 			};
 			name = Release;
 		};
-		CB2CA7D41C8B6D99009ACF51 /* Debug */ = {
+		2260BDD41C8B87490028E711 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = PanicureExtension/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.panicuru.Panicure.PanicureExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = PanicureExtension;
 			};
 			name = Debug;
 		};
-		CB2CA7D51C8B6D99009ACF51 /* Release */ = {
+		2260BDD51C8B87490028E711 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = PanicureExtension/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.panicuru.Panicure.PanicureExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = PanicureExtension;
 			};
 			name = Release;
 		};
@@ -648,6 +643,15 @@
 			buildConfigurations = (
 				224C9AD01C8B47150068237D /* Debug */,
 				224C9AD11C8B47150068237D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2260BDD61C8B87490028E711 /* Build configuration list for PBXNativeTarget "PanicureExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2260BDD41C8B87490028E711 /* Debug */,
+				2260BDD51C8B87490028E711 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
