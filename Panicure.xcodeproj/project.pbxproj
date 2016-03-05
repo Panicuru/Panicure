@@ -15,6 +15,9 @@
 		224C9AD61C8B48A20068237D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AD51C8B48A20068237D /* ViewController.swift */; };
 		84FA6CFAF524B96F973A14B8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F1B6D3EBBBF70E0BD715AB /* libPods.a */; };
 		C18824B41C8B6D7F0031CB92 /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18824B31C8B6D7F0031CB92 /* SecretKeys.swift */; };
+		C18824B91C8B6E810031CB92 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18824B81C8B6E810031CB92 /* Report.swift */; };
+		C18824BB1C8B6F2C0031CB92 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18824BA1C8B6F2C0031CB92 /* Profile.swift */; };
+		C18824BE1C8B71890031CB92 /* EncryptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18824BD1C8B71890031CB92 /* EncryptionHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		B7663C30FCF7FD557B097DD0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C18824B11C8B6D300031CB92 /* Panicure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Panicure-Bridging-Header.h"; sourceTree = "<group>"; };
 		C18824B31C8B6D7F0031CB92 /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecretKeys.swift; path = ../SecretKeys.swift; sourceTree = "<group>"; };
+		C18824B81C8B6E810031CB92 /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		C18824BA1C8B6F2C0031CB92 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		C18824BD1C8B71890031CB92 /* EncryptionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionHelper.swift; sourceTree = "<group>"; };
 		F0F1B6D3EBBBF70E0BD715AB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -130,6 +136,8 @@
 		224C9AD31C8B47300068237D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C18824B81C8B6E810031CB92 /* Report.swift */,
+				C18824BA1C8B6F2C0031CB92 /* Profile.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -144,6 +152,7 @@
 		224C9AD71C8B49700068237D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C18824BD1C8B71890031CB92 /* EncryptionHelper.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -310,8 +319,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				224C9AD61C8B48A20068237D /* ViewController.swift in Sources */,
+				C18824BB1C8B6F2C0031CB92 /* Profile.swift in Sources */,
+				C18824BE1C8B71890031CB92 /* EncryptionHelper.swift in Sources */,
 				224C9AB31C8B47150068237D /* AppDelegate.swift in Sources */,
 				C18824B41C8B6D7F0031CB92 /* SecretKeys.swift in Sources */,
+				C18824B91C8B6E810031CB92 /* Report.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
