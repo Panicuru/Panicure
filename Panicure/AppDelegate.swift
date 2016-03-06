@@ -19,6 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.enableDataSharingWithApplicationGroupIdentifier("group.com.panicuru");
         ParseHelper.start()
         
+        if PFUser.currentUser() == nil {
+            let storyboard = UIStoryboard(name: "SignUp", bundle: nil)
+            let vc = storyboard.instantiateInitialViewController()
+            self.window?.rootViewController = vc
+            self.window?.makeKeyAndVisible()
+        }
+        
         return true
     }
 
