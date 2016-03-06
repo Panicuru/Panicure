@@ -16,6 +16,9 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLLocation *currentLocation;
 
+@property (strong, nonatomic) IBOutlet UIButton* panicButton;
+@property (strong, nonatomic) IBOutlet UIButton* signupButton;
+
 ///
 @property (strong, nonatomic) EVALocationHelper *locationHelper;
 
@@ -25,12 +28,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [EVAParseHelper start];
+    if([PFUser currentUser]){
+        self.panicButton.hidden = NO;
+        self.signupButton.hidden = YES;
+    }else{
+        self.panicButton.hidden = YES;
+        self.signupButton.hidden = NO;
+    }
+    
+    
+    
+    
     self.locationHelper = [[EVALocationHelper alloc] init];
     [_locationHelper requestLocation:^(CLLocation * _Nullable location, NSError * _Nullable error) {
         
     }];
     
-    [EVAParseHelper start];
+    
     
     // Do any additional setup after loading the view from its nib.
     _locationManager = [[CLLocationManager alloc] init];
@@ -43,6 +59,8 @@
     }
     
     [_locationManager startMonitoringSignificantLocationChanges];
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -83,6 +101,11 @@
     } else {
         self.currentLocation = manager.location;
     }
+}
+
+- (IBAction)signupAction:(id)sender {
+    NSURL *url = [NSURL URLWithString:@"panicure://"];
+    [self.extensionContext openURL:url completionHandler:nil];
 }
 
 @end

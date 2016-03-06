@@ -14,17 +14,16 @@
                         <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBb-kR-eHt">
-                                <rect key="frame" x="15" y="8" width="291" height="64"/>
+                                <rect key="frame" x="15" y="8" width="291" height="45"/>
                                 <color key="backgroundColor" red="0.59607843140000005" green="0.078431372550000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="4QR-CL-d4O"/>
-                                    <constraint firstAttribute="height" constant="64" id="rQu-UW-REz"/>
+                                    <constraint firstAttribute="height" constant="45" id="rQu-UW-REz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
                                 <state key="normal" title="Panic">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -43,13 +42,26 @@
                                     <action selector="panicAction:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="raQ-wA-K4g"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7a-YB-Rzn">
+                                <rect key="frame" x="15" y="8" width="291" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Please sign up first...">
+                                    <color key="titleColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signupAction:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="uKH-Sg-NOJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="qBb-kR-eHt" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="Dtn-Op-QAa"/>
+                            <constraint firstItem="Z7a-YB-Rzn" firstAttribute="centerY" secondItem="qBb-kR-eHt" secondAttribute="centerY" id="079-RS-eBL"/>
+                            <constraint firstItem="Z7a-YB-Rzn" firstAttribute="centerX" secondItem="qBb-kR-eHt" secondAttribute="centerX" id="7nd-Qq-ufC"/>
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="qBb-kR-eHt" secondAttribute="bottom" constant="8" id="EpY-9D-4Ov"/>
                             <constraint firstItem="qBb-kR-eHt" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="F2U-17-x1u"/>
                             <constraint firstItem="qBb-kR-eHt" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="PDU-f1-Bjh"/>
                             <constraint firstItem="qBb-kR-eHt" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="15" id="jXR-DQ-ubV"/>
+                            <constraint firstItem="Z7a-YB-Rzn" firstAttribute="width" secondItem="qBb-kR-eHt" secondAttribute="width" id="qjk-jd-wvR"/>
+                            <constraint firstItem="Z7a-YB-Rzn" firstAttribute="height" secondItem="qBb-kR-eHt" secondAttribute="height" id="ssj-iA-AcY"/>
                             <constraint firstAttribute="trailing" secondItem="qBb-kR-eHt" secondAttribute="trailing" constant="14" id="yP3-ey-CSY"/>
                         </constraints>
                     </view>
@@ -58,11 +70,15 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="80"/>
+                    <size key="freeformSize" width="320" height="61"/>
+                    <connections>
+                        <outlet property="panicButton" destination="qBb-kR-eHt" id="zh7-Tv-iHr"/>
+                        <outlet property="signupButton" destination="Z7a-YB-Rzn" id="Zkz-kg-JAy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="285"/>
+            <point key="canvasLocation" x="516" y="284.5"/>
         </scene>
     </scenes>
 </document>
