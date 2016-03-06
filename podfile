@@ -5,6 +5,7 @@ target 'Panicure' do
   pod 'Parse'
   pod 'Bolts'
   pod 'PureLayout'
+  pod 'SwiftyTimer'
 end
 
 target 'PanicExtension' do
