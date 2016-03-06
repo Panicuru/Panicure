@@ -35,6 +35,8 @@
 		224C9B461C8BE0BE0068237D /* ReverseGeocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B441C8BE0BE0068237D /* ReverseGeocoder.swift */; };
 		224C9B471C8BE70B0068237D /* EVANetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B3E1C8BDD530068237D /* EVANetworkHelper.m */; };
 		224C9B481C8BE70F0068237D /* CLLocation+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B421C8BDEBC0068237D /* CLLocation+PanicureAdditions.m */; };
+		224C9B491C8BF4040068237D /* EncryptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407B71C8BC408005AB0B0 /* EncryptionHelper.swift */; };
+		224C9B4A1C8BF44F0068237D /* EVAXOREncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C10407B91C8BC408005AB0B0 /* EVAXOREncrypt.m */; };
 		75378CDC7BF118E90FC8EDB2 /* Pods_Panicure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */; };
 		C10407A51C8BBDE7005AB0B0 /* ChildProfileControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407A41C8BBDE7005AB0B0 /* ChildProfileControl.swift */; };
 		C10407AA1C8BBE09005AB0B0 /* ProfileChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407A71C8BBE09005AB0B0 /* ProfileChildViewController.swift */; };
@@ -698,7 +700,9 @@
 				224C9B231C8B9E080068237D /* PanicHelper.swift in Sources */,
 				224C9B461C8BE0BE0068237D /* ReverseGeocoder.swift in Sources */,
 				224C9B471C8BE70B0068237D /* EVANetworkHelper.m in Sources */,
+				224C9B491C8BF4040068237D /* EncryptionHelper.swift in Sources */,
 				224C9B271C8BA6630068237D /* ParseHelper.swift in Sources */,
+				224C9B4A1C8BF44F0068237D /* EVAXOREncrypt.m in Sources */,
 				224C9B481C8BE70F0068237D /* CLLocation+PanicureAdditions.m in Sources */,
 				224C9B2D1C8BA70E0068237D /* SecretKeys.swift in Sources */,
 			);

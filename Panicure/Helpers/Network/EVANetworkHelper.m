@@ -23,6 +23,8 @@
 
 - (void)saveNewPanic:(PFObject *)panic completion:(void(^)(NSError *error))completion {
     
+    // Encrypt all the string properties
+    
     PFObject *pfObject = (PFObject *)panic;
     [pfObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
         completion(error);
