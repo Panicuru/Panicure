@@ -67,5 +67,20 @@ class ViewController: UIViewController, RequestLocationPermissionsViewController
     func requestLocationPermissionsViewControllerDidDismiss(viewController: RequestLocationPermissionsViewController) {
         locaitonRequestViewController = nil
     }
+    
+    // MARK: -
+    // MARK: - Actions
+    
+    @IBAction func panicNow() {
+        PanicHelper.startPanicingWithCompletion { error in
+            let message = error == nil ? "Success" : "error"
+            let alertController = UIAlertController(title: message, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func cancelPanic() {
+        
+    }
 }
 

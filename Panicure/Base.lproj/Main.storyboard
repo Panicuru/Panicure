@@ -27,6 +27,9 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="Panic Now"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="filled" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="panicNow" destination="BYZ-38-t0r" eventType="touchUpInside" id="7j7-dZ-9ch"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XYd-Q2-E0d" customClass="EVARoundedButton">
                                 <rect key="frame" x="8" y="340" width="584" height="45"/>
@@ -38,6 +41,9 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="Cancel"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="filled" value="NO"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancelPanic" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xqu-zj-OBm"/>
+                                </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q63-TI-p6j">
                                 <rect key="frame" x="271" y="254" width="57" height="36"/>

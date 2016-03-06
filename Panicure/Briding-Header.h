@@ -8,3 +8,5 @@
 
 #import "UIColor+PanicureAdditions.h"
 #import "EVAXOREncrypt.h"
+#import "EVANetworkHelper.h"
+#import "CLLocation+PanicureAdditions.h"
