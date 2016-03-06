@@ -116,6 +116,8 @@ class ViewController: UIViewController, RequestLocationPermissionsViewController
     // MARK: - Panic
     
     private func startPanicing() {
+        stopTiming()
+        
         PanicHelper.startPanicingWithCompletion { (error: NSError?, panic: Panic?) in
             let message = error == nil ? "Success" : "error"
             let alertController = UIAlertController(title: message, message: message, preferredStyle: UIAlertControllerStyle.Alert)

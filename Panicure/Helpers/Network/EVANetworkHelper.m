@@ -9,6 +9,8 @@
 
 #import "EVANetworkHelper.h"
 
+#import "EVAXOREncrypt.h"
+
 @implementation EVANetworkHelper
 
 
@@ -26,8 +28,30 @@
     // Encrypt all the string properties
     
     PFObject *pfObject = (PFObject *)panic;
-    [pfObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-        completion(error);
+    PFUser *user = [pfObject valueForKey:@"user"];
+//    [pfObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+//        completion(error);
+//    }];
+    
+    [[[pfObject saveInBackground] continueWithBlock:^id _Nullable(BFTask<NSNumber *> * _Nonnull task) {
+        PFQuery *pushQuery = [PFInstallation query];
+        [pushQuery whereKey:@"deviceType" equalTo:@"ios"];
+        
+        // Send push notification to query
+        NSString* pushText = [NSString stringWithFormat: @"%@ has panicked at '%@' ", user.email, [XOREncryption encryptDecrypt:[pfObject valueForKey:@"locationName"]]];
+        NSDictionary *data = [NSDictionary dictionaryWithObjectsAndKeys:
+                              pushText, @"alert",
+                              @"Increment", @"badge",
+                              @"userEmail", user.email,
+                              @"userId", user.objectId,
+                              nil];
+        
+        return [PFPush sendPushDataToQueryInBackground:pushQuery withData:data];
+    }] continueWithBlock:^id _Nullable(BFTask * _Nonnull task) {
+        
+        completion(task.error);
+        
+        return nil;
     }];
 }
 

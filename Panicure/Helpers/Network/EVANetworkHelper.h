@@ -16,8 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)sharedInstance;
 
-- (void)nothing;
-
 - (void)saveNewPanic:(PFObject *)panic completion:(void(^)(NSError * _Nullable error))completion;
 
 + (void)createRole:(NSString *)roleName;
