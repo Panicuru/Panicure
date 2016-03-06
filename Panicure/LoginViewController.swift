@@ -18,6 +18,9 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loginButton.layer.cornerRadius = 4.0
+        loginButton.layer.masksToBounds = true
     }
 
     @IBAction func onLogin(sender: AnyObject) {
