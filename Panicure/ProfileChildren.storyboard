@@ -90,9 +90,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="fbS-YD-sLB"/>
                                                 </constraints>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Next">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="onNextButtonClicked:" destination="8tv-4H-kfz" eventType="touchUpInside" id="Q6M-1v-CXq"/>
                                                 </connections>
@@ -293,9 +298,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="Uly-Vj-KQO"/>
                                                 </constraints>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Next">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="onNextButtonClicked:" destination="S7q-W3-1id" eventType="touchUpInside" id="CJD-VD-eIR"/>
                                                 </connections>
@@ -460,9 +470,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="VJi-dA-37F"/>
                                                 </constraints>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Next">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="onNextButtonClicked:" destination="yNP-9g-IxX" eventType="touchUpInside" id="i7b-4g-opo"/>
                                                 </connections>
@@ -602,9 +617,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="mmf-PF-U8O"/>
                                                 </constraints>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="Next">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="onNextButtonClicked:" destination="5Xq-Od-JqN" eventType="touchUpInside" id="cTS-im-igu"/>
                                                 </connections>

@@ -54,6 +54,14 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.59607843137254901" green="0.078431372549019607" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="i5F-hP-GaZ" kind="show" action="showDetailViewController:sender:" id="vqw-Ua-Akj"/>
                                 </connections>
@@ -67,6 +75,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onLogin:" destination="UPB-6N-enV" eventType="touchUpInside" id="HW1-WF-F8v"/>
                                 </connections>
@@ -148,12 +161,12 @@
                                 <color key="textColor" red="0.1214488636" green="0.1214488636" blue="0.1214488636" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFN-ha-6sq">
-                                <rect key="frame" x="20" y="34" width="560" height="97"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFN-ha-6sq">
+                                <rect key="frame" x="227" y="36" width="146" height="92"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="97" id="s9b-Ur-DxG"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="default_profile"/>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sj0-Y6-7sA">
                                 <rect key="frame" x="20" y="180" width="272" height="30"/>
@@ -182,7 +195,12 @@
                                     <constraint firstAttribute="height" constant="44" id="oct-Vm-qsm"/>
                                 </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onSignUp:" destination="i5F-hP-GaZ" eventType="touchUpInside" id="wZd-cf-gZ0"/>
                                 </connections>
@@ -273,6 +291,9 @@
             <point key="canvasLocation" x="1785.5" y="838"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="default_profile" width="92" height="92"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="isK-0R-ZHm"/>
     </inferredMetricsTieBreakers>
