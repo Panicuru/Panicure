@@ -27,6 +27,7 @@ class LoginViewController: UIViewController {
             PFUser.logInWithUsernameInBackground(emailField.text!, password: passwordField.text!, block: {(user: PFUser?, error: NSError?) in
                 if error == nil {
                     print("Success")
+                    
                 } else {
                     print(error)
                 }

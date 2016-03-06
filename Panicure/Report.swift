@@ -10,7 +10,7 @@ import UIKit
 import Parse
 
 @objc(EVAReport)
-class Report: PFObject {
+class Report: PFObject, PFSubclassing {
     
     @NSManaged var media: PFFile?
     @NSManaged var detail: String?
@@ -34,6 +34,10 @@ class Report: PFObject {
         set(newPoint) {
             self.location = String(newPoint?.latitude) + "," + String(newPoint?.longitude)
         }
+    }
+    
+    static func parseClassName() -> String {
+        return "Report"
     }
     
     func encryptDecrypt() {
