@@ -37,6 +37,7 @@
 		224C9B481C8BE70F0068237D /* CLLocation+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B421C8BDEBC0068237D /* CLLocation+PanicureAdditions.m */; };
 		224C9B491C8BF4040068237D /* EncryptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407B71C8BC408005AB0B0 /* EncryptionHelper.swift */; };
 		224C9B4A1C8BF44F0068237D /* EVAXOREncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C10407B91C8BC408005AB0B0 /* EVAXOREncrypt.m */; };
+		2291F7171C8CB09200FAAFAF /* ImageCaptureHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291F7161C8CB09200FAAFAF /* ImageCaptureHelper.swift */; };
 		75378CDC7BF118E90FC8EDB2 /* Pods_Panicure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */; };
 		C10407A51C8BBDE7005AB0B0 /* ChildProfileControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407A41C8BBDE7005AB0B0 /* ChildProfileControl.swift */; };
 		C10407AA1C8BBE09005AB0B0 /* ProfileChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407A71C8BBE09005AB0B0 /* ProfileChildViewController.swift */; };
@@ -123,6 +124,7 @@
 		224C9B411C8BDEBC0068237D /* CLLocation+PanicureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+PanicureAdditions.h"; sourceTree = "<group>"; };
 		224C9B421C8BDEBC0068237D /* CLLocation+PanicureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+PanicureAdditions.m"; sourceTree = "<group>"; };
 		224C9B441C8BE0BE0068237D /* ReverseGeocoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseGeocoder.swift; sourceTree = "<group>"; };
+		2291F7161C8CB09200FAAFAF /* ImageCaptureHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCaptureHelper.swift; path = "Helpers/Media Capture/Image/ImageCaptureHelper.swift"; sourceTree = "<group>"; };
 		42A99D66B15A0D0B99D6ADF1 /* Pods-PanicExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanicExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PanicExtension/Pods-PanicExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		829424ED1D6E7BDAD1C9EFE9 /* Pods-Panicure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.release.xcconfig"; sourceTree = "<group>"; };
 		836C28868AEB079F7D187052 /* Pods-Panicure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.debug.xcconfig"; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 		224C9AD71C8B49700068237D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2291F7131C8CAFAE00FAAFAF /* Media Capture */,
 				224C9B3C1C8BDD3C0068237D /* Network */,
 				C10407B71C8BC408005AB0B0 /* EncryptionHelper.swift */,
 				C10407B81C8BC408005AB0B0 /* EVAXOREncrypt.h */,
@@ -379,6 +382,30 @@
 				224C9B3E1C8BDD530068237D /* EVANetworkHelper.m */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		2291F7131C8CAFAE00FAAFAF /* Media Capture */ = {
+			isa = PBXGroup;
+			children = (
+				2291F7151C8CB00500FAAFAF /* Image */,
+				2291F7141C8CAFFF00FAAFAF /* Audio */,
+			);
+			name = "Media Capture";
+			sourceTree = "<group>";
+		};
+		2291F7141C8CAFFF00FAAFAF /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		2291F7151C8CB00500FAAFAF /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				2291F7161C8CB09200FAAFAF /* ImageCaptureHelper.swift */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 		C10407A61C8BBDED005AB0B0 /* SignUp */ = {
@@ -694,6 +721,7 @@
 				C10407BB1C8BC408005AB0B0 /* EVAXOREncrypt.m in Sources */,
 				C10407BD1C8BCD3B005AB0B0 /* SignUpViewController.swift in Sources */,
 				C10407AE1C8BBE14005AB0B0 /* Profile.swift in Sources */,
+				2291F7171C8CB09200FAAFAF /* ImageCaptureHelper.swift in Sources */,
 				C10407BA1C8BC408005AB0B0 /* EncryptionHelper.swift in Sources */,
 				224C9B261C8BA5970068237D /* ParseHelper.swift in Sources */,
 				C10407C71C8BE996005AB0B0 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
