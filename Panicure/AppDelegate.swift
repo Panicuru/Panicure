@@ -19,9 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Profile.registerSubclass()
         Report.registerSubclass()
-        Panic.registerSubclass()
         
-        Parse.enableDataSharingWithApplicationGroupIdentifier("group.com.panicuru");
+        Parse.enableDataSharingWithApplicationGroupIdentifier("group.com.panicuru")
+        
         ParseHelper.start()
         
         if PFUser.currentUser() == nil {
