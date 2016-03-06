@@ -38,6 +38,7 @@ class ReportsViewController: UIViewController, UITableViewDataSource, UITableVie
             self.tableView.reloadData()
             
             for report in self.reports {
+                report.encryptDecrypt()
                 if (report.image != nil) {
                     report.image?.getDataInBackgroundWithBlock({(imageData: NSData?, error:NSError?) in
                         self.images[report.objectId!] = imageData
@@ -85,5 +86,12 @@ class ReportsViewController: UIViewController, UITableViewDataSource, UITableVie
             self.view.window?.rootViewController = vc
             self.view.window?.makeKeyAndVisible()
         })
+    }
+    
+    @IBAction func startPanicing(sender: AnyObject) {
+        PanicHelper.startPanicingWithCompletion { (error: NSError?, panic: Panic?) in
+            let message = error == nil ? "Success" : "error"
+            self.performSegueWithIdentifier("panicSuccess", sender: self)
+        }
     }
 }

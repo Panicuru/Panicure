@@ -109,4 +109,11 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         self.savedImage = true
         self.profileButton.setImage(nil, forState: .Normal)
     }
+    
+    @IBAction func userDidCancelEditing(sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "SignUp", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController()
+        self.view.window?.rootViewController = vc
+        self.view.window?.makeKeyAndVisible()
+    }
 }

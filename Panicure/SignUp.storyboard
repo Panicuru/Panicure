@@ -202,6 +202,15 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6i6-GG-d2D">
+                                                <rect key="frame" x="8" y="8" width="46" height="30"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" red="0.59607843140000005" green="0.078431372550000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="userDidCancelEditing:" destination="i5F-hP-GaZ" eventType="touchUpInside" id="FfD-hR-kxA"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.93680950129999996" green="0.93680950129999996" blue="0.93680950129999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
@@ -212,6 +221,7 @@
                                             <constraint firstItem="yhG-43-Hwl" firstAttribute="top" secondItem="Inb-55-iG4" secondAttribute="bottom" constant="23" id="1Tg-eT-QAg"/>
                                             <constraint firstItem="e93-av-pTy" firstAttribute="top" secondItem="cB5-zM-gsa" secondAttribute="bottom" constant="8" id="1eF-PL-2B4"/>
                                             <constraint firstItem="6hZ-Jr-hwx" firstAttribute="centerY" secondItem="Qnm-Xo-P8n" secondAttribute="centerY" id="4i2-IY-GdM"/>
+                                            <constraint firstItem="6i6-GG-d2D" firstAttribute="top" secondItem="Tof-1W-AUN" secondAttribute="top" constant="8" id="5A5-yV-JIy"/>
                                             <constraint firstAttribute="leadingMargin" secondItem="K9c-IM-LBo" secondAttribute="leading" id="9l1-d1-ts5"/>
                                             <constraint firstItem="7WA-Nb-caM" firstAttribute="centerX" secondItem="Tof-1W-AUN" secondAttribute="centerX" id="Bwi-cE-5vU"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="cjm-gw-eUP" secondAttribute="trailing" id="C0O-TS-X3e"/>
@@ -227,6 +237,7 @@
                                             <constraint firstItem="YRb-w7-0Io" firstAttribute="top" secondItem="cjm-gw-eUP" secondAttribute="bottom" constant="20" id="QbW-dC-jL3"/>
                                             <constraint firstAttribute="leadingMargin" secondItem="cB5-zM-gsa" secondAttribute="leading" id="RTv-wY-0gy"/>
                                             <constraint firstAttribute="leadingMargin" secondItem="cjm-gw-eUP" secondAttribute="leading" id="XJu-Kf-LiV"/>
+                                            <constraint firstItem="6i6-GG-d2D" firstAttribute="leading" secondItem="Tof-1W-AUN" secondAttribute="leading" constant="8" id="YSx-bd-JDm"/>
                                             <constraint firstItem="cB5-zM-gsa" firstAttribute="top" secondItem="K9c-IM-LBo" secondAttribute="bottom" constant="8" id="Zsm-xy-r2m"/>
                                             <constraint firstAttribute="leadingMargin" secondItem="JsD-LT-KRj" secondAttribute="leading" id="aOx-tV-ULX"/>
                                             <constraint firstAttribute="leadingMargin" secondItem="dWO-Wy-6Mt" secondAttribute="leading" id="esm-Zf-H7F"/>
@@ -314,6 +325,6 @@
         <image name="default_profile" width="92" height="92"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="isK-0R-ZHm"/>
+        <segue reference="Obn-NR-Dhu"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -68,16 +68,5 @@ class ProfileInfoViewController: UIViewController {
         viewControllers[currentIndex].removeFromParentViewController()
         
     }
-    
-    func userDidCancelEditing() {
-        if (currentIndex == 0) {
-            // do something
-        } else if (currentIndex > 0) {
-            currentIndex -= 1
-            displayViewAtIndex(currentIndex)
-        }
-    }
-    
-    
 
 }

@@ -194,6 +194,9 @@
                                 <state key="normal" title="PANIC NOW">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="startPanicing:" destination="NYz-D9-iBC" eventType="touchUpInside" id="dPt-wS-1Es"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eHf-fF-t6s">
                                 <rect key="frame" x="20" y="64" width="560" height="464"/>
@@ -294,7 +297,7 @@
                     <navigationItem key="navigationItem" title="My Reports" id="l4F-NY-5iU">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="DRO-WK-SZS">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="atj-SB-6Jg">
-                                <rect key="frame" x="20" y="7" width="133" height="30"/>
+                                <rect key="frame" x="20" y="7" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Logout"/>
                                 <connections>
@@ -312,7 +315,7 @@
                     <connections>
                         <outlet property="panicButton" destination="PiT-yJ-wXo" id="EKF-zO-BrI"/>
                         <outlet property="tableView" destination="eHf-fF-t6s" id="Oy3-dh-zOf"/>
-                        <segue destination="Tnh-I3-6F1" kind="show" identifier="showPanicSuccess" id="dCe-iQ-jKt"/>
+                        <segue destination="Tnh-I3-6F1" kind="show" identifier="panicSuccess" id="dCe-iQ-jKt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8il-UT-SCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
