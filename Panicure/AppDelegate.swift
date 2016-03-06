@@ -31,6 +31,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.makeKeyAndVisible()
         }
         
+//        EVANetworkHelper.addUserToFirstRole("vahan@ttt.com")
+//        EVANetworkHelper.addUserToFirstRole("sam@tt.com")
+//        EVANetworkHelper.addUserToFirstRole("anya@t.com")
+        
         return true
     }
 
