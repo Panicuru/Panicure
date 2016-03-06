@@ -34,7 +34,7 @@
                                      containingApplication:@"com.panicuru.Panicure"];
     // Setup Parse
     [EVAParseHelper start];
-    if(![PFUser currentUser]){
+    if([PFUser currentUser]){
         self.panicButton.hidden = NO;
         self.signupButton.hidden = YES;
     }else{
