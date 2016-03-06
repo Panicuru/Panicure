@@ -39,6 +39,9 @@
 		C10407BA1C8BC408005AB0B0 /* EncryptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407B71C8BC408005AB0B0 /* EncryptionHelper.swift */; };
 		C10407BB1C8BC408005AB0B0 /* EVAXOREncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C10407B91C8BC408005AB0B0 /* EVAXOREncrypt.m */; };
 		C10407BD1C8BCD3B005AB0B0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407BC1C8BCD3B005AB0B0 /* SignUpViewController.swift */; };
+		C10407BF1C8BE45D005AB0B0 /* Util in Resources */ = {isa = PBXBuildFile; fileRef = C10407BE1C8BE45D005AB0B0 /* Util */; };
+		C10407C41C8BE93A005AB0B0 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C10407C31C8BE93A005AB0B0 /* TPKeyboardAvoidingScrollView.m */; };
+		C10407C71C8BE996005AB0B0 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C10407C61C8BE996005AB0B0 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		CB6E94E11C8B998800AD43B2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */; };
 		CB6E94E51C8B998800AD43B2 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94E41C8B998800AD43B2 /* TodayViewController.m */; };
 		CB6E94E81C8B998800AD43B2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6E94E61C8B998800AD43B2 /* MainInterface.storyboard */; };
@@ -112,11 +115,15 @@
 		C10407AF1C8BBE19005AB0B0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C10407B21C8BBE44005AB0B0 /* ProfileChildren.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileChildren.storyboard; sourceTree = "<group>"; };
 		C10407B41C8BBE4A005AB0B0 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
-		C10407B61C8BBF62005AB0B0 /* Panicure-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Panicure-Bridging-Header.h"; sourceTree = "<group>"; };
 		C10407B71C8BC408005AB0B0 /* EncryptionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionHelper.swift; sourceTree = "<group>"; };
 		C10407B81C8BC408005AB0B0 /* EVAXOREncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAXOREncrypt.h; sourceTree = "<group>"; };
 		C10407B91C8BC408005AB0B0 /* EVAXOREncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAXOREncrypt.m; sourceTree = "<group>"; };
 		C10407BC1C8BCD3B005AB0B0 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C10407BE1C8BE45D005AB0B0 /* Util */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Util; path = /Users/anya/Projects/Panicure/Panicure/Views/Util; sourceTree = "<absolute>"; };
+		C10407C21C8BE93A005AB0B0 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = Views/Util/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		C10407C31C8BE93A005AB0B0 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = Views/Util/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		C10407C51C8BE996005AB0B0 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "Views/Util/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		C10407C61C8BE996005AB0B0 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "Views/Util/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panicure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6E94E01C8B998800AD43B2 /* PanicExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PanicExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6E94E31C8B998800AD43B2 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
@@ -125,7 +132,6 @@
 		CB6E94E91C8B998800AD43B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB6E94F01C8B9AB400AD43B2 /* UIView+PanicureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PanicureAdditions.h"; sourceTree = "<group>"; };
 		CB6E94F11C8B9AB400AD43B2 /* UIView+PanicureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PanicureAdditions.m"; sourceTree = "<group>"; };
-		CB6E94F91C8BB6C600AD43B2 /* Panicure.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Panicure.entitlements; sourceTree = "<group>"; };
 		CB6E94FA1C8BB80A00AD43B2 /* PanicExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PanicExtension.entitlements; sourceTree = "<group>"; };
 		E150143BDDF82436FD1E9EE6 /* Pods_PanicExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PanicExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -250,6 +256,7 @@
 		224C9AD41C8B47530068237D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C10407C11C8BE900005AB0B0 /* Keyboard Avoiding Scroll */,
 				224C9B331C8BB3AE0068237D /* Buttons */,
 				C10407B11C8BBE23005AB0B0 /* SignUp */,
 				224C9AFB1C8B775E0068237D /* Request Location Permision */,
@@ -320,14 +327,14 @@
 			name = Colors;
 			sourceTree = "<group>";
 		};
-224C9B331C8BB3AE0068237D /* Buttons */ = {
-isa = PBXGroup;
-children = (
-224C9B341C8BB3C10068237D /* RoundedButton.swift */,
-);
-name = Buttons;
-sourceTree = "<group>";
-};
+		224C9B331C8BB3AE0068237D /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				224C9B341C8BB3C10068237D /* RoundedButton.swift */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
 		C10407A61C8BBDED005AB0B0 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +354,17 @@ sourceTree = "<group>";
 				C10407B21C8BBE44005AB0B0 /* ProfileChildren.storyboard */,
 			);
 			name = SignUp;
+			sourceTree = "<group>";
+		};
+		C10407C11C8BE900005AB0B0 /* Keyboard Avoiding Scroll */ = {
+			isa = PBXGroup;
+			children = (
+				C10407C21C8BE93A005AB0B0 /* TPKeyboardAvoidingScrollView.h */,
+				C10407C51C8BE996005AB0B0 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				C10407C61C8BE996005AB0B0 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				C10407C31C8BE93A005AB0B0 /* TPKeyboardAvoidingScrollView.m */,
+			);
+			name = "Keyboard Avoiding Scroll";
 			sourceTree = "<group>";
 		};
 		CB6E94E21C8B998800AD43B2 /* PanicExtension */ = {
@@ -497,6 +515,7 @@ sourceTree = "<group>";
 			files = (
 				224C9ABD1C8B47150068237D /* LaunchScreen.storyboard in Resources */,
 				C10407B31C8BBE44005AB0B0 /* ProfileChildren.storyboard in Resources */,
+				C10407BF1C8BE45D005AB0B0 /* Util in Resources */,
 				C10407B51C8BBE4A005AB0B0 /* SignUp.storyboard in Resources */,
 				224C9ABA1C8B47150068237D /* Assets.xcassets in Resources */,
 				224C9AFA1C8B770C0068237D /* RequestLocationPermision.storyboard in Resources */,
@@ -628,12 +647,14 @@ sourceTree = "<group>";
 				C10407AE1C8BBE14005AB0B0 /* Profile.swift in Sources */,
 				C10407BA1C8BC408005AB0B0 /* EncryptionHelper.swift in Sources */,
 				224C9B261C8BA5970068237D /* ParseHelper.swift in Sources */,
+				C10407C71C8BE996005AB0B0 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				C10407AA1C8BBE09005AB0B0 /* ProfileChildViewController.swift in Sources */,
 				224C9AD61C8B48A20068237D /* ViewController.swift in Sources */,
 				224C9B351C8BB3C10068237D /* RoundedButton.swift in Sources */,
 				224C9B311C8BB0F80068237D /* UIColor+PanicureAdditions.m in Sources */,
 				224C9B221C8B9DF10068237D /* PanicHelper.swift in Sources */,
 				224C9B2C1C8BA70E0068237D /* SecretKeys.swift in Sources */,
+				C10407C41C8BE93A005AB0B0 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				C10407AB1C8BBE09005AB0B0 /* ProfileInfoViewController.swift in Sources */,
 				224C9AB31C8B47150068237D /* AppDelegate.swift in Sources */,
 				C10407AC1C8BBE09005AB0B0 /* Report.swift in Sources */,

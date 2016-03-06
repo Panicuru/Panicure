@@ -7,51 +7,70 @@
 //
 
 import UIKit
+import Parse
 
 class ProfileInfoViewController: UIViewController {
     
-    // The values are 1 to 4
-    var currentIndex: Int = 1
+    // The values are 0 to 3
+    var currentIndex: Int = 0
     var viewControllers: [ChildProfileControl] = [ChildProfileControl]()
     var profile: Profile?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let storyboard = UIStoryboard(name: "ProfileChildren.storyboard", bundle: nil)
-        
         for (var i = 1; i < 5; i++) {
-            if let childViewController: ChildProfileControl = storyboard.instantiateViewControllerWithIdentifier("profileChild1") as? ChildProfileControl {
+            let storyboard = UIStoryboard(name: "ProfileChildren", bundle: nil)
+            
+            if let childViewController: ChildProfileControl = storyboard.instantiateViewControllerWithIdentifier("profileChild" + String(i)) as? ChildProfileControl {
                 addChildViewController(childViewController)
-                childViewController.view.frame = self.view.bounds
+                childViewController.formController = self
             
                 viewControllers.append(childViewController)
             }
         }
-        displayViewAtIndex(1)
-        
+        displayViewAtIndex(currentIndex)
     }
 
     func userDidCompleteForm(withObject profile: Profile) {
-        if (currentIndex < 4) {
-            currentIndex += 1
-            displayViewAtIndex(currentIndex)
-            viewControllers[currentIndex].shouldBeginEditing(withObject: profile)
-        } else if (currentIndex == 4) {
+        if (self.currentIndex < 3) {
+            removeView()
+            self.currentIndex = self.currentIndex + 1
+            displayViewAtIndex(self.currentIndex)
+        } else if (self.currentIndex == 3) {
             //finish and save
+            self.profile?.saveInBackgroundWithBlock({(success: Bool, error: NSError?) in
+                if error == nil && success {
+                    PFUser.currentUser()?.setObject(self.profile!, forKey: "profile")
+                    PFUser.currentUser()?.saveInBackgroundWithBlock({(success: Bool, error: NSError?) in
+                        print("Success: " + String(success))
+                        self.removeView()
+                    })
+                }
+            })
         }
     }
     
     func displayViewAtIndex(index: Int) {
+        print("Displaying at " + String(index))
         self.view.addSubview(viewControllers[index].view)
+        viewControllers[index].shouldBeginEditing(withObject: profile!)
         viewControllers[index].didMoveToParentViewController(self)
-        //childViewController.view.autoPinEdgesToSuperviewEdges()
+        viewControllers[index].view.autoPinEdgesToSuperviewEdges()
+    }
+    
+    func removeView() {
+        print("Removing at " + String(currentIndex))
+        viewControllers[currentIndex].didMoveToParentViewController(nil)
+        self.viewControllers[currentIndex].view.removeFromSuperview()
+        viewControllers[currentIndex].removeFromParentViewController()
+        
     }
     
     func userDidCancelEditing() {
-        if (currentIndex == 1) {
+        if (currentIndex == 0) {
             // do something
-        } else if (currentIndex > 1) {
+        } else if (currentIndex > 0) {
             currentIndex -= 1
             displayViewAtIndex(currentIndex)
         }

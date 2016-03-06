@@ -42,6 +42,7 @@ class SignUpViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "showProfileForm") {
             if let dvc = segue.destinationViewController as? ProfileInfoViewController {
+                print("In prepare!!")
                 let newProfile = Profile()
                 newProfile.firstName = firstNameField.text
                 newProfile.lastName = lastNameField.text

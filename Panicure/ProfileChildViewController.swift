@@ -28,6 +28,7 @@ class ProfileChild1ViewController: ChildProfileControl {
             self.profile.phone = phoneField?.text
             self.profile.contactPhone = contactPhoneField?.text
             
+            formController?.userDidCompleteForm(withObject: self.profile)
         } else {
             showInvalidInputError()
         }
@@ -49,7 +50,14 @@ class ProfileChild2ViewController: ChildProfileControl {
     @IBOutlet weak var ethnicityField: UITextField?
     @IBOutlet weak var tattooCheck: UISwitch?
     
+    override var lastField: UITextField? {
+        get {
+            return ethnicityField
+        }
+    }
+    
     override func nextButtonClicked() {
+        print("This got hit")
         if (validateInput()) {
             self.profile.weight = weightField?.text
             self.profile.height = heightField?.text
@@ -57,6 +65,8 @@ class ProfileChild2ViewController: ChildProfileControl {
             profile.eyeColour = eyeColourField?.text
             profile.ethnicity = ethnicityField?.text
             profile.tattoo = (tattooCheck?.on)!
+            
+            formController?.userDidCompleteForm(withObject: self.profile)
         } else {
             showInvalidInputError()
         }
@@ -79,13 +89,22 @@ class ProfileChild3ViewController: ChildProfileControl {
     @IBOutlet weak var secondLanguageField: UITextField?
     @IBOutlet weak var additionalField: UITextField?
     
+    override var lastField: UITextField? {
+        get {
+            return additionalField
+        }
+    }
+    
     override func nextButtonClicked() {
+        print("This got hitNJKHDJK")
         if (validateInput()) {
             if (disabilitySwitch!.on) { profile.disabilities = disabilityField?.text }
             if (pregnantSwitch!.on) { profile.pregnancy = pregnantField?.text }
             profile.firstLanguage = firstLanguageField?.text
             profile.secondLanguage = secondLanguageField?.text
             profile.additionalInfo = additionalField?.text
+            
+            formController?.userDidCompleteForm(withObject: self.profile)
             
         } else {
             showInvalidInputError()
@@ -109,6 +128,12 @@ class ProfileChild4ViewController: ChildProfileControl {
     @IBOutlet weak var colourField: UITextField?
     @IBOutlet weak var licenseField: UITextField?
     
+    override var lastField: UITextField? {
+        get {
+            return licenseField
+        }
+    }
+    
     override func nextButtonClicked() {
         if (validateInput()) {
             if (vehicleSwitch!.on) {
@@ -117,6 +142,8 @@ class ProfileChild4ViewController: ChildProfileControl {
                 profile.license = licenseField?.text
                 profile.year = yearField?.text
                 profile.colour = colourField?.text
+                
+                formController?.userDidCompleteForm(withObject: self.profile)
             }
             
         } else {
