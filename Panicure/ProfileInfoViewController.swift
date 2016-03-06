@@ -45,6 +45,7 @@ class ProfileInfoViewController: UIViewController {
                     PFUser.currentUser()?.saveInBackgroundWithBlock({(success: Bool, error: NSError?) in
                         print("Success: " + String(success))
                         self.removeView()
+                        self.performSegueWithIdentifier("showMain", sender: self)
                     })
                 }
             })

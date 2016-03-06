@@ -51,8 +51,8 @@
                                 <color key="textColor" red="0.59504520893096924" green="0.080887846648693085" blue="0.09281148761510849" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hg3-Ib-FBJ">
-                                <rect key="frame" x="233" y="104.5" width="135" height="149.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hg3-Ib-FBJ">
+                                <rect key="frame" x="233" y="105" width="135" height="149"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="125"/>
                                 <color key="textColor" red="0.59504520893096924" green="0.080887846648693085" blue="0.09281148761510849" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
