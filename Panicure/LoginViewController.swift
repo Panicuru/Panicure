@@ -24,8 +24,7 @@ class LoginViewController: UIViewController {
         if (emailField.text != nil && passwordField.text != nil) {
             PFUser.logInWithUsernameInBackground(emailField.text!, password: passwordField.text!, block: {(user: PFUser?, error: NSError?) in
                 if error == nil {
-                    print("Success")
-                    
+                    self.performSegueWithIdentifier("showMain", sender: self)
                 } else {
                     print(error)
                 }

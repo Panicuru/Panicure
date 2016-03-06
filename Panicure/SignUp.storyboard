@@ -99,6 +99,7 @@
                         <outlet property="loginButton" destination="7Aw-de-OSQ" id="JoH-WH-fH4"/>
                         <outlet property="passwordField" destination="WmA-Zy-OfH" id="x2z-Qz-C7P"/>
                         <outlet property="signupButton" destination="Wmg-rn-HZc" id="nZQ-HC-Djg"/>
+                        <segue destination="RGq-2v-MCL" kind="show" identifier="showMain" id="isK-0R-ZHm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3PD-Cs-9Qb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,10 +256,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="RGq-2v-MCL" kind="show" identifier="showMain" id="Obn-NR-Dhu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="134-wR-zN1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1873" y="354"/>
         </scene>
+        <!--Main-->
+        <scene sceneID="LVt-5p-fN3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="RGq-2v-MCL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UBd-kM-htK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1785.5" y="838"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="isK-0R-ZHm"/>
+    </inferredMetricsTieBreakers>
 </document>
