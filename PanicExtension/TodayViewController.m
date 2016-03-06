@@ -101,6 +101,8 @@
     [EVAPanicHelper startPanicingWithCompletion:^(NSError * _Nullable error) {
         if (error) {
             // Handle error
+            [self.panicButton setTitle:@"ERROR" forState:UIControlStateNormal];
+            [self.panicButton setBackgroundColor:[UIColor redColor]];
             return;
         }
         [self.panicButton setTitle:@"Sent" forState:UIControlStateNormal];
