@@ -9,6 +9,7 @@
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
 #import <CoreLocation/CoreLocation.h>
+#import "UIColor+PanicureAdditions.h"
 
 #import "PanicExtension-Swift.h"
 
@@ -33,7 +34,7 @@
                                      containingApplication:@"com.panicuru.Panicure"];
     // Setup Parse
     [EVAParseHelper start];
-    if([PFUser currentUser]){
+    if(![PFUser currentUser]){
         self.panicButton.hidden = NO;
         self.signupButton.hidden = YES;
     }else{
@@ -66,6 +67,13 @@
 
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.panicButton setTitle:@"Panic Now" forState:UIControlStateNormal];
+    [self.panicButton setBackgroundColor:[UIColor eva_mainRedColor]];
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -87,12 +95,19 @@
     
     NSLog(@"%@", self.currentLocation.description);
     
+    [self.panicButton setTitle:@"Sending..." forState:UIControlStateNormal];
+    [self.panicButton setBackgroundColor:[UIColor eva_greyColor]];
+    
     [EVAPanicHelper startPanicingWithCompletion:^(NSError * _Nullable error) {
         if (error) {
             // Handle error
             return;
         }
+        [self.panicButton setTitle:@"Sent" forState:UIControlStateNormal];
+        [self.panicButton setBackgroundColor:[UIColor clearColor]];
         
+        NSURL *url = [NSURL URLWithString:@"panicure://"];
+        [self.extensionContext openURL:url completionHandler:nil];
         // Panic Successful
     }];
 }
