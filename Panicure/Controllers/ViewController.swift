@@ -8,11 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, RequestLocationPermissionsViewControllerDelegate {
+    
+    var locaitonHelper = LocationHelper()
+    var locaitonRequestViewController: RequestLocationPermissionsViewController?
+    var viewHasAppeared = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // Make sure locaiton services are enabled when the user returns from the background
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "makeSureLocationIsAuthroized", name: nil, object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +27,45 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func viewDidAppear(animated: Bool) {
+        viewHasAppeared = true
+        makeSureLocationIsAuthroized()
+        
+        if locaitonHelper.authorized {
+            locaitonHelper.requestLocation() { location, error in
+                print("location: \(location), error: \(error)")
+            }
+        }
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        viewHasAppeared = false
+    }
+    
+    func makeSureLocationIsAuthroized() {
+        
+        if viewHasAppeared == false || locaitonRequestViewController != nil {
+            return
+        }
+        
+        // Check if the view controller is currently visible
+        if let viewController = locaitonRequestViewController where viewController.view.window != nil {
+            return
+        }
+        
+        if locaitonHelper.authorized == false {
+            
+            // Show the location permission request view controller
+            let storyboard = UIStoryboard(name: "RequestLocationPermision", bundle: nil)
+            locaitonRequestViewController = storyboard.instantiateViewControllerWithIdentifier("EVARequestLocationPermissionsViewController") as? RequestLocationPermissionsViewController
+            locaitonRequestViewController?.delegate = self
+            presentViewController(locaitonRequestViewController!, animated: true, completion: nil)
+            return
+        }
+    }
 
+    func requestLocationPermissionsViewControllerDidDismiss(viewController: RequestLocationPermissionsViewController) {
+        locaitonRequestViewController = nil
+    }
 }
 
