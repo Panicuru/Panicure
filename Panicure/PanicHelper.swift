@@ -23,14 +23,14 @@ class PanicHelper: NSObject {
     /// The oldest allowable time for a location.
     let oldestLocationTime: NSTimeInterval = 5
 
-    static func startPanicingWithCompletion(completion: ((error: NSError?) -> Void)?) {
+    static func startPanicingWithCompletion(completion: ((error: NSError?, panic: Panic?) -> Void)?) {
         // Get the current timestamp
         let date = NSDate()
         
         // Request the user's location
         sharedInstance.getUsersCurrentLocation() { location, error in
             if error != nil {
-                completion?(error: error)
+                completion?(error: error, panic: nil)
                 return
             }
             
@@ -38,7 +38,7 @@ class PanicHelper: NSObject {
             ReverseGeocoder.locationNameForLocation(location!).continueWithBlock({ (task: BFTask) -> AnyObject? in
                 
                 if let error = task.error {
-                    completion?(error: error)
+                    completion?(error: error, panic: nil)
                     return nil
                 }
                 
@@ -56,10 +56,10 @@ class PanicHelper: NSObject {
                 networkController.saveNewPanic(panic, completion: { (error: NSError?) -> Void in
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         if error != nil {
-                            completion?(error: error)
+                            completion?(error: error, panic: nil)
                             return
                         }
-                        completion?(error: nil)
+                        completion?(error: nil, panic:panic)
                     })
                     
                 })
