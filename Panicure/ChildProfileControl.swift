@@ -11,13 +11,11 @@ import UIKit
 class ChildProfileControl: UIViewController {
     
     @IBOutlet weak var submitButton: UIButton?
-    
-    weak var parentViewController: ProfileInfoViewController?
-    
-    var profile: Profile
+
+    var profile: Profile!
     
     func shouldBeginEditing(withObject object: Profile) {
-        self.profile = profile
+        self.profile = object
     }
     
     // don't override this?
@@ -32,14 +30,14 @@ class ChildProfileControl: UIViewController {
     func showInvalidInputError() {
         let alertController = UIAlertController(title: "Error", message: "Some required fields are empty", preferredStyle: .Alert)
         let okAction = UIAlertAction(title: "OK", style: .Default, handler: {(action: UIAlertAction) in
-                self.dismissViewControllerAnimated(alertController, completion: nil)
+            alertController.dismissViewControllerAnimated(false, completion: nil)
             })
         
         alertController.addAction(okAction)
-        self.presentViewController(alertController, animated: false)
+        self.presentViewController(alertController, animated: false, completion: nil)
     }
     
     func validateInput() -> Bool {
-        // implement me
+        return false
     }
 }

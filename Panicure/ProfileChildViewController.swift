@@ -20,22 +20,22 @@ class ProfileChild1ViewController: ChildProfileControl {
     
     override func nextButtonClicked() {
         if (validateInput()) {
-            self.profile.birthday = birthdatePicker.date
+            self.profile.birthday = birthdatePicker?.date
             self.profile.addressUnit = addressUnitField?.text
             self.profile.addressCity = addressCityField?.text
-            self.profiile.province = provincePicker.text
+            self.profile.province = provincePicker?.text
             self.profile.postalCode = postCodeField?.text
             self.profile.phone = phoneField?.text
-            self.profile.contactPhone = contactPhoneField.text
+            self.profile.contactPhone = contactPhoneField?.text
             
-            self.parentViewController.userDidCompleteForm(withProfile: self.profile)
         } else {
             showInvalidInputError()
         }
     }
     
     override func validateInput() -> Bool {
-        return birthdatePicker.date != nil && [addressCityField, addressUnitField, provincePicker, postCodeField, phoneField, contactPhoneField].filter({$0?.text == nil}).count == 0
+        var returnVal = [addressCityField, addressUnitField, provincePicker, postCodeField, phoneField, contactPhoneField].filter({$0?.text == nil}).count == 0
+        return birthdatePicker?.date != nil && returnVal
     }
 
 }
@@ -56,16 +56,15 @@ class ProfileChild2ViewController: ChildProfileControl {
             self.profile.hairColour = hairColourField?.text
             profile.eyeColour = eyeColourField?.text
             profile.ethnicity = ethnicityField?.text
-            profile.tattoo = tattooCheck?.state
-            
-            self.parentViewController.userDidCompleteForm(withProfile: self.profile)
+            profile.tattoo = (tattooCheck?.on)!
         } else {
             showInvalidInputError()
         }
     }
     
     override func validateInput() -> Bool {
-        return [weightField, heightField, hairColourField, eyeColourField, ethnicityField].filter({$0.text == nil}).count == 0
+        var num = [weightField, heightField, hairColourField, eyeColourField, ethnicityField].filter({$0?.text == nil}).count
+        return num == 0
     }
     
 }
@@ -82,22 +81,21 @@ class ProfileChild3ViewController: ChildProfileControl {
     
     override func nextButtonClicked() {
         if (validateInput()) {
-            if (disabilitySwitch.on) { profile.disabilities = disabilityField.text }
-            if (pregnantSwitch.on) { profile.pregnancy = pregnantField.text }
+            if (disabilitySwitch!.on) { profile.disabilities = disabilityField?.text }
+            if (pregnantSwitch!.on) { profile.pregnancy = pregnantField?.text }
             profile.firstLanguage = firstLanguageField?.text
             profile.secondLanguage = secondLanguageField?.text
-            profile.additionalInfo = additionalField.text
+            profile.additionalInfo = additionalField?.text
             
-            self.parentViewController.userDidCompleteForm(withProfile: self.profile)
         } else {
             showInvalidInputError()
         }
     }
     
     override func validateInput() -> Bool {
-        if (disabilitySwitch.on && disabilityField == nil) { return false }
-        if (pregnantSwitch.on && pregnantField.text == nil) { return false }
-        return firstLanguageField.text != nil
+        if (disabilitySwitch!.on && disabilityField == nil) { return false }
+        if (pregnantSwitch!.on && pregnantField!.text == nil) { return false }
+        return firstLanguageField!.text != nil
     }
     
 }
@@ -113,23 +111,23 @@ class ProfileChild4ViewController: ChildProfileControl {
     
     override func nextButtonClicked() {
         if (validateInput()) {
-            if (vehicleSwitch.on) {
-                profile.make = makeField.text
+            if (vehicleSwitch!.on) {
+                profile.make = makeField?.text
                 profile.model = modelField?.text
                 profile.license = licenseField?.text
                 profile.year = yearField?.text
-                profile.colour = colourField.text
+                profile.colour = colourField?.text
             }
             
-            self.parentViewController.userDidCompleteForm(withProfile: self.profile)
         } else {
             showInvalidInputError()
         }
     }
     
     override func validateInput() -> Bool {
-        if (vehicleSwitch.on) {
-            return [makeField, yearField, modelField, colourField, licenseField].filter({$0.text == nil}).count == 0
+        if (vehicleSwitch!.on) {
+            var count = [makeField, yearField, modelField, colourField, licenseField].filter({$0?.text == nil}).count
+            return count == 0
         } else {
             return true
         }

@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        Parse.setApplicationId(ParseKeys.ApplicationId, clientKey: ParseKeys.ClientKey)
+        Parse.enableDataSharingWithApplicationGroupIdentifier("group.com.panicuru");
+        ParseHelper.start()
         
         return true
     }

@@ -11,7 +11,7 @@ import UIKit
 class ProfileInfoViewController: UIViewController {
     
     var currentIndex: Int = 0
-    var views: [UIViewController]
+    var views: [UIViewController]?
 
     override func viewDidLoad() {
         super.viewDidLoad()

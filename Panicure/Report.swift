@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @objc(EVAReport)
 class Report: PFObject {

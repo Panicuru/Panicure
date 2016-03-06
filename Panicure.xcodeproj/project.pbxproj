@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D88FAD040289FAE666EDF77 /* Pods_PanicExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E150143BDDF82436FD1E9EE6 /* Pods_PanicExtension.framework */; };
 		224C9AB31C8B47150068237D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AB21C8B47150068237D /* AppDelegate.swift */; };
 		224C9AB81C8B47150068237D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224C9AB61C8B47150068237D /* Main.storyboard */; };
 		224C9ABA1C8B47150068237D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224C9AB91C8B47150068237D /* Assets.xcassets */; };
@@ -16,22 +17,31 @@
 		224C9AF31C8B74400068237D /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AF11C8B74400068237D /* LocationHelper.swift */; };
 		224C9AF61C8B75360068237D /* RequestLocationPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AF51C8B75360068237D /* RequestLocationPermissionsViewController.swift */; };
 		224C9AFA1C8B770C0068237D /* RequestLocationPermision.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224C9AF91C8B770C0068237D /* RequestLocationPermision.storyboard */; };
+		224C9B1F1C8B9CFC0068237D /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AF11C8B74400068237D /* LocationHelper.swift */; };
+		224C9B221C8B9DF10068237D /* PanicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B211C8B9DF10068237D /* PanicHelper.swift */; };
+		224C9B231C8B9E080068237D /* PanicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B211C8B9DF10068237D /* PanicHelper.swift */; };
+		224C9B261C8BA5970068237D /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B251C8BA5970068237D /* ParseHelper.swift */; };
+		224C9B271C8BA6630068237D /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B251C8BA5970068237D /* ParseHelper.swift */; };
+		224C9B2C1C8BA70E0068237D /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B2B1C8BA70E0068237D /* SecretKeys.swift */; };
+		224C9B2D1C8BA70E0068237D /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B2B1C8BA70E0068237D /* SecretKeys.swift */; };
+		224C9B311C8BB0F80068237D /* UIColor+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B301C8BB0F80068237D /* UIColor+PanicureAdditions.m */; };
+		224C9B321C8BB0F80068237D /* UIColor+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B301C8BB0F80068237D /* UIColor+PanicureAdditions.m */; };
 		75378CDC7BF118E90FC8EDB2 /* Pods_Panicure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */; };
-		C18824B91C8B6E810031CB92 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18824B81C8B6E810031CB92 /* Report.swift */; };
-		C18824BB1C8B6F2C0031CB92 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18824BA1C8B6F2C0031CB92 /* Profile.swift */; };
-		C18824BE1C8B71890031CB92 /* EncryptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18824BD1C8B71890031CB92 /* EncryptionHelper.swift */; };
-		C18824C31C8B79FA0031CB92 /* EVAXOREncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C18824C21C8B79FA0031CB92 /* EVAXOREncrypt.m */; };
-		C1BB6C581C8B8E1100634DE2 /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BB6C571C8B8E1100634DE2 /* SecretKeys.swift */; };
-		C1BB6C5D1C8B904100634DE2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BB6C5C1C8B904100634DE2 /* SignUpViewController.swift */; };
-		C1BB6C601C8B906C00634DE2 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1BB6C5F1C8B906C00634DE2 /* SignUp.storyboard */; };
-		C1BB6C621C8B916200634DE2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BB6C611C8B916200634DE2 /* LoginViewController.swift */; };
-		C1BB6C641C8B98C400634DE2 /* ProfileInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BB6C631C8B98C400634DE2 /* ProfileInfoViewController.swift */; };
-		C1BB6C6B1C8B9C9200634DE2 /* ChildProfileControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BB6C6A1C8B9C9200634DE2 /* ChildProfileControl.swift */; };
-		C1BB6C6D1C8B9D7600634DE2 /* ProfileChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BB6C6C1C8B9D7600634DE2 /* ProfileChildViewController.swift */; };
-		C1BB6C6F1C8BADC300634DE2 /* ProfileChildren.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1BB6C6E1C8BADC300634DE2 /* ProfileChildren.storyboard */; };
-		CB2CA7CC1C8B6D99009ACF51 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2CA7CB1C8B6D99009ACF51 /* TodayViewController.m */; };
-		CB6E94C41C8B88F300AD43B2 /* UIView+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94C31C8B88F300AD43B2 /* UIView+PanicureAdditions.m */; };
-		CB6E94C51C8B88F300AD43B2 /* UIView+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94C31C8B88F300AD43B2 /* UIView+PanicureAdditions.m */; };
+		C10407A51C8BBDE7005AB0B0 /* ChildProfileControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407A41C8BBDE7005AB0B0 /* ChildProfileControl.swift */; };
+		C10407AA1C8BBE09005AB0B0 /* ProfileChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407A71C8BBE09005AB0B0 /* ProfileChildViewController.swift */; };
+		C10407AB1C8BBE09005AB0B0 /* ProfileInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407A81C8BBE09005AB0B0 /* ProfileInfoViewController.swift */; };
+		C10407AC1C8BBE09005AB0B0 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407A91C8BBE09005AB0B0 /* Report.swift */; };
+		C10407AE1C8BBE14005AB0B0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407AD1C8BBE14005AB0B0 /* Profile.swift */; };
+		C10407B01C8BBE19005AB0B0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407AF1C8BBE19005AB0B0 /* LoginViewController.swift */; };
+		C10407B31C8BBE44005AB0B0 /* ProfileChildren.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10407B21C8BBE44005AB0B0 /* ProfileChildren.storyboard */; };
+		C10407B51C8BBE4A005AB0B0 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10407B41C8BBE4A005AB0B0 /* SignUp.storyboard */; };
+		C10407BA1C8BC408005AB0B0 /* EncryptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407B71C8BC408005AB0B0 /* EncryptionHelper.swift */; };
+		C10407BB1C8BC408005AB0B0 /* EVAXOREncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C10407B91C8BC408005AB0B0 /* EVAXOREncrypt.m */; };
+		CB6E94E11C8B998800AD43B2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */; };
+		CB6E94E51C8B998800AD43B2 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94E41C8B998800AD43B2 /* TodayViewController.m */; };
+		CB6E94E81C8B998800AD43B2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6E94E61C8B998800AD43B2 /* MainInterface.storyboard */; };
+		CB6E94EC1C8B998800AD43B2 /* PanicExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB6E94E01C8B998800AD43B2 /* PanicExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CB6E94F21C8B9AB400AD43B2 /* UIView+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94F11C8B9AB400AD43B2 /* UIView+PanicureAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +52,12 @@
 			remoteGlobalIDString = 224C9AAE1C8B47150068237D;
 			remoteInfo = Panicure;
 		};
-		CB2CA7D11C8B6D99009ACF51 /* PBXContainerItemProxy */ = {
+		CB6E94EA1C8B998800AD43B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 224C9AA71C8B47150068237D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CB2CA7C51C8B6D99009ACF51;
-			remoteInfo = PanicureExtension;
+			remoteGlobalIDString = CB6E94DF1C8B998800AD43B2;
+			remoteInfo = PanicExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -58,6 +68,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				CB6E94EC1C8B998800AD43B2 /* PanicExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +76,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		196313204123F3421F6ADBA6 /* Pods-PanicExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanicExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-PanicExtension/Pods-PanicExtension.release.xcconfig"; sourceTree = "<group>"; };
 		224C9AAF1C8B47150068237D /* Panicure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Panicure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		224C9AB21C8B47150068237D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		224C9AB71C8B47150068237D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,27 +90,39 @@
 		224C9AF11C8B74400068237D /* LocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationHelper.swift; path = Helpers/Location/LocationHelper.swift; sourceTree = "<group>"; };
 		224C9AF51C8B75360068237D /* RequestLocationPermissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestLocationPermissionsViewController.swift; path = "Controllers/Request Location/RequestLocationPermissionsViewController.swift"; sourceTree = "<group>"; };
 		224C9AF91C8B770C0068237D /* RequestLocationPermision.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = RequestLocationPermision.storyboard; path = Views/RequestLocationPermision/RequestLocationPermision.storyboard; sourceTree = "<group>"; };
+		224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		224C9B1C1C8B9CC00068237D /* PanicExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PanicExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		224C9B211C8B9DF10068237D /* PanicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanicHelper.swift; sourceTree = "<group>"; };
+		224C9B251C8BA5970068237D /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParseHelper.swift; path = Helpers/Parse/ParseHelper.swift; sourceTree = "<group>"; };
+		224C9B2B1C8BA70E0068237D /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
+		224C9B2F1C8BB0F80068237D /* UIColor+PanicureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+PanicureAdditions.h"; path = "Helpers/Colors/UIColor+PanicureAdditions.h"; sourceTree = "<group>"; };
+		224C9B301C8BB0F80068237D /* UIColor+PanicureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+PanicureAdditions.m"; path = "Helpers/Colors/UIColor+PanicureAdditions.m"; sourceTree = "<group>"; };
+		42A99D66B15A0D0B99D6ADF1 /* Pods-PanicExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanicExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PanicExtension/Pods-PanicExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		829424ED1D6E7BDAD1C9EFE9 /* Pods-Panicure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.release.xcconfig"; sourceTree = "<group>"; };
 		836C28868AEB079F7D187052 /* Pods-Panicure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.debug.xcconfig"; sourceTree = "<group>"; };
+		C10407A41C8BBDE7005AB0B0 /* ChildProfileControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildProfileControl.swift; sourceTree = "<group>"; };
+		C10407A71C8BBE09005AB0B0 /* ProfileChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileChildViewController.swift; sourceTree = "<group>"; };
+		C10407A81C8BBE09005AB0B0 /* ProfileInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInfoViewController.swift; sourceTree = "<group>"; };
+		C10407A91C8BBE09005AB0B0 /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		C10407AD1C8BBE14005AB0B0 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		C10407AF1C8BBE19005AB0B0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C10407B21C8BBE44005AB0B0 /* ProfileChildren.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileChildren.storyboard; sourceTree = "<group>"; };
+		C10407B41C8BBE4A005AB0B0 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		C10407B61C8BBF62005AB0B0 /* Panicure-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Panicure-Bridging-Header.h"; sourceTree = "<group>"; };
+		C10407B71C8BC408005AB0B0 /* EncryptionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionHelper.swift; sourceTree = "<group>"; };
+		C10407B81C8BC408005AB0B0 /* EVAXOREncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAXOREncrypt.h; sourceTree = "<group>"; };
+		C10407B91C8BC408005AB0B0 /* EVAXOREncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAXOREncrypt.m; sourceTree = "<group>"; };
 		C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panicure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C18824B81C8B6E810031CB92 /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
-		C18824BA1C8B6F2C0031CB92 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		C18824BD1C8B71890031CB92 /* EncryptionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionHelper.swift; sourceTree = "<group>"; };
-		C18824C21C8B79FA0031CB92 /* EVAXOREncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAXOREncrypt.m; sourceTree = "<group>"; };
-		C18824C41C8B7A1A0031CB92 /* EVAXOREncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EVAXOREncrypt.h; sourceTree = "<group>"; };
-		C1BB6C571C8B8E1100634DE2 /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
-		C1BB6C5C1C8B904100634DE2 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "Controllers/Sign Up/SignUpViewController.swift"; sourceTree = "<group>"; };
-		C1BB6C5F1C8B906C00634DE2 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
-		C1BB6C611C8B916200634DE2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		C1BB6C631C8B98C400634DE2 /* ProfileInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInfoViewController.swift; sourceTree = "<group>"; };
-		C1BB6C6A1C8B9C9200634DE2 /* ChildProfileControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildProfileControl.swift; sourceTree = "<group>"; };
-		C1BB6C6C1C8B9D7600634DE2 /* ProfileChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileChildViewController.swift; sourceTree = "<group>"; };
-		C1BB6C6E1C8BADC300634DE2 /* ProfileChildren.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileChildren.storyboard; sourceTree = "<group>"; };
-		CB2CA7CA1C8B6D99009ACF51 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
-		CB2CA7CB1C8B6D99009ACF51 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
-		CB2CA7D01C8B6D99009ACF51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB6E94C21C8B88F300AD43B2 /* UIView+PanicureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PanicureAdditions.h"; sourceTree = "<group>"; };
-		CB6E94C31C8B88F300AD43B2 /* UIView+PanicureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PanicureAdditions.m"; sourceTree = "<group>"; };
+		CB6E94E01C8B998800AD43B2 /* PanicExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PanicExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6E94E31C8B998800AD43B2 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		CB6E94E41C8B998800AD43B2 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		CB6E94E71C8B998800AD43B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CB6E94E91C8B998800AD43B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB6E94F01C8B9AB400AD43B2 /* UIView+PanicureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PanicureAdditions.h"; sourceTree = "<group>"; };
+		CB6E94F11C8B9AB400AD43B2 /* UIView+PanicureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PanicureAdditions.m"; sourceTree = "<group>"; };
+		CB6E94F91C8BB6C600AD43B2 /* Panicure.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Panicure.entitlements; sourceTree = "<group>"; };
+		CB6E94FA1C8BB80A00AD43B2 /* PanicExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PanicExtension.entitlements; sourceTree = "<group>"; };
+		E150143BDDF82436FD1E9EE6 /* Pods_PanicExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PanicExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,10 +141,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB2CA7C31C8B6D99009ACF51 /* Frameworks */ = {
+		CB6E94DD1C8B998800AD43B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB6E94E11C8B998800AD43B2 /* NotificationCenter.framework in Frameworks */,
+				1D88FAD040289FAE666EDF77 /* Pods_PanicExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +156,9 @@
 		0850178D5FC1EA0105158438 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */,
 				C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */,
+				E150143BDDF82436FD1E9EE6 /* Pods_PanicExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,6 +168,8 @@
 			children = (
 				836C28868AEB079F7D187052 /* Pods-Panicure.debug.xcconfig */,
 				829424ED1D6E7BDAD1C9EFE9 /* Pods-Panicure.release.xcconfig */,
+				42A99D66B15A0D0B99D6ADF1 /* Pods-PanicExtension.debug.xcconfig */,
+				196313204123F3421F6ADBA6 /* Pods-PanicExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -147,8 +177,10 @@
 		224C9AA61C8B47150068237D = {
 			isa = PBXGroup;
 			children = (
+				224C9B2B1C8BA70E0068237D /* SecretKeys.swift */,
 				224C9AB11C8B47150068237D /* Panicure */,
 				224C9AC61C8B47150068237D /* PanicureTests */,
+				CB6E94E21C8B998800AD43B2 /* PanicExtension */,
 				224C9AB01C8B47150068237D /* Products */,
 				0850178D5FC1EA0105158438 /* Frameworks */,
 				0FB20A710CA03BF7BFAD42D3 /* Pods */,
@@ -160,6 +192,7 @@
 			children = (
 				224C9AAF1C8B47150068237D /* Panicure.app */,
 				224C9AC31C8B47150068237D /* PanicureTests.xctest */,
+				CB6E94E01C8B998800AD43B2 /* PanicExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,7 +200,8 @@
 		224C9AB11C8B47150068237D /* Panicure */ = {
 			isa = PBXGroup;
 			children = (
-				C1BB6C571C8B8E1100634DE2 /* SecretKeys.swift */,
+				CB6E94F91C8BB6C600AD43B2 /* Panicure.entitlements */,
+				C10407B61C8BBF62005AB0B0 /* Panicure-Bridging-Header.h */,
 				224C9AB21C8B47150068237D /* AppDelegate.swift */,
 				224C9AD31C8B47300068237D /* Models */,
 				224C9AD21C8B47290068237D /* Controllers */,
@@ -193,7 +227,7 @@
 		224C9AD21C8B47290068237D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C1BB6C5B1C8B900E00634DE2 /* Sign Up */,
+				C10407A61C8BBDED005AB0B0 /* SignUp */,
 				224C9AEF1C8B740B0068237D /* Request Location  */,
 				224C9AD51C8B48A20068237D /* ViewController.swift */,
 			);
@@ -203,8 +237,8 @@
 		224C9AD31C8B47300068237D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C18824B81C8B6E810031CB92 /* Report.swift */,
-				C18824BA1C8B6F2C0031CB92 /* Profile.swift */,
+				C10407AD1C8BBE14005AB0B0 /* Profile.swift */,
+				C10407A91C8BBE09005AB0B0 /* Report.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -212,7 +246,7 @@
 		224C9AD41C8B47530068237D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C1BB6C5E1C8B905A00634DE2 /* Sign Up */,
+				C10407B11C8BBE23005AB0B0 /* SignUp */,
 				224C9AFB1C8B775E0068237D /* Request Location Permision */,
 			);
 			name = Views;
@@ -221,9 +255,12 @@
 		224C9AD71C8B49700068237D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				C18824BD1C8B71890031CB92 /* EncryptionHelper.swift */,
-				C18824C41C8B7A1A0031CB92 /* EVAXOREncrypt.h */,
-				C18824C21C8B79FA0031CB92 /* EVAXOREncrypt.m */,
+				C10407B71C8BC408005AB0B0 /* EncryptionHelper.swift */,
+				C10407B81C8BC408005AB0B0 /* EVAXOREncrypt.h */,
+				C10407B91C8BC408005AB0B0 /* EVAXOREncrypt.m */,
+				224C9B2E1C8BB0250068237D /* Colors */,
+				224C9B241C8BA5800068237D /* Parse */,
+				224C9B201C8B9D910068237D /* Panic */,
 				224C9AF01C8B74180068237D /* Location */,
 			);
 			name = Helpers;
@@ -233,11 +270,6 @@
 			isa = PBXGroup;
 			children = (
 				224C9AF51C8B75360068237D /* RequestLocationPermissionsViewController.swift */,
-				CB2CA7CA1C8B6D99009ACF51 /* TodayViewController.h */,
-				CB2CA7CB1C8B6D99009ACF51 /* TodayViewController.m */,
-				CB2CA7D01C8B6D99009ACF51 /* Info.plist */,
-				CB6E94C21C8B88F300AD43B2 /* UIView+PanicureAdditions.h */,
-				CB6E94C31C8B88F300AD43B2 /* UIView+PanicureAdditions.m */,
 			);
 			name = "Request Location ";
 			sourceTree = "<group>";
@@ -258,33 +290,64 @@
 			name = "Request Location Permision";
 			sourceTree = "<group>";
 		};
-		C1BB6C5B1C8B900E00634DE2 /* Sign Up */ = {
+		224C9B201C8B9D910068237D /* Panic */ = {
 			isa = PBXGroup;
 			children = (
-				C1BB6C671C8B9C4100634DE2 /* Child Profile View Controllers */,
-				C1BB6C5C1C8B904100634DE2 /* SignUpViewController.swift */,
-				C1BB6C631C8B98C400634DE2 /* ProfileInfoViewController.swift */,
-				C1BB6C611C8B916200634DE2 /* LoginViewController.swift */,
+				224C9B211C8B9DF10068237D /* PanicHelper.swift */,
 			);
-			name = "Sign Up";
+			name = Panic;
 			sourceTree = "<group>";
 		};
-		C1BB6C5E1C8B905A00634DE2 /* Sign Up */ = {
+		224C9B241C8BA5800068237D /* Parse */ = {
 			isa = PBXGroup;
 			children = (
-				C1BB6C5F1C8B906C00634DE2 /* SignUp.storyboard */,
-				C1BB6C6E1C8BADC300634DE2 /* ProfileChildren.storyboard */,
+				224C9B251C8BA5970068237D /* ParseHelper.swift */,
 			);
-			name = "Sign Up";
+			name = Parse;
 			sourceTree = "<group>";
 		};
-		C1BB6C671C8B9C4100634DE2 /* Child Profile View Controllers */ = {
+		224C9B2E1C8BB0250068237D /* Colors */ = {
 			isa = PBXGroup;
 			children = (
-				C1BB6C6A1C8B9C9200634DE2 /* ChildProfileControl.swift */,
-				C1BB6C6C1C8B9D7600634DE2 /* ProfileChildViewController.swift */,
+				224C9B2F1C8BB0F80068237D /* UIColor+PanicureAdditions.h */,
+				224C9B301C8BB0F80068237D /* UIColor+PanicureAdditions.m */,
 			);
-			name = "Child Profile View Controllers";
+			name = Colors;
+			sourceTree = "<group>";
+		};
+		C10407A61C8BBDED005AB0B0 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				C10407AF1C8BBE19005AB0B0 /* LoginViewController.swift */,
+				C10407A71C8BBE09005AB0B0 /* ProfileChildViewController.swift */,
+				C10407A81C8BBE09005AB0B0 /* ProfileInfoViewController.swift */,
+				C10407A41C8BBDE7005AB0B0 /* ChildProfileControl.swift */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		C10407B11C8BBE23005AB0B0 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				C10407B41C8BBE4A005AB0B0 /* SignUp.storyboard */,
+				C10407B21C8BBE44005AB0B0 /* ProfileChildren.storyboard */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		CB6E94E21C8B998800AD43B2 /* PanicExtension */ = {
+			isa = PBXGroup;
+			children = (
+				CB6E94FA1C8BB80A00AD43B2 /* PanicExtension.entitlements */,
+				CB6E94E31C8B998800AD43B2 /* TodayViewController.h */,
+				CB6E94E41C8B998800AD43B2 /* TodayViewController.m */,
+				CB6E94E61C8B998800AD43B2 /* MainInterface.storyboard */,
+				CB6E94E91C8B998800AD43B2 /* Info.plist */,
+				CB6E94F01C8B9AB400AD43B2 /* UIView+PanicureAdditions.h */,
+				CB6E94F11C8B9AB400AD43B2 /* UIView+PanicureAdditions.m */,
+				224C9B1C1C8B9CC00068237D /* PanicExtension-Bridging-Header.h */,
+			);
+			path = PanicExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,7 +368,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				CB2CA7D21C8B6D99009ACF51 /* PBXTargetDependency */,
+				CB6E94EB1C8B998800AD43B2 /* PBXTargetDependency */,
 			);
 			name = Panicure;
 			productName = Panicure;
@@ -330,20 +393,24 @@
 			productReference = 224C9AC31C8B47150068237D /* PanicureTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CB2CA7C51C8B6D99009ACF51 /* PanicureExtension */ = {
+		CB6E94DF1C8B998800AD43B2 /* PanicExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2260BDD61C8B87490028E711 /* Build configuration list for PBXNativeTarget "PanicureExtension" */;
+			buildConfigurationList = CB6E94ED1C8B998800AD43B2 /* Build configuration list for PBXNativeTarget "PanicExtension" */;
 			buildPhases = (
-				CB2CA7C21C8B6D99009ACF51 /* Sources */,
-				CB2CA7C31C8B6D99009ACF51 /* Frameworks */,
-				CB2CA7C41C8B6D99009ACF51 /* Resources */,
+				5CDFF0E49C068F60649552C0 /* Check Pods Manifest.lock */,
+				CB6E94DC1C8B998800AD43B2 /* Sources */,
+				CB6E94DD1C8B998800AD43B2 /* Frameworks */,
+				CB6E94DE1C8B998800AD43B2 /* Resources */,
+				D581FCC17E67AE67ECDA5C92 /* Embed Pods Frameworks */,
+				AB95A67B4FF28DC1394BF13A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PanicureExtension;
-			productName = PanicureExtension;
+			name = PanicExtension;
+			productName = PanicExtension;
+			productReference = CB6E94E01C8B998800AD43B2 /* PanicExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -358,8 +425,15 @@
 				TargetAttributes = {
 					224C9AAE1C8B47150068237D = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 5BNC8N825B;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
 								enabled = 1;
 							};
 						};
@@ -368,8 +442,17 @@
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = 224C9AAE1C8B47150068237D;
 					};
-					CB2CA7C51C8B6D99009ACF51 = {
+					CB6E94DF1C8B998800AD43B2 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 5BNC8N825B;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -388,7 +471,7 @@
 			targets = (
 				224C9AAE1C8B47150068237D /* Panicure */,
 				224C9AC21C8B47150068237D /* PanicureTests */,
-				CB2CA7C51C8B6D99009ACF51 /* PanicureExtension */,
+				CB6E94DF1C8B998800AD43B2 /* PanicExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -399,11 +482,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				224C9ABD1C8B47150068237D /* LaunchScreen.storyboard in Resources */,
+				C10407B31C8BBE44005AB0B0 /* ProfileChildren.storyboard in Resources */,
+				C10407B51C8BBE4A005AB0B0 /* SignUp.storyboard in Resources */,
 				224C9ABA1C8B47150068237D /* Assets.xcassets in Resources */,
 				224C9AFA1C8B770C0068237D /* RequestLocationPermision.storyboard in Resources */,
-				C1BB6C6F1C8BADC300634DE2 /* ProfileChildren.storyboard in Resources */,
 				224C9AB81C8B47150068237D /* Main.storyboard in Resources */,
-				C1BB6C601C8B906C00634DE2 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,10 +497,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB2CA7C41C8B6D99009ACF51 /* Resources */ = {
+		CB6E94DE1C8B998800AD43B2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB6E94E81C8B998800AD43B2 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +523,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panicure/Pods-Panicure-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5CDFF0E49C068F60649552C0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		8E93B65BFEE24B17D8C0DEAB /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -452,6 +551,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panicure/Pods-Panicure-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB95A67B4FF28DC1394BF13A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PanicExtension/Pods-PanicExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D581FCC17E67AE67ECDA5C92 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PanicExtension/Pods-PanicExtension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E7D2CE6394B62BE06F05D4E3 /* Check Pods Manifest.lock */ = {
@@ -476,21 +605,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1BB6C621C8B916200634DE2 /* LoginViewController.swift in Sources */,
-				C1BB6C5D1C8B904100634DE2 /* SignUpViewController.swift in Sources */,
+				C10407B01C8BBE19005AB0B0 /* LoginViewController.swift in Sources */,
 				224C9AF31C8B74400068237D /* LocationHelper.swift in Sources */,
+				C10407A51C8BBDE7005AB0B0 /* ChildProfileControl.swift in Sources */,
 				224C9AF61C8B75360068237D /* RequestLocationPermissionsViewController.swift in Sources */,
-				C1BB6C6D1C8B9D7600634DE2 /* ProfileChildViewController.swift in Sources */,
+				C10407BB1C8BC408005AB0B0 /* EVAXOREncrypt.m in Sources */,
+				C10407AE1C8BBE14005AB0B0 /* Profile.swift in Sources */,
+				C10407BA1C8BC408005AB0B0 /* EncryptionHelper.swift in Sources */,
+				224C9B261C8BA5970068237D /* ParseHelper.swift in Sources */,
+				C10407AA1C8BBE09005AB0B0 /* ProfileChildViewController.swift in Sources */,
 				224C9AD61C8B48A20068237D /* ViewController.swift in Sources */,
-				C18824BB1C8B6F2C0031CB92 /* Profile.swift in Sources */,
-				C18824BE1C8B71890031CB92 /* EncryptionHelper.swift in Sources */,
-				C18824C31C8B79FA0031CB92 /* EVAXOREncrypt.m in Sources */,
-				C18824B91C8B6E810031CB92 /* Report.swift in Sources */,
+				224C9B311C8BB0F80068237D /* UIColor+PanicureAdditions.m in Sources */,
+				224C9B221C8B9DF10068237D /* PanicHelper.swift in Sources */,
+				224C9B2C1C8BA70E0068237D /* SecretKeys.swift in Sources */,
+				C10407AB1C8BBE09005AB0B0 /* ProfileInfoViewController.swift in Sources */,
 				224C9AB31C8B47150068237D /* AppDelegate.swift in Sources */,
-				C1BB6C641C8B98C400634DE2 /* ProfileInfoViewController.swift in Sources */,
-				CB6E94C41C8B88F300AD43B2 /* UIView+PanicureAdditions.m in Sources */,
-				C1BB6C6B1C8B9C9200634DE2 /* ChildProfileControl.swift in Sources */,
-				C1BB6C581C8B8E1100634DE2 /* SecretKeys.swift in Sources */,
+				C10407AC1C8BBE09005AB0B0 /* Report.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,12 +632,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB2CA7C21C8B6D99009ACF51 /* Sources */ = {
+		CB6E94DC1C8B998800AD43B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB2CA7CC1C8B6D99009ACF51 /* TodayViewController.m in Sources */,
-				CB6E94C51C8B88F300AD43B2 /* UIView+PanicureAdditions.m in Sources */,
+				224C9B1F1C8B9CFC0068237D /* LocationHelper.swift in Sources */,
+				224C9B321C8BB0F80068237D /* UIColor+PanicureAdditions.m in Sources */,
+				CB6E94E51C8B998800AD43B2 /* TodayViewController.m in Sources */,
+				CB6E94F21C8B9AB400AD43B2 /* UIView+PanicureAdditions.m in Sources */,
+				224C9B231C8B9E080068237D /* PanicHelper.swift in Sources */,
+				224C9B271C8BA6630068237D /* ParseHelper.swift in Sources */,
+				224C9B2D1C8BA70E0068237D /* SecretKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,10 +654,10 @@
 			target = 224C9AAE1C8B47150068237D /* Panicure */;
 			targetProxy = 224C9AC41C8B47150068237D /* PBXContainerItemProxy */;
 		};
-		CB2CA7D21C8B6D99009ACF51 /* PBXTargetDependency */ = {
+		CB6E94EB1C8B998800AD43B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CB2CA7C51C8B6D99009ACF51 /* PanicureExtension */;
-			targetProxy = CB2CA7D11C8B6D99009ACF51 /* PBXContainerItemProxy */;
+			target = CB6E94DF1C8B998800AD43B2 /* PanicExtension */;
+			targetProxy = CB6E94EA1C8B998800AD43B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -541,6 +676,14 @@
 				224C9ABC1C8B47150068237D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CB6E94E61C8B998800AD43B2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB6E94E71C8B998800AD43B2 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -635,11 +778,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Panicure/Panicure.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Panicure/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.panicuru.Panicure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Panicure/Panicure-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -651,11 +799,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Panicure/Panicure.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Panicure/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.panicuru.Panicure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Panicure/Panicure-Bridging-Header.h";
 			};
 			name = Release;
@@ -684,22 +837,42 @@
 			};
 			name = Release;
 		};
-		2260BDD41C8B87490028E711 /* Debug */ = {
+		CB6E94EE1C8B998800AD43B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A99D66B15A0D0B99D6ADF1 /* Pods-PanicExtension.debug.xcconfig */;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = PanicureExtension;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PanicExtension/PanicExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PanicExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panicuru.Panicure.PanicExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PanicExtension/PanicExtension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		2260BDD51C8B87490028E711 /* Release */ = {
+		CB6E94EF1C8B998800AD43B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196313204123F3421F6ADBA6 /* Pods-PanicExtension.release.xcconfig */;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				PRODUCT_NAME = PanicureExtension;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PanicExtension/PanicExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PanicExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.panicuru.Panicure.PanicExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PanicExtension/PanicExtension-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -733,11 +906,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2260BDD61C8B87490028E711 /* Build configuration list for PBXNativeTarget "PanicureExtension" */ = {
+		CB6E94ED1C8B998800AD43B2 /* Build configuration list for PBXNativeTarget "PanicExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2260BDD41C8B87490028E711 /* Debug */,
-				2260BDD51C8B87490028E711 /* Release */,
+				CB6E94EE1C8B998800AD43B2 /* Debug */,
+				CB6E94EF1C8B998800AD43B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
