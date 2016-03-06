@@ -42,8 +42,8 @@
         NSDictionary *data = [NSDictionary dictionaryWithObjectsAndKeys:
                               pushText, @"alert",
                               @"Increment", @"badge",
-                              @"userEmail", user.email,
-                              @"userId", user.objectId,
+                               user.email,@"userEmail",
+                               user.objectId,@"userId",
                               nil];
         
         return [PFPush sendPushDataToQueryInBackground:pushQuery withData:data];
