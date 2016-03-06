@@ -15,6 +15,7 @@ class ImageCaptureHelper: NSObject {
     
     typealias RequestCameraAuthorizationBlock = (authorized: Bool) -> Void
     
+    var frontCamera = false
     
     func capture(completion: (image: UIImage?, error: NSError?) -> Void) {
         
@@ -26,7 +27,12 @@ class ImageCaptureHelper: NSObject {
         let layer = AVCaptureVideoPreviewLayer(session: session)
         
         // Grab the camera device
-        let camera = frontFacingCamera()
+        var camera: AVCaptureDevice?
+        if frontCamera {
+            camera = frontFacingCamera()
+        } else {
+            camera = defaultCamera()
+        }
         
         var input: AVCaptureDeviceInput?
         do {
@@ -56,12 +62,12 @@ class ImageCaptureHelper: NSObject {
         }
         
         // Grab an image
-        imageOutput.captureStillImageAsynchronouslyFromConnection(videoConnection) { (imageSampleBuffer: CMSampleBuffer!, error: NSError!) -> Void in
+        imageOutput.captureStillImageAsynchronouslyFromConnection(videoConnection) { (imageSampleBuffer: CMSampleBuffer?, error: NSError?) -> Void in
             
             let exifAttachments = CMGetAttachment(imageSampleBuffer, kCGImagePropertyExifDictionary, nil)
             
             let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageSampleBuffer)
-            let image: UIImage = UIImage(data: imageData)!
+            let image: UIImage? = UIImage(data: imageData)
             
             if exifAttachments != nil {
                 // Do something with the attachments

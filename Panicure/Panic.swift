@@ -15,6 +15,8 @@ class Panic: PFObject, PFSubclassing {
     @NSManaged var location: String?
     @NSManaged var locationName: String?
     @NSManaged var timestamp: NSDate?
+    @NSManaged var frontCameraImages: [PFFile]?
+    @NSManaged var backCameraImages: [PFFile]?
     
     static func parseClassName() -> String {
         return "Panic"

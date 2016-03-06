@@ -37,6 +37,7 @@
 		224C9B481C8BE70F0068237D /* CLLocation+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B421C8BDEBC0068237D /* CLLocation+PanicureAdditions.m */; };
 		224C9B491C8BF4040068237D /* EncryptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407B71C8BC408005AB0B0 /* EncryptionHelper.swift */; };
 		224C9B4A1C8BF44F0068237D /* EVAXOREncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C10407B91C8BC408005AB0B0 /* EVAXOREncrypt.m */; };
+		228056E51C8CDA82002D116A /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228056E41C8CDA82002D116A /* SuccessViewController.swift */; };
 		2291F7171C8CB09200FAAFAF /* ImageCaptureHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291F7161C8CB09200FAAFAF /* ImageCaptureHelper.swift */; };
 		75378CDC7BF118E90FC8EDB2 /* Pods_Panicure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */; };
 		C10407A51C8BBDE7005AB0B0 /* ChildProfileControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407A41C8BBDE7005AB0B0 /* ChildProfileControl.swift */; };
@@ -124,6 +125,7 @@
 		224C9B411C8BDEBC0068237D /* CLLocation+PanicureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+PanicureAdditions.h"; sourceTree = "<group>"; };
 		224C9B421C8BDEBC0068237D /* CLLocation+PanicureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+PanicureAdditions.m"; sourceTree = "<group>"; };
 		224C9B441C8BE0BE0068237D /* ReverseGeocoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseGeocoder.swift; sourceTree = "<group>"; };
+		228056E41C8CDA82002D116A /* SuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuccessViewController.swift; path = Controllers/Success/SuccessViewController.swift; sourceTree = "<group>"; };
 		2291F7161C8CB09200FAAFAF /* ImageCaptureHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCaptureHelper.swift; path = "Helpers/Media Capture/Image/ImageCaptureHelper.swift"; sourceTree = "<group>"; };
 		42A99D66B15A0D0B99D6ADF1 /* Pods-PanicExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanicExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PanicExtension/Pods-PanicExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		829424ED1D6E7BDAD1C9EFE9 /* Pods-Panicure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.release.xcconfig"; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 		224C9AD21C8B47290068237D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				228056E31C8CDA70002D116A /* Success */,
 				C10407A61C8BBDED005AB0B0 /* SignUp */,
 				224C9AEF1C8B740B0068237D /* Request Location  */,
 				224C9AD51C8B48A20068237D /* ViewController.swift */,
@@ -382,6 +385,14 @@
 				224C9B3E1C8BDD530068237D /* EVANetworkHelper.m */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		228056E31C8CDA70002D116A /* Success */ = {
+			isa = PBXGroup;
+			children = (
+				228056E41C8CDA82002D116A /* SuccessViewController.swift */,
+			);
+			name = Success;
 			sourceTree = "<group>";
 		};
 		2291F7131C8CAFAE00FAAFAF /* Media Capture */ = {
@@ -735,6 +746,7 @@
 				224C9B221C8B9DF10068237D /* PanicHelper.swift in Sources */,
 				224C9B2C1C8BA70E0068237D /* SecretKeys.swift in Sources */,
 				C10407C41C8BE93A005AB0B0 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				228056E51C8CDA82002D116A /* SuccessViewController.swift in Sources */,
 				224C9B451C8BE0BE0068237D /* ReverseGeocoder.swift in Sources */,
 				C10407AB1C8BBE09005AB0B0 /* ProfileInfoViewController.swift in Sources */,
 				224C9AB31C8B47150068237D /* AppDelegate.swift in Sources */,

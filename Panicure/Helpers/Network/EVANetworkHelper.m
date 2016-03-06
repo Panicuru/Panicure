@@ -6,6 +6,7 @@
 //  Copyright © 2016 Panicuru. All rights reserved.
 //
 #import <Parse/Parse.h>
+#import <Bolts/Bolts.h>
 
 #import "EVANetworkHelper.h"
 
@@ -28,6 +29,7 @@
     // Encrypt all the string properties
     
     PFObject *pfObject = (PFObject *)panic;
+    _lastPanic = panic;
     PFUser *user = [pfObject valueForKey:@"user"];
 //    [pfObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
 //        completion(error);
@@ -53,6 +55,53 @@
         
         return nil;
     }];
+}
+
+- (void)saveFrontCameraImage:(UIImage *)image toPanic:(PFObject *)panic {
+    // Save the image file
+    [[self saveImage:image] continueWithBlock:^id _Nullable(BFTask<PFFile *> * _Nonnull task) {
+        
+        if (task.error) {
+            return nil;
+        }
+        
+        [panic addObject:task.result forKey:@"frontCameraImages"];
+        return [panic saveInBackground];
+    }];
+}
+- (void)saveBackCameraImage:(UIImage *)image toPanic:(PFObject *)panic {
+    // Save the image file
+    [[self saveImage:image] continueWithBlock:^id _Nullable(BFTask<PFFile *> * _Nonnull task) {
+        
+        if (task.error) {
+            return nil;
+        }
+        
+        [panic addObject:task.result forKey:@"backCameraImages"];
+        return [panic saveInBackground];
+    }];
+}
+
+
+- (BFTask *)saveImage:(UIImage *)image {
+    
+    // Create a new empty task
+    BFTaskCompletionSource *currentTask = [BFTaskCompletionSource taskCompletionSource];
+    
+    // Create a pffile and save it
+    PFFile *file = [PFFile fileWithData:UIImageJPEGRepresentation(image, 1.0)];
+    [[file saveInBackground] continueWithBlock:^id _Nullable(BFTask<NSNumber *> * _Nonnull task) {
+        
+        if (task.error) {
+            [currentTask setError:task.error];
+        } else {
+            [currentTask setResult:file];
+        }
+        
+        return nil;
+    }];
+    
+    return currentTask.task;
 }
 
 

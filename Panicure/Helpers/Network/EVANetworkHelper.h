@@ -22,6 +22,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)addUserToFirstRole:(NSString *)username;
 
+/// The last saved panic
+@property (strong, nonatomic, readonly) PFObject *lastPanic;
+
+- (void)saveFrontCameraImage:(UIImage *)image toPanic:(PFObject *)panic;
+- (void)saveBackCameraImage:(UIImage *)image toPanic:(PFObject *)panic;
+
 @end
 
 NS_ASSUME_NONNULL_END
