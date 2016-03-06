@@ -27,7 +27,6 @@
 		224C9B311C8BB0F80068237D /* UIColor+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B301C8BB0F80068237D /* UIColor+PanicureAdditions.m */; };
 		224C9B321C8BB0F80068237D /* UIColor+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B301C8BB0F80068237D /* UIColor+PanicureAdditions.m */; };
 		224C9B351C8BB3C10068237D /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B341C8BB3C10068237D /* RoundedButton.swift */; };
-		224C9B361C8BB3C10068237D /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B341C8BB3C10068237D /* RoundedButton.swift */; };
 		75378CDC7BF118E90FC8EDB2 /* Pods_Panicure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */; };
 		CB6E94E11C8B998800AD43B2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */; };
 		CB6E94E51C8B998800AD43B2 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94E41C8B998800AD43B2 /* TodayViewController.m */; };
@@ -87,11 +86,11 @@
 		224C9B211C8B9DF10068237D /* PanicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanicHelper.swift; sourceTree = "<group>"; };
 		224C9B251C8BA5970068237D /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParseHelper.swift; path = Helpers/Parse/ParseHelper.swift; sourceTree = "<group>"; };
 		224C9B2B1C8BA70E0068237D /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
-		42A99D66B15A0D0B99D6ADF1 /* Pods-PanicExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanicExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PanicExtension/Pods-PanicExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		224C9B2F1C8BB0F80068237D /* UIColor+PanicureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+PanicureAdditions.h"; path = "Helpers/Colors/UIColor+PanicureAdditions.h"; sourceTree = "<group>"; };
 		224C9B301C8BB0F80068237D /* UIColor+PanicureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+PanicureAdditions.m"; path = "Helpers/Colors/UIColor+PanicureAdditions.m"; sourceTree = "<group>"; };
 		224C9B341C8BB3C10068237D /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
-		224C9B371C8BB43F0068237D /* Panicure-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Panicure-Bridging-Header.h"; path = "Panicure/Panicure-Bridging-Header.h"; sourceTree = "<group>"; };
+		224C9B381C8BC06B0068237D /* Briding-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Briding-Header.h"; sourceTree = "<group>"; };
+		42A99D66B15A0D0B99D6ADF1 /* Pods-PanicExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanicExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PanicExtension/Pods-PanicExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		829424ED1D6E7BDAD1C9EFE9 /* Pods-Panicure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.release.xcconfig"; sourceTree = "<group>"; };
 		836C28868AEB079F7D187052 /* Pods-Panicure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.debug.xcconfig"; sourceTree = "<group>"; };
 		C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panicure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,7 +158,6 @@
 			children = (
 				224C9B2B1C8BA70E0068237D /* SecretKeys.swift */,
 				224C9AB11C8B47150068237D /* Panicure */,
-				224C9B371C8BB43F0068237D /* Panicure-Bridging-Header.h */,
 				224C9AC61C8B47150068237D /* PanicureTests */,
 				CB6E94E21C8B998800AD43B2 /* PanicExtension */,
 				224C9AB01C8B47150068237D /* Products */,
@@ -181,6 +179,7 @@
 		224C9AB11C8B47150068237D /* Panicure */ = {
 			isa = PBXGroup;
 			children = (
+				224C9B381C8BC06B0068237D /* Briding-Header.h */,
 				224C9AB21C8B47150068237D /* AppDelegate.swift */,
 				224C9AD31C8B47300068237D /* Models */,
 				224C9AD21C8B47290068237D /* Controllers */,
@@ -574,7 +573,6 @@
 				224C9B1F1C8B9CFC0068237D /* LocationHelper.swift in Sources */,
 				224C9B321C8BB0F80068237D /* UIColor+PanicureAdditions.m in Sources */,
 				CB6E94E51C8B998800AD43B2 /* TodayViewController.m in Sources */,
-				224C9B361C8BB3C10068237D /* RoundedButton.swift in Sources */,
 				CB6E94F21C8B9AB400AD43B2 /* UIView+PanicureAdditions.m in Sources */,
 				224C9B231C8B9E080068237D /* PanicHelper.swift in Sources */,
 				224C9B271C8BA6630068237D /* ParseHelper.swift in Sources */,
@@ -720,7 +718,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.panicuru.Panicure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Panicure/Panicure-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Panicure/Briding-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -737,7 +735,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.panicuru.Panicure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Panicure/Panicure-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Panicure/Briding-Header.h";
 			};
 			name = Release;
 		};

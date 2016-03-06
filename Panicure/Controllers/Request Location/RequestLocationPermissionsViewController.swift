@@ -15,12 +15,16 @@ class RequestLocationPermissionsViewController: UIViewController {
     
     var delegate: RequestLocationPermissionsViewControllerDelegate?
     
+    /// The label describing why we need location
+    @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Make sure to dismiss this view if location services are enabled
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "makeSureLocationIsAuthroized", name: nil, object: nil)
+        
+        label.textColor = UIColor.eva_grayTextColor()
     }
     
     func makeSureLocationIsAuthroized() {

@@ -10,6 +10,13 @@
 
 @interface UIColor (PanicureAdditions)
 
+/**
+ Covert a hexidecimal value into a `UIColor` object.
+ @param hex The hexidecimal value, should be in "#FFFFFF" format.
+ @return A UIColor object representing the passed in hexideciaml value.
+ */
++ (UIColor *)colorWithHexValue:(NSString *)hex;
+
 + (UIColor *)eva_mainRedColor;
 
 + (UIColor *)eva_grayTextColor;

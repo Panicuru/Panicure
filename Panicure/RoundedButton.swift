@@ -7,12 +7,27 @@
 //
 
 import UIKit
+import PureLayout
 
 @objc(EVARoundedButton)
 class RoundedButton: UIControl {
 
-    var redColor: UIColor!// = UIColor.eva_mainRedColor()
+    
+    var fillColor: UIColor = UIColor.eva_mainRedColor()
     var label: UILabel!
+    @IBInspectable var text: String? {
+        didSet {
+            label.text = text
+        }
+    }
+    var filled: Bool = false {
+        didSet {
+            updateFill()
+        }
+    }
+   
+    // MARK: -
+    // MARK: - SetUp
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,7 +41,13 @@ class RoundedButton: UIControl {
     
     
     private func setUp() {
-        layer.borderColor = redColor.CGColor
+        setupBorder()
+        setupLabel()
+    }
+    
+    private func setupBorder() {
+        layer.borderColor = fillColor.CGColor
+        layer.borderWidth = 1
         layer.cornerRadius = 4
         layer.masksToBounds = true
     }
@@ -34,19 +55,25 @@ class RoundedButton: UIControl {
     private func setupLabel() {
         label = UILabel()
         label.font = UIFont(name: "SF UI Display", size: 18.0)
-        label.textColor = redColor
+        label.textColor = fillColor
+        label.textAlignment = .Center
+        
+        addSubview(label)
+        label.autoPinEdgesToSuperviewEdges()
     }
+    
+    // MARK: -
+    // MARK: - Update
     
     private func updateFill() {
         if filled {
-            backgroundColor = redColor
-            
+            backgroundColor = fillColor
+            label.textColor = UIColor.whiteColor()
+        } else {
+            backgroundColor = UIColor.whiteColor()
+            label.textColor = fillColor
         }
     }
     
-    var filled: Bool = false {
-        didSet {
-            updateFill()
-        }
-    }
+    
 }
