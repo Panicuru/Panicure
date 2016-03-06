@@ -38,6 +38,7 @@
 		C10407B51C8BBE4A005AB0B0 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10407B41C8BBE4A005AB0B0 /* SignUp.storyboard */; };
 		C10407BA1C8BC408005AB0B0 /* EncryptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407B71C8BC408005AB0B0 /* EncryptionHelper.swift */; };
 		C10407BB1C8BC408005AB0B0 /* EVAXOREncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C10407B91C8BC408005AB0B0 /* EVAXOREncrypt.m */; };
+		C10407BD1C8BCD3B005AB0B0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407BC1C8BCD3B005AB0B0 /* SignUpViewController.swift */; };
 		CB6E94E11C8B998800AD43B2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */; };
 		CB6E94E51C8B998800AD43B2 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94E41C8B998800AD43B2 /* TodayViewController.m */; };
 		CB6E94E81C8B998800AD43B2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6E94E61C8B998800AD43B2 /* MainInterface.storyboard */; };
@@ -115,6 +116,7 @@
 		C10407B71C8BC408005AB0B0 /* EncryptionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionHelper.swift; sourceTree = "<group>"; };
 		C10407B81C8BC408005AB0B0 /* EVAXOREncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAXOREncrypt.h; sourceTree = "<group>"; };
 		C10407B91C8BC408005AB0B0 /* EVAXOREncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAXOREncrypt.m; sourceTree = "<group>"; };
+		C10407BC1C8BCD3B005AB0B0 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panicure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6E94E01C8B998800AD43B2 /* PanicExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PanicExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6E94E31C8B998800AD43B2 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@ sourceTree = "<group>";
 			isa = PBXGroup;
 			children = (
 				C10407AF1C8BBE19005AB0B0 /* LoginViewController.swift */,
+				C10407BC1C8BCD3B005AB0B0 /* SignUpViewController.swift */,
 				C10407A71C8BBE09005AB0B0 /* ProfileChildViewController.swift */,
 				C10407A81C8BBE09005AB0B0 /* ProfileInfoViewController.swift */,
 				C10407A41C8BBDE7005AB0B0 /* ChildProfileControl.swift */,
@@ -621,6 +624,7 @@ sourceTree = "<group>";
 				C10407A51C8BBDE7005AB0B0 /* ChildProfileControl.swift in Sources */,
 				224C9AF61C8B75360068237D /* RequestLocationPermissionsViewController.swift in Sources */,
 				C10407BB1C8BC408005AB0B0 /* EVAXOREncrypt.m in Sources */,
+				C10407BD1C8BCD3B005AB0B0 /* SignUpViewController.swift in Sources */,
 				C10407AE1C8BBE14005AB0B0 /* Profile.swift in Sources */,
 				C10407BA1C8BC408005AB0B0 /* EncryptionHelper.swift in Sources */,
 				224C9B261C8BA5970068237D /* ParseHelper.swift in Sources */,

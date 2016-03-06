@@ -7,29 +7,32 @@
 //
 
 import UIKit
+import Parse
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signupButton: UIButton!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func onLogin(sender: AnyObject) {
+        if (emailField.text != nil && passwordField.text != nil) {
+            PFUser.logInWithUsernameInBackground(emailField.text!, password: passwordField.text!, block: {(user: PFUser?, error: NSError?) in
+                if error == nil {
+                    print("Success")
+                } else {
+                    print(error)
+                }
+            })
+            
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
