@@ -11,6 +11,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "UIColor+PanicureAdditions.h"
 
+
 #import "PanicExtension-Swift.h"
 
 @interface TodayViewController () <NCWidgetProviding,CLLocationManagerDelegate>
@@ -98,7 +99,7 @@
     [self.panicButton setTitle:@"Sending..." forState:UIControlStateNormal];
     [self.panicButton setBackgroundColor:[UIColor eva_greyColor]];
     
-    [EVAPanicHelper startPanicingWithCompletion:^(NSError * _Nullable error) {
+    [EVAPanicHelper startPanicingWithCompletion:^(NSError * _Nullable error, EVAPanic * panic) {
         if (error) {
             // Handle error
             [self.panicButton setTitle:@"ERROR" forState:UIControlStateNormal];
@@ -108,10 +109,24 @@
         [self.panicButton setTitle:@"Sent" forState:UIControlStateNormal];
         [self.panicButton setBackgroundColor:[UIColor clearColor]];
         
-        NSURL *url = [NSURL URLWithString:@"panicure://"];
-        [self.extensionContext openURL:url completionHandler:nil];
+        PFQuery *pushQuery = [PFInstallation query];
+        [pushQuery whereKey:@"deviceType" equalTo:@"ios"];
+        
+        // Send push notification to query
+        NSString* pushText = [NSString stringWithFormat: @"%@ has panicked at '%@' ", panic.user.email, panic.locationName];
+        [PFPush sendPushMessageToQueryInBackground:pushQuery
+                                       withMessage:pushText block:^(BOOL succeeded, NSError * _Nullable error) {
+                                           NSURL *url = [NSURL URLWithString:@"panicure://"];
+                                           [self.extensionContext openURL:url completionHandler:nil];
+                                       }];
+        
+        //NSURL *url = [NSURL URLWithString:@"panicure://"];
+        //[self.extensionContext openURL:url completionHandler:nil];
         // Panic Successful
-    }];
+        
+        
+        
+    } ];
 }
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
