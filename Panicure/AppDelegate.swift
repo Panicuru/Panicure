@@ -25,10 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ParseHelper.start()
         
         if PFUser.currentUser() == nil {
-            let storyboard = UIStoryboard(name: "SignUp", bundle: nil)
-            let vc = storyboard.instantiateInitialViewController()
-            self.window?.rootViewController = vc
-            self.window?.makeKeyAndVisible()
+            launchToLogin()
         }
         
 //        EVANetworkHelper.addUserToFirstRole("vahan@ttt.com")
@@ -63,9 +60,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
         // Was probably called from extension
-        
+        launchToPanicSuccess()
         
         return true
+    }
+    
+    func launchToLogin() {
+        let storyboard = UIStoryboard(name: "SignUp", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController()
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
+    }
+    
+    func launchToPanicSuccess() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("panicSuccess")
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
+    }
+    
+    func launchToCountdown() {
+        
     }
 
 }

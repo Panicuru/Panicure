@@ -20,6 +20,7 @@ class ReportsViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+    
     }
     
     override func viewDidAppear(animated: Bool) {

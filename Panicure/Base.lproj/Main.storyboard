@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2OT-RJ-hu8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -9,23 +9,23 @@
         <!--Navigation Controller-->
         <scene sceneID="rMf-9m-3Dj">
             <objects>
-                <navigationController id="2OT-RJ-hu8" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mainNavigation" id="2OT-RJ-hu8" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DQR-v6-Iwi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KVc-yh-x5m"/>
+                        <segue destination="NYz-D9-iBC" kind="relationship" relationship="rootViewController" id="6IH-EE-GnA"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OPf-FB-Qp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-390" y="352"/>
+            <point key="canvasLocation" x="-80" y="308"/>
         </scene>
         <!--Panic Success-->
         <scene sceneID="O7J-kt-fep">
             <objects>
-                <viewController id="Tnh-I3-6F1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="panicSuccess" id="Tnh-I3-6F1" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Ez-XJ-g1Q"/>
                         <viewControllerLayoutGuide type="bottom" id="KyV-cJ-9rb"/>
@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="300" y="-384"/>
         </scene>
-        <!--showReports-->
+        <!--Countdown-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="showReports" id="BYZ-38-t0r" customClass="ViewController" customModule="Panicure" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Countdown" title="Countdown" id="BYZ-38-t0r" customClass="ViewController" customModule="Panicure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -78,7 +78,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="filled" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="cancelPanic" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xqu-zj-OBm"/>
+                                    <action selector="cancelPanic" destination="BYZ-38-t0r" eventType="touchUpInside" id="jsF-EA-mGD"/>
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q63-TI-p6j">
@@ -111,12 +111,13 @@
                     <navigationItem key="navigationItem" id="c9N-sU-Cfh"/>
                     <connections>
                         <outlet property="timerLabel" destination="Hg3-Ib-FBJ" id="ebU-02-Lpk"/>
-                        <segue destination="NYz-D9-iBC" kind="show" identifier="showReports" id="9KO-Bi-Ftm"/>
-                        <segue destination="Tnh-I3-6F1" kind="show" identifier="panicSuccess" id="aO4-se-3ZK"/>
+                        <segue destination="2OT-RJ-hu8" kind="show" identifier="showHome" id="tw2-nL-9aI"/>
+                        <segue destination="Tnh-I3-6F1" kind="show" identifier="panicSuccess" id="gjD-dh-N2Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="30" y="1034"/>
         </scene>
         <!--My Reports-->
         <scene sceneID="fra-aX-aJq">
@@ -226,6 +227,7 @@
                     <connections>
                         <outlet property="panicButton" destination="PiT-yJ-wXo" id="EKF-zO-BrI"/>
                         <outlet property="tableView" destination="eHf-fF-t6s" id="Oy3-dh-zOf"/>
+                        <segue destination="Tnh-I3-6F1" kind="show" identifier="showPanicSuccess" id="dCe-iQ-jKt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8il-UT-SCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -420,4 +422,7 @@
     <resources>
         <image name="edit" width="27" height="28"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gjD-dh-N2Q"/>
+    </inferredMetricsTieBreakers>
 </document>
