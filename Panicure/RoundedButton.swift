@@ -20,7 +20,7 @@ class RoundedButton: UIControl {
             label.text = text
         }
     }
-    var filled: Bool = false {
+    @IBInspectable var filled: Bool = false {
         didSet {
             updateFill()
         }
