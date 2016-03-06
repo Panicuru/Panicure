@@ -52,6 +52,9 @@
 		C10407BF1C8BE45D005AB0B0 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		C10407C41C8BE93A005AB0B0 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C10407C31C8BE93A005AB0B0 /* TPKeyboardAvoidingScrollView.m */; };
 		C10407C71C8BE996005AB0B0 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C10407C61C8BE996005AB0B0 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		C19397261C8C907700F305BF /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19397251C8C907700F305BF /* ReportsViewController.swift */; };
+		C19397281C8C956400F305BF /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19397271C8C956400F305BF /* ReportTableViewCell.swift */; };
+		C193972A1C8C9CD500F305BF /* AddReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19397291C8C9CD500F305BF /* AddReportViewController.swift */; };
 		CB6E94E11C8B998800AD43B2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */; };
 		CB6E94E51C8B998800AD43B2 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94E41C8B998800AD43B2 /* TodayViewController.m */; };
 		CB6E94E81C8B998800AD43B2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6E94E61C8B998800AD43B2 /* MainInterface.storyboard */; };
@@ -140,6 +143,9 @@
 		C10407C51C8BE996005AB0B0 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "Views/Util/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		C10407C61C8BE996005AB0B0 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "Views/Util/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panicure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19397251C8C907700F305BF /* ReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
+		C19397271C8C956400F305BF /* ReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
+		C19397291C8C9CD500F305BF /* AddReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReportViewController.swift; sourceTree = "<group>"; };
 		CB6E94E01C8B998800AD43B2 /* PanicExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PanicExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6E94E31C8B998800AD43B2 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		CB6E94E41C8B998800AD43B2 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
@@ -254,6 +260,8 @@
 				C10407A61C8BBDED005AB0B0 /* SignUp */,
 				224C9AEF1C8B740B0068237D /* Request Location  */,
 				224C9AD51C8B48A20068237D /* ViewController.swift */,
+				C19397251C8C907700F305BF /* ReportsViewController.swift */,
+				C19397291C8C9CD500F305BF /* AddReportViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -359,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				224C9AB61C8B47150068237D /* Main.storyboard */,
+				C19397271C8C956400F305BF /* ReportTableViewCell.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -680,6 +689,7 @@
 				C10407A51C8BBDE7005AB0B0 /* ChildProfileControl.swift in Sources */,
 				224C9AF61C8B75360068237D /* RequestLocationPermissionsViewController.swift in Sources */,
 				224C9B3F1C8BDD530068237D /* EVANetworkHelper.m in Sources */,
+				C193972A1C8C9CD500F305BF /* AddReportViewController.swift in Sources */,
 				224C9B431C8BDEBC0068237D /* CLLocation+PanicureAdditions.m in Sources */,
 				C10407BB1C8BC408005AB0B0 /* EVAXOREncrypt.m in Sources */,
 				C10407BD1C8BCD3B005AB0B0 /* SignUpViewController.swift in Sources */,
@@ -692,6 +702,8 @@
 				224C9B3B1C8BD59E0068237D /* Panic.swift in Sources */,
 				224C9B351C8BB3C10068237D /* RoundedButton.swift in Sources */,
 				224C9B311C8BB0F80068237D /* UIColor+PanicureAdditions.m in Sources */,
+				C19397281C8C956400F305BF /* ReportTableViewCell.swift in Sources */,
+				C19397261C8C907700F305BF /* ReportsViewController.swift in Sources */,
 				224C9B221C8B9DF10068237D /* PanicHelper.swift in Sources */,
 				224C9B2C1C8BA70E0068237D /* SecretKeys.swift in Sources */,
 				C10407C41C8BE93A005AB0B0 /* TPKeyboardAvoidingScrollView.m in Sources */,
