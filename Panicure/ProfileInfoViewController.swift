@@ -13,6 +13,7 @@ class ProfileInfoViewController: UIViewController {
     // The values are 1 to 4
     var currentIndex: Int = 1
     var viewControllers: [ChildProfileControl] = [ChildProfileControl]()
+    var profile: Profile?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,7 @@ class ProfileInfoViewController: UIViewController {
                 viewControllers.append(childViewController)
             }
         }
-        
+        displayViewAtIndex(1)
         
     }
 

@@ -235,22 +235,23 @@
                         <outlet property="firstNameField" destination="sj0-Y6-7sA" id="Y3k-sD-Ivd"/>
                         <outlet property="lastNameField" destination="Wmq-jN-PPq" id="TaY-cD-wIe"/>
                         <outlet property="passwordField" destination="sDg-cd-sfs" id="90j-9N-jZW"/>
+                        <segue destination="g5r-8Q-YEb" kind="show" identifier="showProfileForm" id="UPu-2v-8yX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vyh-oL-1FV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1046" y="354"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile Info View Controller-->
         <scene sceneID="S5g-FQ-l4w">
             <objects>
-                <viewController id="g5r-8Q-YEb" sceneMemberID="viewController">
+                <viewController id="g5r-8Q-YEb" customClass="ProfileInfoViewController" customModule="Panicure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m03-qf-ONN"/>
                         <viewControllerLayoutGuide type="bottom" id="2VB-l6-1f0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WFG-Xl-Vbt">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
