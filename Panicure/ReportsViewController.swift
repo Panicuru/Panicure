@@ -21,7 +21,9 @@ class ReportsViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-    
+        
+        self.panicButton.layer.cornerRadius = 4.0
+        self.panicButton.layer.masksToBounds = true
     }
     
     override func viewDidAppear(animated: Bool) {
