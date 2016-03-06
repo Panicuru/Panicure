@@ -21,16 +21,28 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func onLogin(sender: AnyObject) {
-        if (emailField.text != nil && passwordField.text != nil) {
+        if (emailField.text?.characters.count > 0 && passwordField.text?.characters.count > 0) {
             PFUser.logInWithUsernameInBackground(emailField.text!, password: passwordField.text!, block: {(user: PFUser?, error: NSError?) in
                 if error == nil {
                     self.performSegueWithIdentifier("showMain", sender: self)
                 } else {
-                    print(error)
+                    self.showInvalidInputError()
                 }
             })
             
+        } else {
+            showInvalidInputError()
         }
+    }
+    
+    func showInvalidInputError() {
+        let alertController = UIAlertController(title: "Error", message: "Some required fields are empty", preferredStyle: .Alert)
+        let okAction = UIAlertAction(title: "OK", style: .Default, handler: {(action: UIAlertAction) in
+            alertController.dismissViewControllerAnimated(false, completion: nil)
+        })
+        
+        alertController.addAction(okAction)
+        self.presentViewController(alertController, animated: false, completion: nil)
     }
     
 }

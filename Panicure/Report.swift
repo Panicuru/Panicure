@@ -12,7 +12,7 @@ import Parse
 @objc(EVAReport)
 class Report: PFObject, PFSubclassing {
     
-    @NSManaged var media: PFFile?
+    @NSManaged var image: PFFile?
     @NSManaged var detail: String?
     @NSManaged var user: PFUser?
     @NSManaged var location: String?

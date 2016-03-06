@@ -14,5 +14,6 @@ class ReportTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var severityLabel: UILabel!
     @IBOutlet weak var reportImageView: UIImageView!
+    @IBOutlet weak var reportDetail: UILabel!
 
 }

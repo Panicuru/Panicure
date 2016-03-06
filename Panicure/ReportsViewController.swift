@@ -15,6 +15,7 @@ class ReportsViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var panicButton: UIButton!
     
     var reports: [Report] = [Report]()
+    var images: [String: NSData?] = [String: NSData?]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +33,20 @@ class ReportsViewController: UIViewController, UITableViewDataSource, UITableVie
         query.whereKey("user", equalTo: PFUser.currentUser()!)
         query.findObjectsInBackgroundWithBlock({(results: [PFObject]?, error: NSError?) in
             if let reports = results as? [Report] {
-                self.reports.appendContentsOf(reports)
+                self.reports = reports
             }
             self.tableView.reloadData()
+            
+            for report in self.reports {
+                if (report.image != nil) {
+                    report.image?.getDataInBackgroundWithBlock({(imageData: NSData?, error:NSError?) in
+                        self.images[report.objectId!] = imageData
+                        self.tableView.reloadData()
+                    })
+                } else {
+                    self.images[report.objectId!] = nil
+                }
+            }
         })
     }
 
@@ -42,9 +54,17 @@ class ReportsViewController: UIViewController, UITableViewDataSource, UITableVie
         if let cell = tableView.dequeueReusableCellWithIdentifier("reportCell") as? ReportTableViewCell {
             let report = self.reports[indexPath.row]
             cell.addressLabel.text = report.location
-            let dateString: String = String(report.createdAt) ?? ""
-            cell.dateLabel.text = dateString
+            cell.reportDetail.text = report.detail
+            cell.dateLabel.text = report.when
             cell.severityLabel.text = report.severity
+            
+            let data = self.images[report.objectId!]
+            
+            if data != nil {
+                let image = UIImage(data: data!!)
+                cell.reportImageView.image = image
+            }
+            
             return cell
         }
         return UITableViewCell()
@@ -55,7 +75,15 @@ class ReportsViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 88
+        return 140
     }
 
+    @IBAction func logout(sender: AnyObject) {
+        PFUser.logOutInBackgroundWithBlock({(error: NSError?) in
+            let storyboard = UIStoryboard(name: "SignUp", bundle: nil)
+            let vc = storyboard.instantiateInitialViewController()
+            self.view.window?.rootViewController = vc
+            self.view.window?.makeKeyAndVisible()
+        })
+    }
 }

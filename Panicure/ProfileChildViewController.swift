@@ -35,7 +35,7 @@ class ProfileChild1ViewController: ChildProfileControl {
     }
     
     override func validateInput() -> Bool {
-        var returnVal = [addressCityField, addressUnitField, provincePicker, postCodeField, phoneField, contactPhoneField].filter({$0?.text == nil}).count == 0
+        var returnVal = [addressCityField, addressUnitField, provincePicker, postCodeField, phoneField, contactPhoneField].filter({$0?.text?.characters.count == 0}).count == 0
         return birthdatePicker?.date != nil && returnVal
     }
 
@@ -73,7 +73,7 @@ class ProfileChild2ViewController: ChildProfileControl {
     }
     
     override func validateInput() -> Bool {
-        var num = [weightField, heightField, hairColourField, eyeColourField, ethnicityField].filter({$0?.text == nil}).count
+        var num = [weightField, heightField, hairColourField, eyeColourField, ethnicityField].filter({$0?.text?.characters.count == 0}).count
         return num == 0
     }
     
@@ -96,7 +96,6 @@ class ProfileChild3ViewController: ChildProfileControl {
     }
     
     override func nextButtonClicked() {
-        print("This got hitNJKHDJK")
         if (validateInput()) {
             if (disabilitySwitch!.on) { profile.disabilities = disabilityField?.text }
             if (pregnantSwitch!.on) { profile.pregnancy = pregnantField?.text }
@@ -153,8 +152,8 @@ class ProfileChild4ViewController: ChildProfileControl {
     
     override func validateInput() -> Bool {
         if (vehicleSwitch!.on) {
-            var count = [makeField, yearField, modelField, colourField, licenseField].filter({$0?.text == nil}).count
-            return count == 0
+            let array = [makeField, yearField, modelField, colourField, licenseField].filter({$0?.text?.characters.count == 0})
+            return array.count == 0
         } else {
             return true
         }
