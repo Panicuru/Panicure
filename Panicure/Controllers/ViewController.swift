@@ -132,6 +132,7 @@ class ViewController: UIViewController, RequestLocationPermissionsViewController
     
     @IBAction func cancelPanic() {
         stopTiming()
+        self.performSegueWithIdentifier("showReports", sender: self)
     }
 }
 
