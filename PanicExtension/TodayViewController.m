@@ -110,31 +110,11 @@
         [self.panicButton setTitle:@"Sent" forState:UIControlStateNormal];
         [self.panicButton setBackgroundColor:[UIColor clearColor]];
         
-        PFQuery *pushQuery = [PFInstallation query];
-        [pushQuery whereKey:@"deviceType" equalTo:@"ios"];
-        
-        // Send push notification to query
-        NSString* pushText = [NSString stringWithFormat: @"%@ has panicked at '%@' ", panic.user.email, [EVAEncryptionHelper encryptDecryptString:panic.locationName ]];
-        NSDictionary *data = [NSDictionary dictionaryWithObjectsAndKeys:
-                              pushText, @"alert",
-                              @"Increment", @"badge",
-                              @"userEmail", panic.user.email,
-                              @"userId", panic.user.objectId,
-                              nil];
         
         
-        [PFPush sendPushDataToQueryInBackground:pushQuery
-                                       withData:data block:^(BOOL succeeded, NSError * _Nullable error) {
-                                           NSURL *url = [NSURL URLWithString:@"panicure://"];
-                                           [self.extensionContext openURL:url completionHandler:nil];
-                                       }];
-        
-        //NSURL *url = [NSURL URLWithString:@"panicure://"];
-        //[self.extensionContext openURL:url completionHandler:nil];
+        NSURL *url = [NSURL URLWithString:@"panicure://"];
+        [self.extensionContext openURL:url completionHandler:nil];
         // Panic Successful
-        
-        
-        
     } ];
 }
 
