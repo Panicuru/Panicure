@@ -52,6 +52,12 @@ class Profile: PFObject, PFSubclassing {
     
     func encryptDecrypt() {
         // todo: implement when more properties added
+        
+        for key in self.allKeys {
+            if let string = self.valueForKey(key) as? String {
+                self.setValue(EncryptionHelper.encryptDecryptString(string), forKey: key)
+            }
+        }
     }
     
 }

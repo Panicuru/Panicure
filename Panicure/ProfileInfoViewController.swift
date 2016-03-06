@@ -39,6 +39,7 @@ class ProfileInfoViewController: UIViewController {
             displayViewAtIndex(self.currentIndex)
         } else if (self.currentIndex == 3) {
             //finish and save
+            self.profile?.encryptDecrypt()
             self.profile?.saveInBackgroundWithBlock({(success: Bool, error: NSError?) in
                 if error == nil && success {
                     PFUser.currentUser()?.setObject(self.profile!, forKey: "profile")
