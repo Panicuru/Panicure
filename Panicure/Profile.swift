@@ -10,11 +10,13 @@ import UIKit
 import Parse
 
 @objc(EVAProfile)
-class Profile: PFObject {
+class Profile: PFObject, PFSubclassing {
     
     @NSManaged var user: PFUser?
     
     @NSManaged var birthday: NSDate?
+    @NSManaged var firstName: String?
+    @NSManaged var lastName: String?
     
     @NSManaged var addressUnit: String?
     @NSManaged var addressCity: String?
@@ -42,6 +44,11 @@ class Profile: PFObject {
     @NSManaged var year: String?
     @NSManaged var colour: String?
     @NSManaged var license: String?
+    
+    static func parseClassName() -> String {
+        return "Profile"
+    }
+    
     
     func encryptDecrypt() {
         // todo: implement when more properties added

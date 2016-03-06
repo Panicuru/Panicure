@@ -20,7 +20,7 @@ class RoundedButton: UIControl {
             label.text = text
         }
     }
-    var filled: Bool = false {
+    @IBInspectable var filled: Bool = false {
         didSet {
             updateFill()
         }
@@ -76,4 +76,9 @@ class RoundedButton: UIControl {
     }
     
     
+    override var highlighted: Bool {
+        didSet {
+            self.alpha = highlighted ? 0.5 : 1.0
+        }
+    }
 }

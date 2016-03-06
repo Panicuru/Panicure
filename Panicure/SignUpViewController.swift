@@ -27,15 +27,27 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func onSignUp(sender: AnyObject) {
-        var newUser = PFUser()
+        let newUser = PFUser()
         newUser.username = emailField.text
         newUser.email = emailField.text
         newUser.password = passwordField.text
         newUser.signUpInBackgroundWithBlock({(success: Bool, error: NSError?) in
             if (error == nil) {
                 print("No error!")
+                self.performSegueWithIdentifier("showProfileForm", sender: self)
             }
         })
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "showProfileForm") {
+            if let dvc = segue.destinationViewController as? ProfileInfoViewController {
+                let newProfile = Profile()
+                newProfile.firstName = firstNameField.text
+                newProfile.lastName = lastNameField.text
+                dvc.profile = newProfile
+            }
+        }
     }
     
     func dismissKeyboard(sender: AnyObject) {
