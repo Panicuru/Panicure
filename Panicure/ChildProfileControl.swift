@@ -11,6 +11,14 @@ import UIKit
 class ChildProfileControl: UIViewController {
     
     @IBOutlet weak var submitButton: UIButton?
+    
+    weak var formController: ProfileInfoViewController?
+    
+    var lastField: UITextField? {
+        get {
+            return nil
+        }
+    }
 
     var profile: Profile!
     

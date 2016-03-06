@@ -20,6 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)saveNewPanic:(PFObject *)panic completion:(void(^)(NSError * _Nullable error))completion;
 
++ (void)createRole:(NSString *)roleName;
+
++ (void)addUserToFirstRole:(NSString *)username;
+
 @end
 
 NS_ASSUME_NONNULL_END

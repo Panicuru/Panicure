@@ -44,9 +44,11 @@ class PanicHelper: NSObject {
                 
                 // Create a new panic
                 let panic = Panic()
-                panic.location = location!.eva_stringFromLocation()
+                let locaitonString = location!.eva_stringFromLocation()
+                let locationName = task.result as? String
+                panic.location = EncryptionHelper.encryptDecryptString(locaitonString)
                 panic.user = PFUser.currentUser()
-                panic.locationName = task.result as? String
+                panic.locationName = EncryptionHelper.encryptDecryptString(locationName)
                 panic.timestamp = date
                 
                 // Save the panic
