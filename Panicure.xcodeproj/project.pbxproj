@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D88FAD040289FAE666EDF77 /* Pods_PanicExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E150143BDDF82436FD1E9EE6 /* Pods_PanicExtension.framework */; };
 		224C9AB31C8B47150068237D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9AB21C8B47150068237D /* AppDelegate.swift */; };
 		224C9AB81C8B47150068237D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224C9AB61C8B47150068237D /* Main.storyboard */; };
 		224C9ABA1C8B47150068237D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224C9AB91C8B47150068237D /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		196313204123F3421F6ADBA6 /* Pods-PanicExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanicExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-PanicExtension/Pods-PanicExtension.release.xcconfig"; sourceTree = "<group>"; };
 		224C9AAF1C8B47150068237D /* Panicure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Panicure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		224C9AB21C8B47150068237D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		224C9AB71C8B47150068237D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		224C9B211C8B9DF10068237D /* PanicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanicHelper.swift; sourceTree = "<group>"; };
 		224C9B251C8BA5970068237D /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParseHelper.swift; path = Helpers/Parse/ParseHelper.swift; sourceTree = "<group>"; };
 		224C9B2B1C8BA70E0068237D /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
+		42A99D66B15A0D0B99D6ADF1 /* Pods-PanicExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanicExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PanicExtension/Pods-PanicExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		829424ED1D6E7BDAD1C9EFE9 /* Pods-Panicure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.release.xcconfig"; sourceTree = "<group>"; };
 		836C28868AEB079F7D187052 /* Pods-Panicure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.debug.xcconfig"; sourceTree = "<group>"; };
 		C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panicure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +94,7 @@
 		CB6E94E91C8B998800AD43B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB6E94F01C8B9AB400AD43B2 /* UIView+PanicureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PanicureAdditions.h"; sourceTree = "<group>"; };
 		CB6E94F11C8B9AB400AD43B2 /* UIView+PanicureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PanicureAdditions.m"; sourceTree = "<group>"; };
+		E150143BDDF82436FD1E9EE6 /* Pods_PanicExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PanicExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB6E94E11C8B998800AD43B2 /* NotificationCenter.framework in Frameworks */,
+				1D88FAD040289FAE666EDF77 /* Pods_PanicExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			children = (
 				224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */,
 				C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */,
+				E150143BDDF82436FD1E9EE6 /* Pods_PanicExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,6 +140,8 @@
 			children = (
 				836C28868AEB079F7D187052 /* Pods-Panicure.debug.xcconfig */,
 				829424ED1D6E7BDAD1C9EFE9 /* Pods-Panicure.release.xcconfig */,
+				42A99D66B15A0D0B99D6ADF1 /* Pods-PanicExtension.debug.xcconfig */,
+				196313204123F3421F6ADBA6 /* Pods-PanicExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -321,9 +329,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB6E94ED1C8B998800AD43B2 /* Build configuration list for PBXNativeTarget "PanicExtension" */;
 			buildPhases = (
+				5CDFF0E49C068F60649552C0 /* Check Pods Manifest.lock */,
 				CB6E94DC1C8B998800AD43B2 /* Sources */,
 				CB6E94DD1C8B998800AD43B2 /* Frameworks */,
 				CB6E94DE1C8B998800AD43B2 /* Resources */,
+				D581FCC17E67AE67ECDA5C92 /* Embed Pods Frameworks */,
+				AB95A67B4FF28DC1394BF13A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -426,6 +437,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panicure/Pods-Panicure-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5CDFF0E49C068F60649552C0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		8E93B65BFEE24B17D8C0DEAB /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -439,6 +465,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Panicure/Pods-Panicure-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB95A67B4FF28DC1394BF13A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PanicExtension/Pods-PanicExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D581FCC17E67AE67ECDA5C92 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PanicExtension/Pods-PanicExtension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E7D2CE6394B62BE06F05D4E3 /* Check Pods Manifest.lock */ = {
@@ -679,7 +735,9 @@
 		};
 		CB6E94EE1C8B998800AD43B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A99D66B15A0D0B99D6ADF1 /* Pods-PanicExtension.debug.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PanicExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -693,7 +751,9 @@
 		};
 		CB6E94EF1C8B998800AD43B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196313204123F3421F6ADBA6 /* Pods-PanicExtension.release.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PanicExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
