@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class AddReportViewController: UIViewController, UIImagePickerControllerDelegate {
     
@@ -27,6 +28,7 @@ class AddReportViewController: UIViewController, UIImagePickerControllerDelegate
         newReport.location = whereField.text
         newReport.when = whenField.text
         newReport.detail = descriptionField.text
+        newReport.user = PFUser.currentUser()
         
         switch severitySegment.selectedSegmentIndex {
         case 0:

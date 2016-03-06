@@ -18,7 +18,11 @@ class ReportsViewController: UIViewController, UITableViewDataSource, UITableVie
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         fetchReportsForUser()
     }
     
@@ -29,6 +33,7 @@ class ReportsViewController: UIViewController, UITableViewDataSource, UITableVie
             if let reports = results as? [Report] {
                 self.reports.appendContentsOf(reports)
             }
+            self.tableView.reloadData()
         })
     }
 
@@ -36,7 +41,8 @@ class ReportsViewController: UIViewController, UITableViewDataSource, UITableVie
         if let cell = tableView.dequeueReusableCellWithIdentifier("reportCell") as? ReportTableViewCell {
             let report = self.reports[indexPath.row]
             cell.addressLabel.text = report.location
-            cell.dateLabel.text = String(report.createdAt)
+            let dateString: String = String(report.createdAt) ?? ""
+            cell.dateLabel.text = dateString
             cell.severityLabel.text = report.severity
             return cell
         }
@@ -45,6 +51,10 @@ class ReportsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.reports.count
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 88
     }
 
 }
