@@ -64,18 +64,22 @@ class ImageCaptureHelper: NSObject {
         // Grab an image
         imageOutput.captureStillImageAsynchronouslyFromConnection(videoConnection) { (imageSampleBuffer: CMSampleBuffer?, error: NSError?) -> Void in
             
-            let exifAttachments = CMGetAttachment(imageSampleBuffer, kCGImagePropertyExifDictionary, nil)
-            
-            let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageSampleBuffer)
-            let image: UIImage? = UIImage(data: imageData)
-            
-            if exifAttachments != nil {
-                // Do something with the attachments
+            if let imageSampleBuffer = imageSampleBuffer {
+                let exifAttachments = CMGetAttachment(imageSampleBuffer, kCGImagePropertyExifDictionary, nil)
+                
+                let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageSampleBuffer)
+                let image: UIImage? = UIImage(data: imageData)
+                
+                if exifAttachments != nil {
+                    // Do something with the attachments
+                }
+                
+                // Continue
+                
+                completion(image: image, error: nil)
+            } else {
+                completion(image: nil, error: error)
             }
-            
-            // Continue
-            
-            completion(image: image, error: nil)
         }
     }
     

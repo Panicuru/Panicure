@@ -26,7 +26,7 @@
         <!--Panic Success-->
         <scene sceneID="O7J-kt-fep">
             <objects>
-                <viewController storyboardIdentifier="panicSuccess" id="Tnh-I3-6F1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="panicSuccess" id="Tnh-I3-6F1" customClass="SuccessViewController" customModule="Panicure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Ez-XJ-g1Q"/>
                         <viewControllerLayoutGuide type="bottom" id="KyV-cJ-9rb"/>
@@ -57,13 +57,13 @@
                                     <segue destination="2OT-RJ-hu8" kind="show" id="TeC-vR-ORG"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YLn-61-UJN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YLn-61-UJN">
                                 <rect key="frame" x="0.0" y="64" width="300" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="B1m-C3-Tn4"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7nW-PI-yW9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7nW-PI-yW9">
                                 <rect key="frame" x="300" y="64" width="300" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="afR-c4-erR"/>
@@ -86,6 +86,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Panic Success" id="znC-yZ-zcG"/>
+                    <connections>
+                        <outlet property="imageView1" destination="YLn-61-UJN" id="QeU-LC-YPa"/>
+                        <outlet property="imageView2" destination="7nW-PI-yW9" id="Nt8-8f-ZKH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pag-if-As4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,9 +235,7 @@
                                                     <color key="textColor" red="0.59607843140000005" green="0.078431372550000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKE-mV-dLQ">
-
                                                     <rect key="frame" x="8" y="95" width="544" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
