@@ -24,6 +24,8 @@
 		224C9B271C8BA6630068237D /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B251C8BA5970068237D /* ParseHelper.swift */; };
 		224C9B2C1C8BA70E0068237D /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B2B1C8BA70E0068237D /* SecretKeys.swift */; };
 		224C9B2D1C8BA70E0068237D /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B2B1C8BA70E0068237D /* SecretKeys.swift */; };
+		224C9B311C8BB0F80068237D /* UIColor+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B301C8BB0F80068237D /* UIColor+PanicureAdditions.m */; };
+		224C9B321C8BB0F80068237D /* UIColor+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B301C8BB0F80068237D /* UIColor+PanicureAdditions.m */; };
 		75378CDC7BF118E90FC8EDB2 /* Pods_Panicure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */; };
 		CB6E94E11C8B998800AD43B2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */; };
 		CB6E94E51C8B998800AD43B2 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94E41C8B998800AD43B2 /* TodayViewController.m */; };
@@ -221,6 +223,7 @@
 		224C9AD71C8B49700068237D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				224C9B2E1C8BB0250068237D /* Colors */,
 				224C9B241C8BA5800068237D /* Parse */,
 				224C9B201C8B9D910068237D /* Panic */,
 				224C9AF01C8B74180068237D /* Location */,
@@ -266,6 +269,15 @@
 				224C9B251C8BA5970068237D /* ParseHelper.swift */,
 			);
 			name = Parse;
+			sourceTree = "<group>";
+		};
+		224C9B2E1C8BB0250068237D /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				224C9B2F1C8BB0F80068237D /* UIColor+PanicureAdditions.h */,
+				224C9B301C8BB0F80068237D /* UIColor+PanicureAdditions.m */,
+			);
+			name = Colors;
 			sourceTree = "<group>";
 		};
 		CB6E94E21C8B998800AD43B2 /* PanicExtension */ = {
@@ -523,6 +535,7 @@
 				224C9AF61C8B75360068237D /* RequestLocationPermissionsViewController.swift in Sources */,
 				224C9B261C8BA5970068237D /* ParseHelper.swift in Sources */,
 				224C9AD61C8B48A20068237D /* ViewController.swift in Sources */,
+				224C9B311C8BB0F80068237D /* UIColor+PanicureAdditions.m in Sources */,
 				224C9B221C8B9DF10068237D /* PanicHelper.swift in Sources */,
 				224C9B2C1C8BA70E0068237D /* SecretKeys.swift in Sources */,
 				224C9AB31C8B47150068237D /* AppDelegate.swift in Sources */,
@@ -542,6 +555,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				224C9B1F1C8B9CFC0068237D /* LocationHelper.swift in Sources */,
+				224C9B321C8BB0F80068237D /* UIColor+PanicureAdditions.m in Sources */,
 				CB6E94E51C8B998800AD43B2 /* TodayViewController.m in Sources */,
 				CB6E94F21C8B9AB400AD43B2 /* UIView+PanicureAdditions.m in Sources */,
 				224C9B231C8B9E080068237D /* PanicHelper.swift in Sources */,

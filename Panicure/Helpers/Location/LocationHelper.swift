@@ -17,9 +17,9 @@ class LocationHelper: NSObject, CLLocationManagerDelegate {
     private let locationManager = CLLocationManager()
     
     /// The last location recieved.
-    private var _lastLocation: CLLocation?
+    private static var _lastLocation: CLLocation?
     var lastLocation: CLLocation? {
-        return _lastLocation
+        return LocationHelper._lastLocation
     }
     
     /// true when the user has authorized location updates, false otherwise
@@ -28,7 +28,9 @@ class LocationHelper: NSObject, CLLocationManagerDelegate {
     }
     
     /// The current athroization status of the app
-    private var authorizationStatus: CLAuthorizationStatus = .NotDetermined
+    private var authorizationStatus: CLAuthorizationStatus {
+        return CLLocationManager.authorizationStatus()
+    }
     
     /// @name Requesting Location
     typealias RequestLocationAuthorizationBlock = (authorized: Bool) -> Void
@@ -90,9 +92,6 @@ class LocationHelper: NSObject, CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         
-        // Update the status
-        authorizationStatus = status
-        
         // Call the completion bock 
         authorizeLocationBlock?(authorized: authorized)
         authorizeLocationBlock = nil
@@ -107,7 +106,7 @@ class LocationHelper: NSObject, CLLocationManagerDelegate {
             requestLocationBlock = nil
             
             // Save this as the most recent location
-            _lastLocation = location
+            LocationHelper._lastLocation = location
             
             // Stop requesting locations
             locationManager.stopUpdatingLocation()

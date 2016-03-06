@@ -18,10 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0a-15-pLk">
-                                <rect key="frame" x="8" y="542" width="584" height="50"/>
+                                <rect key="frame" x="8" y="547" width="584" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="DsK-2A-xjM"/>
+                                    <constraint firstAttribute="height" constant="45" id="DsK-2A-xjM"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Enable Location"/>
                                 <connections>
                                     <action selector="enableLocation:" destination="pbz-wz-NQB" eventType="touchUpInside" id="VVx-ds-SJd"/>
