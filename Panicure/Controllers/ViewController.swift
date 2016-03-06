@@ -55,6 +55,11 @@ class ViewController: UIViewController, RequestLocationPermissionsViewController
         if makeSureLocationIsAuthroized() {
             startTiming()
         }
+        
+        let imagehelper = ImageCaptureHelper()
+        imagehelper.requestCameraAuthorization { (authorized) -> Void in
+            
+        }
     }
     
     override func viewDidDisappear(animated: Bool) {
