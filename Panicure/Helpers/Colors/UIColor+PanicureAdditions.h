@@ -20,5 +20,8 @@
 + (UIColor *)eva_mainRedColor;
 
 + (UIColor *)eva_grayTextColor;
++ (UIColor *)eva_greyColor;
+
+
 
 @end

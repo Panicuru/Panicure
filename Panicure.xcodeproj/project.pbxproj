@@ -28,6 +28,16 @@
 		224C9B321C8BB0F80068237D /* UIColor+PanicureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B301C8BB0F80068237D /* UIColor+PanicureAdditions.m */; };
 		224C9B351C8BB3C10068237D /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224C9B341C8BB3C10068237D /* RoundedButton.swift */; };
 		75378CDC7BF118E90FC8EDB2 /* Pods_Panicure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */; };
+		C10407A51C8BBDE7005AB0B0 /* ChildProfileControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407A41C8BBDE7005AB0B0 /* ChildProfileControl.swift */; };
+		C10407AA1C8BBE09005AB0B0 /* ProfileChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407A71C8BBE09005AB0B0 /* ProfileChildViewController.swift */; };
+		C10407AB1C8BBE09005AB0B0 /* ProfileInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407A81C8BBE09005AB0B0 /* ProfileInfoViewController.swift */; };
+		C10407AC1C8BBE09005AB0B0 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407A91C8BBE09005AB0B0 /* Report.swift */; };
+		C10407AE1C8BBE14005AB0B0 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407AD1C8BBE14005AB0B0 /* Profile.swift */; };
+		C10407B01C8BBE19005AB0B0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407AF1C8BBE19005AB0B0 /* LoginViewController.swift */; };
+		C10407B31C8BBE44005AB0B0 /* ProfileChildren.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10407B21C8BBE44005AB0B0 /* ProfileChildren.storyboard */; };
+		C10407B51C8BBE4A005AB0B0 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10407B41C8BBE4A005AB0B0 /* SignUp.storyboard */; };
+		C10407BA1C8BC408005AB0B0 /* EncryptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10407B71C8BC408005AB0B0 /* EncryptionHelper.swift */; };
+		C10407BB1C8BC408005AB0B0 /* EVAXOREncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C10407B91C8BC408005AB0B0 /* EVAXOREncrypt.m */; };
 		CB6E94E11C8B998800AD43B2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224C9B1A1C8B8CEB0068237D /* NotificationCenter.framework */; };
 		CB6E94E51C8B998800AD43B2 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E94E41C8B998800AD43B2 /* TodayViewController.m */; };
 		CB6E94E81C8B998800AD43B2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6E94E61C8B998800AD43B2 /* MainInterface.storyboard */; };
@@ -93,6 +103,18 @@
 		42A99D66B15A0D0B99D6ADF1 /* Pods-PanicExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanicExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PanicExtension/Pods-PanicExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		829424ED1D6E7BDAD1C9EFE9 /* Pods-Panicure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.release.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.release.xcconfig"; sourceTree = "<group>"; };
 		836C28868AEB079F7D187052 /* Pods-Panicure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Panicure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Panicure/Pods-Panicure.debug.xcconfig"; sourceTree = "<group>"; };
+		C10407A41C8BBDE7005AB0B0 /* ChildProfileControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildProfileControl.swift; sourceTree = "<group>"; };
+		C10407A71C8BBE09005AB0B0 /* ProfileChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileChildViewController.swift; sourceTree = "<group>"; };
+		C10407A81C8BBE09005AB0B0 /* ProfileInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInfoViewController.swift; sourceTree = "<group>"; };
+		C10407A91C8BBE09005AB0B0 /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		C10407AD1C8BBE14005AB0B0 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		C10407AF1C8BBE19005AB0B0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C10407B21C8BBE44005AB0B0 /* ProfileChildren.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileChildren.storyboard; sourceTree = "<group>"; };
+		C10407B41C8BBE4A005AB0B0 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		C10407B61C8BBF62005AB0B0 /* Panicure-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Panicure-Bridging-Header.h"; sourceTree = "<group>"; };
+		C10407B71C8BC408005AB0B0 /* EncryptionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionHelper.swift; sourceTree = "<group>"; };
+		C10407B81C8BC408005AB0B0 /* EVAXOREncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAXOREncrypt.h; sourceTree = "<group>"; };
+		C10407B91C8BC408005AB0B0 /* EVAXOREncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAXOREncrypt.m; sourceTree = "<group>"; };
 		C168C93621D7FBF654BCC628 /* Pods_Panicure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Panicure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6E94E01C8B998800AD43B2 /* PanicExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PanicExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6E94E31C8B998800AD43B2 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
@@ -101,6 +123,8 @@
 		CB6E94E91C8B998800AD43B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB6E94F01C8B9AB400AD43B2 /* UIView+PanicureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PanicureAdditions.h"; sourceTree = "<group>"; };
 		CB6E94F11C8B9AB400AD43B2 /* UIView+PanicureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PanicureAdditions.m"; sourceTree = "<group>"; };
+		CB6E94F91C8BB6C600AD43B2 /* Panicure.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Panicure.entitlements; sourceTree = "<group>"; };
+		CB6E94FA1C8BB80A00AD43B2 /* PanicExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PanicExtension.entitlements; sourceTree = "<group>"; };
 		E150143BDDF82436FD1E9EE6 /* Pods_PanicExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PanicExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -205,6 +229,7 @@
 		224C9AD21C8B47290068237D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C10407A61C8BBDED005AB0B0 /* SignUp */,
 				224C9AEF1C8B740B0068237D /* Request Location  */,
 				224C9AD51C8B48A20068237D /* ViewController.swift */,
 			);
@@ -214,6 +239,8 @@
 		224C9AD31C8B47300068237D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C10407AD1C8BBE14005AB0B0 /* Profile.swift */,
+				C10407A91C8BBE09005AB0B0 /* Report.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -222,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				224C9B331C8BB3AE0068237D /* Buttons */,
+				C10407B11C8BBE23005AB0B0 /* SignUp */,
 				224C9AFB1C8B775E0068237D /* Request Location Permision */,
 			);
 			name = Views;
@@ -230,6 +258,9 @@
 		224C9AD71C8B49700068237D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C10407B71C8BC408005AB0B0 /* EncryptionHelper.swift */,
+				C10407B81C8BC408005AB0B0 /* EVAXOREncrypt.h */,
+				C10407B91C8BC408005AB0B0 /* EVAXOREncrypt.m */,
 				224C9B2E1C8BB0250068237D /* Colors */,
 				224C9B241C8BA5800068237D /* Parse */,
 				224C9B201C8B9D910068237D /* Panic */,
@@ -287,17 +318,38 @@
 			name = Colors;
 			sourceTree = "<group>";
 		};
-		224C9B331C8BB3AE0068237D /* Buttons */ = {
+224C9B331C8BB3AE0068237D /* Buttons */ = {
+isa = PBXGroup;
+children = (
+224C9B341C8BB3C10068237D /* RoundedButton.swift */,
+);
+name = Buttons;
+sourceTree = "<group>";
+};
+		C10407A61C8BBDED005AB0B0 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				224C9B341C8BB3C10068237D /* RoundedButton.swift */,
+				C10407AF1C8BBE19005AB0B0 /* LoginViewController.swift */,
+				C10407A71C8BBE09005AB0B0 /* ProfileChildViewController.swift */,
+				C10407A81C8BBE09005AB0B0 /* ProfileInfoViewController.swift */,
+				C10407A41C8BBDE7005AB0B0 /* ChildProfileControl.swift */,
 			);
-			name = Buttons;
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		C10407B11C8BBE23005AB0B0 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				C10407B41C8BBE4A005AB0B0 /* SignUp.storyboard */,
+				C10407B21C8BBE44005AB0B0 /* ProfileChildren.storyboard */,
+			);
+			name = SignUp;
 			sourceTree = "<group>";
 		};
 		CB6E94E21C8B998800AD43B2 /* PanicExtension */ = {
 			isa = PBXGroup;
 			children = (
+				CB6E94FA1C8BB80A00AD43B2 /* PanicExtension.entitlements */,
 				CB6E94E31C8B998800AD43B2 /* TodayViewController.h */,
 				CB6E94E41C8B998800AD43B2 /* TodayViewController.m */,
 				CB6E94E61C8B998800AD43B2 /* MainInterface.storyboard */,
@@ -384,8 +436,15 @@
 				TargetAttributes = {
 					224C9AAE1C8B47150068237D = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 5BNC8N825B;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
 								enabled = 1;
 							};
 						};
@@ -396,6 +455,15 @@
 					};
 					CB6E94DF1C8B998800AD43B2 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 5BNC8N825B;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -425,6 +493,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				224C9ABD1C8B47150068237D /* LaunchScreen.storyboard in Resources */,
+				C10407B31C8BBE44005AB0B0 /* ProfileChildren.storyboard in Resources */,
+				C10407B51C8BBE4A005AB0B0 /* SignUp.storyboard in Resources */,
 				224C9ABA1C8B47150068237D /* Assets.xcassets in Resources */,
 				224C9AFA1C8B770C0068237D /* RequestLocationPermision.storyboard in Resources */,
 				224C9AB81C8B47150068237D /* Main.storyboard in Resources */,
@@ -546,15 +616,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C10407B01C8BBE19005AB0B0 /* LoginViewController.swift in Sources */,
 				224C9AF31C8B74400068237D /* LocationHelper.swift in Sources */,
+				C10407A51C8BBDE7005AB0B0 /* ChildProfileControl.swift in Sources */,
 				224C9AF61C8B75360068237D /* RequestLocationPermissionsViewController.swift in Sources */,
+				C10407BB1C8BC408005AB0B0 /* EVAXOREncrypt.m in Sources */,
+				C10407AE1C8BBE14005AB0B0 /* Profile.swift in Sources */,
+				C10407BA1C8BC408005AB0B0 /* EncryptionHelper.swift in Sources */,
 				224C9B261C8BA5970068237D /* ParseHelper.swift in Sources */,
+				C10407AA1C8BBE09005AB0B0 /* ProfileChildViewController.swift in Sources */,
 				224C9AD61C8B48A20068237D /* ViewController.swift in Sources */,
 				224C9B351C8BB3C10068237D /* RoundedButton.swift in Sources */,
 				224C9B311C8BB0F80068237D /* UIColor+PanicureAdditions.m in Sources */,
 				224C9B221C8B9DF10068237D /* PanicHelper.swift in Sources */,
 				224C9B2C1C8BA70E0068237D /* SecretKeys.swift in Sources */,
+				C10407AB1C8BBE09005AB0B0 /* ProfileInfoViewController.swift in Sources */,
 				224C9AB31C8B47150068237D /* AppDelegate.swift in Sources */,
+				C10407AC1C8BBE09005AB0B0 /* Report.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,6 +790,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Panicure/Panicure.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Panicure/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -729,6 +810,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Panicure/Panicure.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Panicure/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -769,10 +853,14 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PanicExtension/PanicExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PanicExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.panicuru.Panicure.PanicExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "PanicExtension/PanicExtension-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -785,10 +873,14 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PanicExtension/PanicExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PanicExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.panicuru.Panicure.PanicExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "PanicExtension/PanicExtension-Bridging-Header.h";
 			};
