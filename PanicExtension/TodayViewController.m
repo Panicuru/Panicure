@@ -115,8 +115,16 @@
         
         // Send push notification to query
         NSString* pushText = [NSString stringWithFormat: @"%@ has panicked at '%@' ", panic.user.email, [EVAEncryptionHelper encryptDecryptString:panic.locationName ]];
-        [PFPush sendPushMessageToQueryInBackground:pushQuery
-                                       withMessage:pushText block:^(BOOL succeeded, NSError * _Nullable error) {
+        NSDictionary *data = [NSDictionary dictionaryWithObjectsAndKeys:
+                              pushText, @"alert",
+                              @"Increment", @"badge",
+                              @"userEmail", panic.user.email,
+                              @"userId", panic.user.objectId,
+                              nil];
+        
+        
+        [PFPush sendPushDataToQueryInBackground:pushQuery
+                                       withData:data block:^(BOOL succeeded, NSError * _Nullable error) {
                                            NSURL *url = [NSURL URLWithString:@"panicure://"];
                                            [self.extensionContext openURL:url completionHandler:nil];
                                        }];
