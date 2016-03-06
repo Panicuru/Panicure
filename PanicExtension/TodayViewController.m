@@ -29,6 +29,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [Parse enableDataSharingWithApplicationGroupIdentifier:@"group.com.panicuru"
+                                     containingApplication:@"com.panicuru.Panicure"];
+    // Setup Parse
     [EVAParseHelper start];
     if([PFUser currentUser]){
         self.panicButton.hidden = NO;
