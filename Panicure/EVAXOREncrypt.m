@@ -13,7 +13,7 @@
 @implementation XOREncryption
 
 +(NSString *) encryptDecrypt:(NSString *)input {
-    unichar key[] = {"B", "A", "S", "I", "L"};
+    unichar key[] = {'B', 'A', 'S', 'I', 'L'};
     NSMutableString *output = [[NSMutableString alloc] init];
     
     for(int i = 0; i < input.length; i++) {
