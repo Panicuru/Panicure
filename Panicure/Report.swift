@@ -16,6 +16,8 @@ class Report: PFObject, PFSubclassing {
     @NSManaged var detail: String?
     @NSManaged var user: PFUser?
     @NSManaged var location: String?
+    @NSManaged var severity: String?
+    @NSManaged var when: String?
     
     var geopoint: PFGeoPoint? {
         get {
