@@ -10,6 +10,7 @@
 #import <NotificationCenter/NotificationCenter.h>
 #import <CoreLocation/CoreLocation.h>
 #import "UIColor+PanicureAdditions.h"
+#import "EVAXOREncrypt.h"
 
 
 #import "PanicExtension-Swift.h"
@@ -113,7 +114,7 @@
         [pushQuery whereKey:@"deviceType" equalTo:@"ios"];
         
         // Send push notification to query
-        NSString* pushText = [NSString stringWithFormat: @"%@ has panicked at '%@' ", panic.user.email, panic.locationName];
+        NSString* pushText = [NSString stringWithFormat: @"%@ has panicked at '%@' ", panic.user.email, [EVAEncryptionHelper encryptDecryptString:panic.locationName ]];
         [PFPush sendPushMessageToQueryInBackground:pushQuery
                                        withMessage:pushText block:^(BOOL succeeded, NSError * _Nullable error) {
                                            NSURL *url = [NSURL URLWithString:@"panicure://"];
