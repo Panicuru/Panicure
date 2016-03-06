@@ -48,4 +48,5 @@ class ChildProfileControl: UIViewController {
     func validateInput() -> Bool {
         return false
     }
+
 }

@@ -45,6 +45,7 @@ class Report: PFObject, PFSubclassing {
     func encryptDecrypt() {
         self.detail = EncryptionHelper.encryptDecryptString(self.detail)
         self.location = EncryptionHelper.encryptDecryptString(self.location)
+        self.when = EncryptionHelper.encryptDecryptString(self.when)
     }
     
 }

@@ -171,6 +171,9 @@
                                 <state key="normal" title="PANIC NOW">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="startPanicing:" destination="NYz-D9-iBC" eventType="touchUpInside" id="dPt-wS-1Es"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eHf-fF-t6s">
                                 <rect key="frame" x="20" y="64" width="560" height="464"/>
@@ -203,7 +206,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SEVERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMh-XT-W8N">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEVERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMh-XT-W8N">
                                                     <rect key="frame" x="87" y="58" width="116" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="116" id="hdg-yu-zdB"/>
@@ -289,7 +292,7 @@
                     <connections>
                         <outlet property="panicButton" destination="PiT-yJ-wXo" id="EKF-zO-BrI"/>
                         <outlet property="tableView" destination="eHf-fF-t6s" id="Oy3-dh-zOf"/>
-                        <segue destination="Tnh-I3-6F1" kind="show" identifier="showPanicSuccess" id="dCe-iQ-jKt"/>
+                        <segue destination="Tnh-I3-6F1" kind="show" identifier="panicSuccess" id="dCe-iQ-jKt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8il-UT-SCa" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -64,7 +64,7 @@ class AddReportViewController: UIViewController, UIImagePickerControllerDelegate
         imageFile!.saveInBackground()
         newReport.image = imageFile
         }
-        
+        newReport.encryptDecrypt()
         
         newReport.saveInBackgroundWithBlock({(success: Bool, error: NSError?) in
             print(success)
@@ -76,6 +76,5 @@ class AddReportViewController: UIViewController, UIImagePickerControllerDelegate
                 print(error)
             }
         })
-        
     }
 }

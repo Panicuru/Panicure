@@ -38,6 +38,13 @@ class ProfileChild1ViewController: ChildProfileControl {
         var returnVal = [addressCityField, addressUnitField, provincePicker, postCodeField, phoneField, contactPhoneField].filter({$0?.text?.characters.count == 0}).count == 0
         return birthdatePicker?.date != nil && returnVal
     }
+    
+    @IBAction func userDidCancelEditing(sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "SignUp", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController()
+        self.view.window?.rootViewController = vc
+        self.view.window?.makeKeyAndVisible()
+    }
 
 }
 

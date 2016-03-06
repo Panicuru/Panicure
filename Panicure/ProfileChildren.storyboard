@@ -111,6 +111,15 @@
                                                     <!--2016-03-06 00:27:20 +0000-->
                                                 </date>
                                             </datePicker>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBg-cd-jCf">
+                                                <rect key="frame" x="8" y="8" width="52" height="30"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" red="0.59607843140000005" green="0.078431372550000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="userDidCancelEditing:" destination="8tv-4H-kfz" eventType="touchUpInside" id="Iti-yn-x65"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.93680950129999996" green="0.93680950129999996" blue="0.93680950129999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -126,6 +135,7 @@
                                             <constraint firstItem="6CW-8X-VLB" firstAttribute="leading" secondItem="IZz-bn-djq" secondAttribute="leadingMargin" constant="20" id="Db8-ka-GiZ"/>
                                             <constraint firstItem="T5i-dr-Ice" firstAttribute="leading" secondItem="IZz-bn-djq" secondAttribute="leadingMargin" constant="20" id="Kk8-LG-hgL"/>
                                             <constraint firstItem="yBH-a4-kg1" firstAttribute="leading" secondItem="IZz-bn-djq" secondAttribute="leadingMargin" constant="20" id="LeM-NH-jA4"/>
+                                            <constraint firstItem="xBg-cd-jCf" firstAttribute="top" secondItem="IZz-bn-djq" secondAttribute="top" constant="24" id="NrS-RJ-9Vd"/>
                                             <constraint firstItem="Gt2-QQ-1pA" firstAttribute="width" secondItem="oLA-jQ-bdz" secondAttribute="width" id="Ois-4o-EGj"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="N5d-8l-KXf" secondAttribute="trailing" constant="5" id="P21-Bx-YUT"/>
                                             <constraint firstItem="fg0-Zi-5qV" firstAttribute="top" secondItem="8WK-Vy-XmQ" secondAttribute="bottom" constant="8" id="UL3-PP-6h3"/>
@@ -147,6 +157,7 @@
                                             <constraint firstItem="oLA-jQ-bdz" firstAttribute="height" secondItem="Gt2-QQ-1pA" secondAttribute="height" id="vqV-mV-UUH"/>
                                             <constraint firstItem="fg0-Zi-5qV" firstAttribute="leading" secondItem="IZz-bn-djq" secondAttribute="leadingMargin" constant="20" id="wAv-Zt-U9v"/>
                                             <constraint firstItem="N5d-8l-KXf" firstAttribute="leading" secondItem="IZz-bn-djq" secondAttribute="leadingMargin" constant="20" id="xMc-ce-WYC"/>
+                                            <constraint firstItem="xBg-cd-jCf" firstAttribute="leading" secondItem="IZz-bn-djq" secondAttribute="leading" constant="8" id="y8R-C3-Jan"/>
                                             <constraint firstItem="bJ1-WD-4Zv" firstAttribute="top" secondItem="IyI-jQ-JNO" secondAttribute="bottom" constant="8" id="yih-oy-EFF"/>
                                             <constraint firstItem="Gt2-QQ-1pA" firstAttribute="centerY" secondItem="oLA-jQ-bdz" secondAttribute="centerY" id="z5F-Mx-kwm"/>
                                             <constraint firstItem="kz8-9e-TkE" firstAttribute="top" secondItem="T5i-dr-Ice" secondAttribute="bottom" constant="8" id="z5T-Di-yWG"/>
