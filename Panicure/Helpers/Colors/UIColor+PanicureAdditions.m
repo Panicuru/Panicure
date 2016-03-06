@@ -23,6 +23,9 @@
     return [self colorWithHexValue:@"#981417"];
 }
 
++ (UIColor *)eva_grayTextColor {
+    return [self colorWithHexValue:@"#4a4a4a"];
+}
 + (UIColor *)eva_greyColor {
     return [self colorWithHexValue:@"#6C6C6C"];
 }

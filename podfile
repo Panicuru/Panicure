@@ -4,6 +4,7 @@ use_frameworks!
 target 'Panicure' do
   pod 'Parse'
   pod 'Bolts'
+  pod 'PureLayout'
 end
 
 target 'PanicExtension' do
