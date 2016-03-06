@@ -13,6 +13,9 @@ import Parse
 class ParseHelper: NSObject {
     
     static func start() {
+        
+        Panic.registerSubclass()
+        
         Parse.setApplicationId(ParseKeys.ApplicationId, clientKey: ParseKeys.ClientKey)
     }
 }

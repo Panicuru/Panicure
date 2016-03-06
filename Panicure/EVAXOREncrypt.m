@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "EVAXOREncrypt.h"
-#import "Panicure-Swift.h"
+//#import "Panicure-Swift.h"
 
 @implementation XOREncryption
 

@@ -20,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Profile.registerSubclass()
         Report.registerSubclass()
         
-        Parse.enableDataSharingWithApplicationGroupIdentifier("group.com.panicuru");
+        Parse.enableDataSharingWithApplicationGroupIdentifier("group.com.panicuru")
+        
         ParseHelper.start()
         
         if PFUser.currentUser() == nil {
@@ -29,6 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = vc
             self.window?.makeKeyAndVisible()
         }
+        
+//        EVANetworkHelper.addUserToFirstRole("vahan@ttt.com")
+//        EVANetworkHelper.addUserToFirstRole("sam@tt.com")
+//        EVANetworkHelper.addUserToFirstRole("anya@t.com")
         
         return true
     }
